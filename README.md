@@ -4,7 +4,7 @@ Welcome to the Purple Cow Games repository! We're thrilled to have you here as w
 
 ## About the Project
 
-Purple Cow Games is a team of enthusiastic students collaborating to develop a unique shoot 'em up (shmup) game using Unity. Our team roles include Producer, Game Designer, Artists, and Developers.
+Purple Cow Games is a team of enthusiastic students collaborating to develop a unique shoot 'em up (shmup) game using Unity. Our team roles include Producer, Game Designers, Artists, and Developers.
 
 ## Challenge Details
 - **Duration**: June to August 13th
