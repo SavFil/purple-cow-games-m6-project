@@ -245,7 +245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1249189718
 Transform:
   m_ObjectHideFlags: 0
@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 1744607259}
   - component: {fileID: 1744607260}
   m_Layer: 0
-  m_Name: TitleScreenMenu
+  m_Name: PracticeMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1744607258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76252ccd3ed988741a49d1af72330e14, type: 3}
+  m_Script: {fileID: 11500000, guid: 611c87cdb68be254ea2460e5a30010bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Root: {fileID: 1249189717}
