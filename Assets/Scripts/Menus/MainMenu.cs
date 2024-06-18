@@ -4,8 +4,6 @@ public class MainMenu : Menu
 {
     public static MainMenu Instance { get; private set; }
 
-
-
     private void Start()
     {
         if (Instance)

@@ -14,4 +14,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameplayScene.unity
     guid: e75e0343391a8004abd062e9cc4b58ff
+  - enabled: 1
+    path: Assets/Scenes/Menus/MainMenu.unity
+    guid: 37977848be02aaa4d8044633257cbac9
+  - enabled: 1
+    path: Assets/Scenes/Menus/AudioOptionsMenu.unity
+    guid: 30b78ae8741425841b29a7dbfd4581af
+  - enabled: 1
+    path: Assets/Scenes/Menus/ControlsOptionsMenu.unity
+    guid: f5d4180af8428214aba0855a2c42e686
+  - enabled: 1
+    path: Assets/Scenes/Menus/CraftSelectMenu.unity
+    guid: 30528e8b6d97f2341a635eb32c866b2a
+  - enabled: 1
+    path: Assets/Scenes/Menus/CreditsMenu.unity
+    guid: f14e7c952834afa499f363b65bba4a31
+  - enabled: 1
+    path: Assets/Scenes/Menus/GraphicsOptionsMenu.unity
+    guid: 5de83565a73a65f4f8b0648b5f6e5f91
+  - enabled: 1
+    path: Assets/Scenes/Menus/OptionsMenu.unity
+    guid: 5c5f6f8876342a84db60b4cb22e4d189
+  - enabled: 1
+    path: Assets/Scenes/Menus/PauseMenu.unity
+    guid: 2d1c331f52b9f35499ab5e749aace3cc
+  - enabled: 1
+    path: Assets/Scenes/Menus/MedalsMenu.unity
+    guid: 8b5cc3add52742d46a5b47f152a15180
   m_configObjects: {}
