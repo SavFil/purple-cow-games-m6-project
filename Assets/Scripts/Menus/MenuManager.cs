@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -20,13 +19,31 @@ public class MenuManager : MonoBehaviour
         Debug.Log("MenuManager Created!");
     }
 
-    public void SwitchToGameplay()
+    internal void SwitchToGameplayMenus()
     {
-        
+        SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("GraphicsOptionsMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("OptionsMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("AudioOptionsMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("ControlsOptionsMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("YesNoMenu", LoadSceneMode.Additive);
     }
 
-    public void SwitchToMainMenus()
+    internal void SwitchToMainMenuMenus()
     {
-
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("ScoresMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("MedalsMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("CreditsMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("PlayMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("PracticeMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("PracticeArenaMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("PracticeStageMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("CraftSelectMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("GraphicsOptionsMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("OptionsMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("AudioOptionsMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("ControlsOptionsMenu", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("YesNoMenu", LoadSceneMode.Additive);
     }
 }

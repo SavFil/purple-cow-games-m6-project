@@ -1,9 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameInitializer : MonoBehaviour
 {
+    private bool menuLoaded = false;
+    public enum GameMode
+    {
+        INVALID,
+        Menus,
+        Gameplay
+    }
+
+    public GameMode gameMode;
     public GameObject gameManagerPrefab = null;
     void Start()
     {
@@ -17,6 +24,23 @@ public class GameInitializer : MonoBehaviour
             {
                 Debug.LogError("gameMangerPrefab isn't set!");
             }
+        }
+    }
+
+    public void Update()
+    {
+        if (!menuLoaded)
+        {
+            switch (gameMode)
+            {
+                case GameMode.Menus:
+                    MenuManager.Instance.SwitchToMainMenuMenus();
+                    break;
+                case GameMode.Gameplay:
+                    MenuManager.Instance.SwitchToGameplayMenus();
+                    break;
+            };
+            menuLoaded = true;
         }
     }
 }
