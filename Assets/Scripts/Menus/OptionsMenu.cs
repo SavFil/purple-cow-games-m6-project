@@ -16,4 +16,27 @@ public class OptionsMenu : Menu
         Instance = this;
         Debug.Log("OptionsMenu Created!");
     }
+
+    public void OnGraphicsButton()
+    {
+        TurnOff(false);
+        GraphicsOptionsMenu.Instance.TurnOn(this);
+    }
+
+    public void OnAudioButton()
+    {
+        TurnOff(false);
+        AudioOptionsMenu.Instance.TurnOn(this);
+    }
+
+    public void OnControlsButton()
+    {
+        TurnOff(false);
+        ControlsOptionsMenu.Instance.TurnOn(this);
+    }
+
+    public void OnBackButton()
+    {
+        TurnOff(true);
+    }
 }
