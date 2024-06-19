@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 470367991}
   - component: {fileID: 470367990}
   m_Layer: 0
-  m_Name: MedalsMenu
+  m_Name: AchievementsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,7 +259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ed4cc32666f7a4ca438306eb266ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Root: {fileID: 1119262444}
+  ROOT: {fileID: 1119262444}
+  previousMenu: {fileID: 0}
+  previousItem: {fileID: 0}
 --- !u!4 &470367991
 Transform:
   m_ObjectHideFlags: 0
