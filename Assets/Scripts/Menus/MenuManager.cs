@@ -32,8 +32,9 @@ public class MenuManager : MonoBehaviour
     internal void SwitchToMainMenuMenus()
     {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
-        SceneManager.LoadScene("ScoresMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("CreditsMenu", LoadSceneMode.Additive);
         SceneManager.LoadScene("AchievementsMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("ScoresMenu", LoadSceneMode.Additive);
         SceneManager.LoadScene("PlayMenu", LoadSceneMode.Additive);
         SceneManager.LoadScene("CraftSelectMenu", LoadSceneMode.Additive);
         SceneManager.LoadScene("GraphicsOptionsMenu", LoadSceneMode.Additive);
