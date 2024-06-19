@@ -22,6 +22,7 @@ public class MenuManager : MonoBehaviour
     internal void SwitchToGameplayMenus()
     {
         SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("LoadMenu", LoadSceneMode.Additive);
         SceneManager.LoadScene("GraphicsOptionsMenu", LoadSceneMode.Additive);
         SceneManager.LoadScene("OptionsMenu", LoadSceneMode.Additive);
         SceneManager.LoadScene("AudioOptionsMenu", LoadSceneMode.Additive);
