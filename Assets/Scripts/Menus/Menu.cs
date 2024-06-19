@@ -11,7 +11,7 @@ public class Menu : MonoBehaviour
     {
         if (ROOT)
         {
-            if (previousMenu != null)
+            if (previous != null)
             {
                 previousMenu = previous;
             }
@@ -20,10 +20,11 @@ public class Menu : MonoBehaviour
             {
                 EventSystem.current.SetSelectedGameObject(previousItem);
             }
-            Debug.LogError("ROOT object not set.");
-            return;
         }
-        ROOT.SetActive(true);
+        else
+        {
+            Debug.LogError("ROOT object not set.");
+        }
     }
 
     public virtual void TurnOff(bool returnToPrevious)
@@ -37,15 +38,15 @@ public class Menu : MonoBehaviour
 
             ROOT.SetActive(false);
 
-            if (previousMenu & returnToPrevious) {
+            if (previousMenu & returnToPrevious)
+            {
                 previousMenu.TurnOn(null);
             }
-           
+
         }
         else
         {
             Debug.LogError("ROOT object not set.");
         }
-        
     }
 }

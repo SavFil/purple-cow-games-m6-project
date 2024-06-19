@@ -19,7 +19,7 @@ public class TitleScreenMenu : Menu
 
     public void OnFireButton()
     {
-        //TurnOff();
-        //MainMenu.Instance.TurnOn();
+        TurnOff(false);
+        MainMenu.Instance.TurnOn(null);
     }
 }

@@ -16,4 +16,40 @@ public class MainMenu : Menu
         Instance = this;
         Debug.Log("MainMenu Created!");
     }
+
+    public void OnPlayButton()
+    {
+        TurnOff(true);
+        PlayMenu.Instance.TurnOn(this);
+    }
+
+    public void OnOptionsButton()
+    {
+        TurnOff(true);
+        OptionsMenu.Instance.TurnOn(this);
+    }
+
+    public void OnScoresButton()
+    {
+        TurnOff(true);
+        ScoresMenu.Instance.TurnOn(this);
+    }
+
+    public void OnAchievementsButton()
+    {
+        TurnOff(true);
+        AchievementsMenu.Instance.TurnOn(this);
+    }
+
+    public void OnCreditsButton()
+    {
+        TurnOff(true);
+        CreditsMenu.Instance.TurnOn(this);
+    }
+
+    public void OnQuitButton()
+    {
+        TurnOff(true);
+        YesNoMenu.Instance.TurnOn(this);
+    }
 }
