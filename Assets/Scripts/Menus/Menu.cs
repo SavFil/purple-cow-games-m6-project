@@ -38,7 +38,7 @@ public class Menu : MonoBehaviour
 
             ROOT.SetActive(false);
 
-            if (previousMenu & returnToPrevious)
+            if (previousMenu && returnToPrevious)
             {
                 previousMenu.TurnOn(null);
             }

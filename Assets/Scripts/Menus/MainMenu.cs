@@ -19,37 +19,37 @@ public class MainMenu : Menu
 
     public void OnPlayButton()
     {
-        TurnOff(true);
+        TurnOff(false);
         PlayMenu.Instance.TurnOn(this);
     }
 
     public void OnOptionsButton()
     {
-        TurnOff(true);
+        TurnOff(false);
         OptionsMenu.Instance.TurnOn(this);
     }
 
     public void OnScoresButton()
     {
-        TurnOff(true);
+        TurnOff(false);
         ScoresMenu.Instance.TurnOn(this);
     }
 
     public void OnAchievementsButton()
     {
-        TurnOff(true);
+        TurnOff(false);
         AchievementsMenu.Instance.TurnOn(this);
     }
 
     public void OnCreditsButton()
     {
-        TurnOff(true);
+        TurnOff(false);
         CreditsMenu.Instance.TurnOn(this);
     }
 
     public void OnQuitButton()
     {
-        TurnOff(true);
+        TurnOff(false);
         YesNoMenu.Instance.TurnOn(this);
     }
 }
