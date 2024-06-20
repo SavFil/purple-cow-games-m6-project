@@ -16,4 +16,14 @@ public class CraftSelectMenu : Menu
         Instance = this;
         Debug.Log("CraftSelectMenu Created!");
     }
+
+    public void OnPlayButton()
+    {
+        // to do as well the a-z buttons
+    }
+
+    public void OnBackButton()
+    {
+        TurnOff(true);
+    }
 }

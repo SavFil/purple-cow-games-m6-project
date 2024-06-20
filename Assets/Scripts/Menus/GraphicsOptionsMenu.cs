@@ -16,4 +16,14 @@ public class GraphicsOptionsMenu : Menu
         Instance = this;
         Debug.Log("GraphicsOptionsMenu Created!");
     }
+
+    public void OnApplyButton()
+    {
+        // to do and all other buttons
+    }
+
+    public void OnBackButton()
+    {
+        TurnOff(true);
+    }
 }

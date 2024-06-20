@@ -16,4 +16,14 @@ public class AudioOptionsMenu : Menu
         Instance = this;
         Debug.Log("AudioOptionsMenu Created!");
     }
+
+    public void OnSFXVolumeSlider()
+    {
+        // to do and all other buttons
+    }
+
+    public void OnBackButton()
+    {
+        TurnOff(true);
+    }
 }

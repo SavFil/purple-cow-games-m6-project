@@ -16,4 +16,14 @@ public class ControlsOptionsMenu : Menu
         Instance = this;
         Debug.Log("ControlsOptionsMenu Created!");
     }
+
+    public void OnShootButton()
+    {
+        // to do and all other buttons
+    }
+
+    public void OnBackButton()
+    {
+        TurnOff(true);
+    }
 }
