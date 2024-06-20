@@ -16,4 +16,8 @@ public class ScoresMenu : Menu
         Instance = this;
         Debug.Log("ScoresMenu Created!");
     }
+    public void OnBackButton()
+    {
+        TurnOff(true);
+    }
 }

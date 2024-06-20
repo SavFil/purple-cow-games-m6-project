@@ -16,4 +16,8 @@ public class AchievementsMenu : Menu
         Instance = this;
         Debug.Log("AchievementsMenu Created!");
     }
+    public void OnBackButton()
+    {
+        TurnOff(true);
+    }
 }

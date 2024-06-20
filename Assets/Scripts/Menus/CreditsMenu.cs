@@ -16,4 +16,8 @@ public class CreditsMenu : Menu
         Instance = this;
         Debug.Log("CreditsMenu Created!");
     }
+    public void OnBackButton()
+    {
+        TurnOff(true);
+    }
 }

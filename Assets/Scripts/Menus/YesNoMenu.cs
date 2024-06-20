@@ -16,4 +16,16 @@ public class YesNoMenu : Menu
         Instance = this;
         Debug.Log("YesNoMenu Created!");
     }
+
+    public void OnQuitButton()
+    {
+        Debug.Log("Quitting game...");
+        Application.Quit();
+        Debug.Log("Application.Quit() called.");
+    }
+
+    public void OnBackButton()
+    {
+        TurnOff(true);
+    }
 }
