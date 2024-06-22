@@ -17,9 +17,15 @@ public class TitleScreenMenu : Menu
         Debug.Log("TitleScreenMenu Created!");
     }
 
-    public void OnFireButton()
+    private void Update()
     {
-        TurnOff(false);
-        MainMenu.Instance.TurnOn(null);
+        if (ROOT.gameObject.activeInHierarchy)
+        {
+            if (InputManager.Instance.CheckForPlayerInput(0))
+            {
+                TurnOff(false);
+                MainMenu.Instance.TurnOn(null);
+            }
+        }
     }
 }

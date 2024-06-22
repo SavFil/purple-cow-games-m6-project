@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameVersionSO gameVersionSO;
     [Tooltip("The version of the game.")]
     [SerializeField] private string currentVersion;
+    public bool twoPlayer = false;
 
     private void Awake()
     {
