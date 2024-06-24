@@ -61,20 +61,25 @@ public class InputManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         Debug.Log("InputManager Created!");
 
-        playerController[0] = 0;
-        playerController[1] = 1;
+        // Initialisation
+        playerController[0] = -1;
+        playerController[1] = -1;
+
         playerUsingKeys[0] = false;
         playerUsingKeys[1] = false;
 
         playerState[0] = new InputState();
         playerState[1] = new InputState();
+
         playerButtons[0] = new ButtonMapping();
         playerButtons[1] = new ButtonMapping();
+
         playerAxis[0] = new AxisMapping();
         playerAxis[1] = new AxisMapping();
 
         playerKeyAxis[0] = new KeyAxisMapping();
         playerKeyAxis[1] = new KeyAxisMapping();
+
         playerKeyButtons[0] = new KeyButtonMapping();
         playerKeyButtons[1] = new KeyButtonMapping();
 
