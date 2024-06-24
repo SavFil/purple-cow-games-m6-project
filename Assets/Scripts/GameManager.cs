@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private string currentVersion;
     public bool twoPlayer = false;
 
+    public GameObject[] craftPrefabs;
+
     private void Awake()
     {
         if (Instance)

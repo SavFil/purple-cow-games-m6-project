@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99d271dc475ee2458de3d9363010930, type: 3}
+  m_Name: CraftA_Config
+  m_EditorClassIdentifier: 
+  speed: 2
+  bulletStrenth: 1
+  beamSrength: 1
+  craftSprite: {fileID: -1136510360149084540, guid: b124005b10ecc6242a3a3a9a4479607c, type: 3}
