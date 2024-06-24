@@ -149,6 +149,7 @@ public class InputManager : MonoBehaviour
 
         if (playerController[playerIndex] < 0)
         {
+            UpdateMovement(playerIndex);
             return;
         }
 
@@ -177,6 +178,8 @@ public class InputManager : MonoBehaviour
             Input.GetButton(playerButtonNames[playerController[playerIndex], playerButtons[playerIndex].extra1]);
         playerState[playerIndex].extra2 =
             Input.GetButton(playerButtonNames[playerController[playerIndex], playerButtons[playerIndex].extra2]);
+
+        UpdateMovement(playerIndex);
 
     }
 
@@ -442,11 +445,39 @@ public class InputManager : MonoBehaviour
                 break;
         }
     }
+
+    void UpdateMovement(int playerIndex)
+    {
+        if (playerState[playerIndex].right)
+	    {
+            playerState[playerIndex].movement.x = 1;
+	    }
+        else if (playerState[playerIndex].left)
+        {
+         playerState[playerIndex].movement.x = -1;
+        }
+        else
+            playerState[playerIndex].movement.x = 0;
+
+        if (playerState[playerIndex].up)
+        {
+            playerState[playerIndex].movement.y = 1;
+        }
+        else if (playerState[playerIndex].down)
+        {
+            playerState[playerIndex].movement.y = -1;
+        }
+        else
+            playerState[playerIndex].movement.y = 0;
+
+        playerState[playerIndex].movement.Normalize();
+    }
 }
 
 
 public class InputState
 {
+    public Vector2 movement;
     public bool left, right, up, down;
     public bool shoot, bomb, options, auto, beam, menu, extra1, extra2;
 }
