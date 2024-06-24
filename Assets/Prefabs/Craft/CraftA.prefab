@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 1296115738}
   - component: {fileID: 1296115739}
   m_Layer: 0
-  m_Name: Flame1
+  m_Name: AftFlame1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 1642120931}
   - component: {fileID: 1642120932}
   m_Layer: 0
-  m_Name: Flame2
+  m_Name: AftFlame2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,7 +344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2966809664702188289
 Transform:
   m_ObjectHideFlags: 0
@@ -426,7 +426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4599560823195152620
 Transform:
   m_ObjectHideFlags: 0
@@ -596,6 +596,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9a5d83180483d4e803be993ec136d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AftFlame1: {fileID: 1296115737}
+  AftFlame2: {fileID: 1642120930}
+  LeftFlame: {fileID: 3004964092287338273}
+  RightFlame: {fileID: 5947114851177984289}
+  FrontFlame1: {fileID: 9000366664358252229}
+  FrontFlame2: {fileID: 4071994067218465072}
   playerIndex: 0
   config: {fileID: 11400000, guid: 55b044e435bd7594a80ade06ee3ad1df, type: 2}
 --- !u!95 &101710249712097265
@@ -633,7 +639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9048618387794573619
 Transform:
   m_ObjectHideFlags: 0
@@ -715,7 +721,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9154192532489110276
 Transform:
   m_ObjectHideFlags: 0

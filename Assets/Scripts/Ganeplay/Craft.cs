@@ -7,6 +7,13 @@ public class Craft : MonoBehaviour
     CraftData craftData = new CraftData();
     Vector3 newPosition = new Vector3();
 
+    public GameObject AftFlame1;
+    public GameObject AftFlame2;
+    public GameObject LeftFlame;
+    public GameObject RightFlame;
+    public GameObject FrontFlame1;
+    public GameObject FrontFlame2;
+
     public int playerIndex;
 
     public CraftConfiguration config;
