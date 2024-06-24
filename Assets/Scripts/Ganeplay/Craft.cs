@@ -7,6 +7,8 @@ public class Craft : MonoBehaviour
     CraftData craftData = new CraftData();
     Vector3 newPosition = new Vector3();
 
+    public int playerIndex;
+
     public CraftConfiguration config;
 
     private void FixedUpdate()
