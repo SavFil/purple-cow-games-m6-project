@@ -3,7 +3,14 @@ guid: 3f9a5d83180483d4e803be993ec136d5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - AftFlame1: {instanceID: 0}
+  - AftFlame2: {instanceID: 0}
+  - LeftFlame: {instanceID: 0}
+  - RightFlame: {instanceID: 0}
+  - FrontFlame1: {instanceID: 0}
+  - FrontFlame2: {instanceID: 0}
+  - config: {fileID: 11400000, guid: 55b044e435bd7594a80ade06ee3ad1df, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
