@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 195020847}
   - component: {fileID: 195020848}
-  - component: {fileID: 889847843}
+  - component: {fileID: 265179275}
   m_Layer: 0
   m_Name: MiniFlame1
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &889847843
+--- !u!95 &265179275
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513318100}
   - component: {fileID: 513318101}
-  - component: {fileID: 192672076}
+  - component: {fileID: 1472868648}
   m_Layer: 0
   m_Name: MiniFlame2
   m_TagString: Untagged
@@ -128,8 +128,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513318099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.53, y: -14, z: 0}
-  m_LocalScale: {x: 1.2228127, y: 1, z: 1}
+  m_LocalPosition: {x: 6, y: -14, z: 0}
+  m_LocalScale: {x: 0.9754033, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5926266032888430353}
   m_RootOrder: 3
@@ -185,7 +185,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &192672076
+--- !u!95 &1472868648
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
