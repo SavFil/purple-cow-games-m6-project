@@ -94,6 +94,7 @@ public class Craft : MonoBehaviour
     public void Explode()
     {
         EffectSystem.instance.CraftExplosion(transform.position);
+        Destroy(gameObject);
     }
 }
 

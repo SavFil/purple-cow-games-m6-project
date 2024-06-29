@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.B))
         {
-            if (playerOneCraft) EffectSystem.instance.CraftExplosion(playerOneCraft.transform.position);
+            if (playerOneCraft) playerOneCraft.Explode();
         }
     }
 }
