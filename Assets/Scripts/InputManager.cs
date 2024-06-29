@@ -397,7 +397,7 @@ public class InputManager : MonoBehaviour
                 playerKeyButtons[playerIndex].shoot = key;
                 break;
             case 1:
-               playerKeyButtons[playerIndex].bomb = key;
+                playerKeyButtons[playerIndex].bomb = key;
                 break;
             case 2:
                 playerKeyButtons[playerIndex].options = key;
@@ -453,27 +453,30 @@ public class InputManager : MonoBehaviour
 
     void UpdateMovement(int playerIndex)
     {
+        playerState[playerIndex].movement.x = 0;
+        playerState[playerIndex].movement.y = 0;
+
+
         if (playerState[playerIndex].right)
-	    {
-            playerState[playerIndex].movement.x = 1;
-	    }
-        else if (playerState[playerIndex].left)
         {
-         playerState[playerIndex].movement.x = -1;
+            playerState[playerIndex].movement.x += 1;
         }
-        else
-            playerState[playerIndex].movement.x = 0;
+
+        if (playerState[playerIndex].left)
+        {
+            playerState[playerIndex].movement.x += -1;
+        }
+
 
         if (playerState[playerIndex].up)
         {
-            playerState[playerIndex].movement.y = 1;
+            playerState[playerIndex].movement.y += 1;
         }
-        else if (playerState[playerIndex].down)
+
+        if (playerState[playerIndex].down)
         {
-            playerState[playerIndex].movement.y = -1;
+            playerState[playerIndex].movement.y += -1;
         }
-        else
-            playerState[playerIndex].movement.y = 0;
 
         playerState[playerIndex].movement.Normalize();
     }
