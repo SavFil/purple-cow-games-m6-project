@@ -90,6 +90,11 @@ public class Craft : MonoBehaviour
             }
         }
     }
+
+    public void Explode()
+    {
+        EffectSystem.instance.CraftExplosion(transform.position);
+    }
 }
 
 public class CraftData
