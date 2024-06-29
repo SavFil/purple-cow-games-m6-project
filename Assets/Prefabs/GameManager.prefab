@@ -91,3 +91,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   craftExplosionPrefab: {fileID: 2293839730220326849, guid: 4a6884e4536428d43a985884cfc88b73, type: 3}
+  craftParticlesPrefab: {fileID: 4835851698071002798, guid: b64d9c4bb3db12c409c1261de87adb95, type: 3}
+  craftDebrisParticlesPrefab: {fileID: 4835851698071002798, guid: 28a41f62083a97548ab567fb3ce74f2d, type: 3}

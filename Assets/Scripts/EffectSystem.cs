@@ -7,6 +7,8 @@ public class EffectSystem : MonoBehaviour
    public static EffectSystem instance = null;
 
    public GameObject craftExplosionPrefab = null;
+   public ParticleSystem craftParticlesPrefab = null;
+   public ParticleSystem craftDebrisParticlesPrefab = null;
     void Start()
     {
         if (instance)
@@ -22,7 +24,9 @@ public class EffectSystem : MonoBehaviour
 
     public void CraftExplosion(Vector3 position)
     {
-        Instantiate(craftExplosionPrefab,position, Quaternion.identity);
+        Instantiate(craftExplosionPrefab, position, Quaternion.identity);
+        Instantiate(craftParticlesPrefab, position, Quaternion.identity);
+        Instantiate(craftDebrisParticlesPrefab, position, Quaternion.identity);
     }
 
 }

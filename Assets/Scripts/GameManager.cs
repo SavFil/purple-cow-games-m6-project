@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] craftPrefabs;
 
-    Craft playerOneCraft = null;
+    public Craft playerOneCraft = null;
 
     private void Awake()
     {
