@@ -9,8 +9,10 @@ public class Craft : MonoBehaviour
 
     public GameObject AftFlame1;
     public GameObject AftFlame2;
+
     public GameObject LeftFlame;
     public GameObject RightFlame;
+
     public GameObject FrontFlame1;
     public GameObject FrontFlame2;
 
@@ -67,6 +69,7 @@ public class Craft : MonoBehaviour
         {
                 RightFlame.SetActive(true);
                 animator.SetBool(leftBoolID, true);
+
         }
         else
         {
