@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CraftA_Material
-  m_Shader: {fileID: -6465566751694194690, guid: 621a7a52041ac324fb77a04b9619408d, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: bcca100e94d1c3741bc9b3ad41f03eaa, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -37,5 +37,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_7cf1d8159868435693815b3bc425c603: {r: 0, g: 0, b: 0, a: 0}
+    - Color_7cf1d8159868435693815b3bc425c603: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0}
+    - _Overbright: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
