@@ -61,20 +61,25 @@ public class InputManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         Debug.Log("InputManager Created!");
 
-        playerController[0] = 0;
-        playerController[1] = 1;
+        // Initialisation
+        playerController[0] = -1;
+        playerController[1] = -1;
+
         playerUsingKeys[0] = false;
         playerUsingKeys[1] = false;
 
         playerState[0] = new InputState();
         playerState[1] = new InputState();
+
         playerButtons[0] = new ButtonMapping();
         playerButtons[1] = new ButtonMapping();
+
         playerAxis[0] = new AxisMapping();
         playerAxis[1] = new AxisMapping();
 
         playerKeyAxis[0] = new KeyAxisMapping();
         playerKeyAxis[1] = new KeyAxisMapping();
+
         playerKeyButtons[0] = new KeyButtonMapping();
         playerKeyButtons[1] = new KeyButtonMapping();
 
@@ -149,6 +154,7 @@ public class InputManager : MonoBehaviour
 
         if (playerController[playerIndex] < 0)
         {
+            UpdateMovement(playerIndex);
             return;
         }
 
@@ -177,6 +183,8 @@ public class InputManager : MonoBehaviour
             Input.GetButton(playerButtonNames[playerController[playerIndex], playerButtons[playerIndex].extra1]);
         playerState[playerIndex].extra2 =
             Input.GetButton(playerButtonNames[playerController[playerIndex], playerButtons[playerIndex].extra2]);
+
+        UpdateMovement(playerIndex);
 
     }
 
@@ -389,7 +397,7 @@ public class InputManager : MonoBehaviour
                 playerKeyButtons[playerIndex].shoot = key;
                 break;
             case 1:
-               playerKeyButtons[playerIndex].bomb = key;
+                playerKeyButtons[playerIndex].bomb = key;
                 break;
             case 2:
                 playerKeyButtons[playerIndex].options = key;
@@ -442,11 +450,42 @@ public class InputManager : MonoBehaviour
                 break;
         }
     }
+
+    void UpdateMovement(int playerIndex)
+    {
+        playerState[playerIndex].movement.x = 0;
+        playerState[playerIndex].movement.y = 0;
+
+
+        if (playerState[playerIndex].right)
+        {
+            playerState[playerIndex].movement.x += 1;
+        }
+
+        if (playerState[playerIndex].left)
+        {
+            playerState[playerIndex].movement.x += -1;
+        }
+
+
+        if (playerState[playerIndex].up)
+        {
+            playerState[playerIndex].movement.y += 1;
+        }
+
+        if (playerState[playerIndex].down)
+        {
+            playerState[playerIndex].movement.y += -1;
+        }
+
+        playerState[playerIndex].movement.Normalize();
+    }
 }
 
 
 public class InputState
 {
+    public Vector2 movement;
     public bool left, right, up, down;
     public bool shoot, bomb, options, auto, beam, menu, extra1, extra2;
 }
