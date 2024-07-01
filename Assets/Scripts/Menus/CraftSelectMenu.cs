@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CraftSelectMenu : Menu
 {
@@ -19,7 +20,7 @@ public class CraftSelectMenu : Menu
 
     public void OnPlayButton()
     {
-        // to do as well the a-z buttons
+        SceneManager.LoadScene(1);
     }
 
     public void OnBackButton()
