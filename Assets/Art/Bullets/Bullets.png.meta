@@ -58,7 +58,7 @@ TextureImporter:
     second: B6_S4
   - first:
       213: 8781172507622064882
-    second: B7_S3
+    second: B6_S5
   - first:
       213: 380848690993824820
     second: B3_S1
@@ -73,178 +73,184 @@ TextureImporter:
     second: B3_S4
   - first:
       213: 3020426036130856944
-    second: B7_S1
+    second: B6_S6
   - first:
       213: 8481577158663800423
-    second: B7_S2
+    second: B6_S7
   - first:
       213: -3248768135920844227
-    second: Bullets_25
+    second: B14_S2
   - first:
       213: 5075594579446865605
-    second: Bullets_26
+    second: B14_S4
   - first:
       213: 7400421876906394292
-    second: Bullets_27
-  - first:
-      213: 7809205399895181096
-    second: Bullets_28
-  - first:
-      213: -2904209371353226583
-    second: Bullets_29
-  - first:
-      213: -6420844195460199693
-    second: Bullets_30
-  - first:
-      213: 3875386850156840488
-    second: Bullets_31
-  - first:
-      213: 1075554528415370117
-    second: Bullets_32
-  - first:
-      213: 7526020002069563681
-    second: Bullets_33
-  - first:
-      213: 1942262846362446627
-    second: Bullets_34
-  - first:
-      213: 7491529709737008652
-    second: Bullets_35
-  - first:
-      213: 550780712946729732
-    second: Bullets_36
-  - first:
-      213: -8061456236047456437
-    second: Bullets_37
-  - first:
-      213: 3054627044134025355
-    second: B7_S4
-  - first:
-      213: 7824364329725064509
-    second: B8_S1
-  - first:
-      213: 2212971258114523521
-    second: B8_S2
-  - first:
-      213: -3112707629364167273
-    second: B8_S3
-  - first:
-      213: -2801188413828906523
-    second: B8_S4
-  - first:
-      213: -6331664980684406410
-    second: B8_S5
-  - first:
-      213: 666290146956312264
-    second: B8_S6
-  - first:
-      213: 1186191241046255239
-    second: B8_S7
-  - first:
-      213: 3637363274750488564
-    second: B8_S8
-  - first:
-      213: -4476026940594521554
-    second: B8_S9
-  - first:
-      213: -7761981562578494135
-    second: B8_S10
-  - first:
-      213: -4703132324196816328
-    second: B8_S11
-  - first:
-      213: 8249376495571375207
-    second: B8_S12
-  - first:
-      213: -7424233011324768093
-    second: B8_S13
-  - first:
-      213: -8976391588767782205
-    second: B8_S14
-  - first:
-      213: -4998858486898687225
-    second: B8_S15
-  - first:
-      213: -2924090030043048836
-    second: B8_S16
-  - first:
-      213: 8247295196088259214
     second: B9_S1
   - first:
-      213: -8733793815426895964
-    second: B9_S2
+      213: 7809205399895181096
+    second: B15_S2
   - first:
-      213: 9198438318297119011
-    second: B9_S4
-  - first:
-      213: 1399784326612438852
-    second: B9_S8
-  - first:
-      213: 4638034875785081577
-    second: B9_S5
-  - first:
-      213: -3191540648995136777
-    second: B9_S6
-  - first:
-      213: -2989080228739209912
-    second: B9_S7
-  - first:
-      213: 3112628020847960136
-    second: B10_S1
-  - first:
-      213: -5561476735004764157
-    second: B10_S2
-  - first:
-      213: -2379052948204132433
-    second: B10_S3
-  - first:
-      213: 4354696149753556427
-    second: B10_S4
-  - first:
-      213: 4925281477694271293
-    second: B11_S1
-  - first:
-      213: -7020000618706354416
-    second: B11_S2
-  - first:
-      213: 6829704520187915586
-    second: B11_S3
-  - first:
-      213: 5225516858251353919
-    second: B11_S4
-  - first:
-      213: -6152723440763084550
-    second: B12_S1
-  - first:
-      213: 5462230370244237961
-    second: B12_S2
-  - first:
-      213: -8773317590248861251
+      213: -2904209371353226583
     second: B12_S3
   - first:
+      213: -6420844195460199693
+    second: B12_S4
+  - first:
+      213: 3875386850156840488
+    second: B7_S1
+  - first:
+      213: 1075554528415370117
+    second: B8_S3
+  - first:
+      213: 7526020002069563681
+    second: B6_S8
+  - first:
+      213: 1942262846362446627
+    second: B10_S1
+  - first:
+      213: 7491529709737008652
+    second: B13_S3
+  - first:
+      213: 550780712946729732
+    second: B13_S2
+  - first:
+      213: -8061456236047456437
+    second: B13_S1
+  - first:
+      213: 3054627044134025355
+    second: B6_S8
+  - first:
+      213: 7824364329725064509
+    second: B14_S1
+  - first:
+      213: 2212971258114523521
+    second: B14_S2
+  - first:
+      213: -3112707629364167273
+    second: B14_S3
+  - first:
+      213: -2801188413828906523
+    second: B14_S4
+  - first:
+      213: -6331664980684406410
+    second: B11_S5
+  - first:
+      213: 666290146956312264
+    second: B11_S6
+  - first:
+      213: 1186191241046255239
+    second: B11_S7
+  - first:
+      213: 3637363274750488564
+    second: B11_S8
+  - first:
+      213: -4476026940594521554
+    second: B11_S9
+  - first:
+      213: -7761981562578494135
+    second: B11_S10
+  - first:
+      213: -4703132324196816328
+    second: B11_S11
+  - first:
+      213: 8249376495571375207
+    second: B11_S12
+  - first:
+      213: -7424233011324768093
+    second: B11_S13
+  - first:
+      213: -8976391588767782205
+    second: B11_S14
+  - first:
+      213: -4998858486898687225
+    second: B11_S15
+  - first:
+      213: -2924090030043048836
+    second: B11_S16
+  - first:
+      213: 8247295196088259214
+    second: B15_S1
+  - first:
+      213: -8733793815426895964
+    second: B15_S2
+  - first:
+      213: 9198438318297119011
+    second: B12_S4
+  - first:
+      213: 1399784326612438852
+    second: B12_S8
+  - first:
+      213: 4638034875785081577
+    second: B12_S5
+  - first:
+      213: -3191540648995136777
+    second: B12_S6
+  - first:
+      213: -2989080228739209912
+    second: B12_S7
+  - first:
+      213: 3112628020847960136
+    second: B13_S1
+  - first:
+      213: -5561476735004764157
+    second: B13_S2
+  - first:
+      213: -2379052948204132433
+    second: B13_S3
+  - first:
+      213: 4354696149753556427
+    second: B13_S4
+  - first:
+      213: 4925281477694271293
+    second: B14_S1
+  - first:
+      213: -7020000618706354416
+    second: B14_S2
+  - first:
+      213: 6829704520187915586
+    second: B14_S3
+  - first:
+      213: 5225516858251353919
+    second: B14_S4
+  - first:
+      213: -6152723440763084550
+    second: B15_S1
+  - first:
+      213: 5462230370244237961
+    second: B15_S2
+  - first:
+      213: -8773317590248861251
+    second: B15_S3
+  - first:
       213: 5608877973654228779
-    second: Bullets_73
+    second: B16_S1
   - first:
       213: -7102557114122768155
-    second: Bullets_74
+    second: B16_S2
   - first:
       213: -2671506382053073586
-    second: Bullets_75
+    second: B16_S3
   - first:
       213: 3100373092906510596
     second: B6_S2
   - first:
       213: 2865517150706313819
-    second: Bullets_77
+    second: B8_S1
   - first:
       213: -5086252329484156432
-    second: B9_S3
+    second: B12_S3
   - first:
       213: -1163515702074205077
     second: B4_S1
   - first:
       213: 3191860009773080540
     second: B4_S3
+  - first:
+      213: 6488186498641610253
+    second: B8_S3
+  - first:
+      213: 4613823061894527985
+    second: B7_S2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -589,7 +595,7 @@ TextureImporter:
       name: B5_S2
       rect:
         serializedVersion: 2
-        x: 92
+        x: 91
         y: 243
         width: 12
         height: 12
@@ -712,7 +718,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B7_S3
+      name: B6_S5
       rect:
         serializedVersion: 2
         x: 206
@@ -817,7 +823,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B7_S1
+      name: B6_S6
       rect:
         serializedVersion: 2
         x: 143
@@ -838,7 +844,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B7_S2
+      name: B6_S7
       rect:
         serializedVersion: 2
         x: 176
@@ -859,13 +865,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_25
+      name: B8_S2
       rect:
         serializedVersion: 2
         x: 85
-        y: 206
-        width: 8
-        height: 28
+        y: 212
+        width: 3
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,7 +886,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_26
+      name: B8_S4
       rect:
         serializedVersion: 2
         x: 94
@@ -901,11 +907,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_27
+      name: B9_S1
       rect:
         serializedVersion: 2
         x: 101
-        y: 227
+        y: 226
         width: 5
         height: 7
       alignment: 0
@@ -922,7 +928,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_28
+      name: B9_S2
       rect:
         serializedVersion: 2
         x: 107
@@ -943,7 +949,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_29
+      name: B9_S3
       rect:
         serializedVersion: 2
         x: 116
@@ -964,7 +970,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_30
+      name: B9_S4
       rect:
         serializedVersion: 2
         x: 127
@@ -985,12 +991,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_31
+      name: B7_S1
       rect:
         serializedVersion: 2
         x: 2
         y: 203
-        width: 9
+        width: 3
         height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1006,7 +1012,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_32
+      name: B7_S3
       rect:
         serializedVersion: 2
         x: 12
@@ -1027,7 +1033,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_33
+      name: B7_S4
       rect:
         serializedVersion: 2
         x: 20
@@ -1048,7 +1054,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_34
+      name: B10_S1
       rect:
         serializedVersion: 2
         x: 102
@@ -1069,7 +1075,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_35
+      name: B10_S2
       rect:
         serializedVersion: 2
         x: 108
@@ -1090,7 +1096,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_36
+      name: B10_S3
       rect:
         serializedVersion: 2
         x: 114
@@ -1111,7 +1117,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_37
+      name: B10_S4
       rect:
         serializedVersion: 2
         x: 122
@@ -1132,7 +1138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B7_S4
+      name: B6_S8
       rect:
         serializedVersion: 2
         x: 206
@@ -1153,7 +1159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S1
+      name: B11_S1
       rect:
         serializedVersion: 2
         x: 6
@@ -1174,7 +1180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S2
+      name: B11_S2
       rect:
         serializedVersion: 2
         x: 20
@@ -1195,7 +1201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S3
+      name: B11_S3
       rect:
         serializedVersion: 2
         x: 32
@@ -1216,7 +1222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S4
+      name: B11_S4
       rect:
         serializedVersion: 2
         x: 44
@@ -1237,7 +1243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S5
+      name: B11_S5
       rect:
         serializedVersion: 2
         x: 57
@@ -1258,7 +1264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S6
+      name: B11_S6
       rect:
         serializedVersion: 2
         x: 71
@@ -1279,7 +1285,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S7
+      name: B11_S7
       rect:
         serializedVersion: 2
         x: 85
@@ -1300,7 +1306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S8
+      name: B11_S8
       rect:
         serializedVersion: 2
         x: 99
@@ -1321,7 +1327,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S9
+      name: B11_S9
       rect:
         serializedVersion: 2
         x: 113
@@ -1342,7 +1348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S10
+      name: B11_S10
       rect:
         serializedVersion: 2
         x: 129
@@ -1363,7 +1369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S11
+      name: B11_S11
       rect:
         serializedVersion: 2
         x: 145
@@ -1384,7 +1390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S12
+      name: B11_S12
       rect:
         serializedVersion: 2
         x: 161
@@ -1405,7 +1411,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S13
+      name: B11_S13
       rect:
         serializedVersion: 2
         x: 176
@@ -1426,7 +1432,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S14
+      name: B11_S14
       rect:
         serializedVersion: 2
         x: 195
@@ -1447,7 +1453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S15
+      name: B11_S15
       rect:
         serializedVersion: 2
         x: 213
@@ -1468,7 +1474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B8_S16
+      name: B11_S16
       rect:
         serializedVersion: 2
         x: 231
@@ -1489,7 +1495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B9_S1
+      name: B12_S1
       rect:
         serializedVersion: 2
         x: 5
@@ -1510,7 +1516,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B9_S2
+      name: B12_S2
       rect:
         serializedVersion: 2
         x: 57
@@ -1531,7 +1537,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B9_S4
+      name: B12_S4
       rect:
         serializedVersion: 2
         x: 134
@@ -1552,7 +1558,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B9_S8
+      name: B12_S8
       rect:
         serializedVersion: 2
         x: 182
@@ -1573,7 +1579,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B9_S5
+      name: B12_S5
       rect:
         serializedVersion: 2
         x: 8
@@ -1594,7 +1600,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B9_S6
+      name: B12_S6
       rect:
         serializedVersion: 2
         x: 71
@@ -1615,7 +1621,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B9_S7
+      name: B12_S7
       rect:
         serializedVersion: 2
         x: 126
@@ -1636,7 +1642,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B10_S1
+      name: B13_S1
       rect:
         serializedVersion: 2
         x: 1
@@ -1657,7 +1663,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B10_S2
+      name: B13_S2
       rect:
         serializedVersion: 2
         x: 10
@@ -1678,7 +1684,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B10_S3
+      name: B13_S3
       rect:
         serializedVersion: 2
         x: 21
@@ -1699,7 +1705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B10_S4
+      name: B13_S4
       rect:
         serializedVersion: 2
         x: 35
@@ -1720,7 +1726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B11_S1
+      name: B14_S1
       rect:
         serializedVersion: 2
         x: 51
@@ -1741,7 +1747,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B11_S2
+      name: B14_S2
       rect:
         serializedVersion: 2
         x: 64
@@ -1762,7 +1768,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B11_S3
+      name: B14_S3
       rect:
         serializedVersion: 2
         x: 79
@@ -1783,7 +1789,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B11_S4
+      name: B14_S4
       rect:
         serializedVersion: 2
         x: 95
@@ -1804,15 +1810,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B12_S1
+      name: B15_S1
       rect:
         serializedVersion: 2
         x: 113
         y: 1
         width: 6
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1825,7 +1831,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B12_S2
+      name: B15_S2
       rect:
         serializedVersion: 2
         x: 120
@@ -1846,7 +1852,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B12_S3
+      name: B15_S3
       rect:
         serializedVersion: 2
         x: 129
@@ -1867,7 +1873,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_73
+      name: B16_S1
       rect:
         serializedVersion: 2
         x: 220
@@ -1888,7 +1894,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_74
+      name: B16_S2
       rect:
         serializedVersion: 2
         x: 230
@@ -1909,7 +1915,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_75
+      name: B16_S3
       rect:
         serializedVersion: 2
         x: 242
@@ -1951,7 +1957,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullets_77
+      name: B8_S1
       rect:
         serializedVersion: 2
         x: 81
@@ -1972,7 +1978,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: B9_S3
+      name: B12_S3
       rect:
         serializedVersion: 2
         x: 98
@@ -2030,6 +2036,48 @@ TextureImporter:
       bones: []
       spriteID: cdf9c4784c3cb4c20800000000000000
       internalID: 3191860009773080540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B8_S3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 206
+        width: 4
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06c400ae3baa0a50800000000000000
+      internalID: 6488186498641610253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B7_S2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 203
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb7ab431a7970040800000000000000
+      internalID: 4613823061894527985
       vertices: []
       indices: 
       edges: []
