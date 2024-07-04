@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public Craft playerOneCraft = null;
 
+    private BulletManager bulletManager = null;
+
     private void Awake()
     {
         if (Instance)
@@ -29,6 +31,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("GameManager Created!");
 
         currentVersion = gameVersionSO.Version;
+
+        bulletManager = GetComponent<BulletManager>();
     }
 
     public void SpawnPlayer(int playerIndex, int craftType)
