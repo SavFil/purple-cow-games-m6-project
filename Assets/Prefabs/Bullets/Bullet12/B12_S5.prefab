@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5096292542538131236}
   - component: {fileID: 706746421838398510}
+  - component: {fileID: -2088685368754103554}
   m_Layer: 0
   m_Name: B12_S5
   m_TagString: Untagged
@@ -82,3 +83,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2088685368754103554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6757425915415937876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0808afd27fe5b8a4ebbd1ad8e82d4bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
