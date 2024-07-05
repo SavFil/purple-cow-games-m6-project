@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.XPath;
+using Unity.Collections;
 using UnityEngine;
 
 public class BulletManager : MonoBehaviour
@@ -97,9 +99,11 @@ public class BulletManager : MonoBehaviour
     const int MAX_BULLET_PER_TYPE = 500;
     const int MAX_BULLET_COUNT    = MAX_BULLET_PER_TYPE * (int)BulletType.MAX_TYPES;
     private Bullet[] bullets      = new Bullet[MAX_BULLET_COUNT];
+    private NativeArray<BulletData> bulletData;
 
     void Start()
     {
+        bulletData = new NativeArray<BulletData>(MAX_BULLET_COUNT, Allocator.Persistent);
         int index = 0;
         for (int bulletType = (int)BulletType.Bullet1_Size1; bulletType<(int)BulletType.MAX_TYPES; bulletType++)
         {
@@ -112,8 +116,36 @@ public class BulletManager : MonoBehaviour
                 index++;
 
             }
+        }   
+    }
+    private void OnDestroy()
+    {
+        bulletData.Dispose();
+    }
+
+    private int NextFreeBulletIndex(BulletType type)
+    {
+        int startIndex = (int)type * MAX_BULLET_PER_TYPE;
+        for (int b=0;b<MAX_BULLET_PER_TYPE;b++)
+        {
+            if (!bulletData[startIndex+b].active)
+                return startIndex+b;
         }
-        
+        return -1;
+    }
+
+    public Bullet SpawnBullet (BulletType type, float x, float y, float dX, float dY, float angle)
+    {
+        int bulletIndex = NextFreeBulletIndex(type);
+        if (bulletIndex>-1)
+        {
+            Bullet result = bullets[bulletIndex];
+            result.gameObject.SetActive(true);
+            bulletData[bulletIndex] = new BulletData(x,y,dX,dY,angle,(int)type,true);
+            bullets[bulletIndex].gameObject.transform.position = new Vector3(x, y, 0);
+            return result;
+        }
+        return null;
     }
 }
 
