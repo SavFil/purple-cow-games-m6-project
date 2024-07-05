@@ -56,5 +56,9 @@ public class GameManager : MonoBehaviour
         {
             if (playerOneCraft) playerOneCraft.Explode();
         }
+
+        if (Input.GetKeyDown(KeyCode.S))
+            if (bulletManager)
+                bulletManager.SpawnBullet(BulletManager.BulletType.Bullet10_Size3, 0, 150, Random.Range(-10f, 10f), Random.Range(-10f, 10f), 0);
     }
 }
