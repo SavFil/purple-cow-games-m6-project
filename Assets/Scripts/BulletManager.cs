@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml.XPath;
 using Unity.Collections;
+using Unity.Jobs;
 using UnityEngine;
+using UnityEngine.Jobs;
 
 public class BulletManager : MonoBehaviour
 {
@@ -100,10 +102,15 @@ public class BulletManager : MonoBehaviour
     const int MAX_BULLET_COUNT    = MAX_BULLET_PER_TYPE * (int)BulletType.MAX_TYPES;
     private Bullet[] bullets      = new Bullet[MAX_BULLET_COUNT];
     private NativeArray<BulletData> bulletData;
+    private TransformAccessArray    bulletTransforms;
+
+    ProcessBulletJob jobProcessor;
 
     void Start()
     {
-        bulletData = new NativeArray<BulletData>(MAX_BULLET_COUNT, Allocator.Persistent);
+        bulletData       = new NativeArray<BulletData>(MAX_BULLET_COUNT, Allocator.Persistent);
+        bulletTransforms = new TransformAccessArray(MAX_BULLET_COUNT);
+
         int index = 0;
         for (int bulletType = (int)BulletType.Bullet1_Size1; bulletType<(int)BulletType.MAX_TYPES; bulletType++)
         {
@@ -117,10 +124,13 @@ public class BulletManager : MonoBehaviour
 
             }
         }   
+
+        jobProcessor = new ProcessBulletJob {bullets = bulletData};
     }
     private void OnDestroy()
     {
         bulletData.Dispose();
+        bulletTransforms.Dispose();
     }
 
     private int NextFreeBulletIndex(BulletType type)
@@ -146,6 +156,56 @@ public class BulletManager : MonoBehaviour
             return result;
         }
         return null;
+    }
+
+    private void FixedUpdate()
+    {
+        ProcessBullets();
+
+    }
+
+    void ProcessBullets()
+    {
+        JobHandle handler = jobProcessor.Schedule(bulletTransforms);
+        handler.Complete();
+    }
+
+    public struct ProcessBulletJob : IJobParallelForTransform
+    {
+        public NativeArray<BulletData> bullets;
+        public void Execute(int index, TransformAccess transform)
+        {
+         bool active = bullets[index].active;
+            if (!active) return;
+
+            float dX    = bullets[index].dX;
+            float dY    = bullets[index].dY;
+            float x     = bullets[index].positionX;
+            float y     = bullets[index].positionY;
+            float angle = bullets[index].angle;
+            int type    = bullets[index].type;
+
+            // Movement
+            x = x + dX;
+            y = y + dY;
+
+            // Check for out of bounds
+            if (x<-320) active = false;
+            if (x>320)  active = false;
+            if (y<-180) active = false;
+            if (y>180)  active = false;
+
+            bullets[index] = new BulletData(x, y, dX, dY, angle, type, active);
+
+            if (active)
+            {
+                Vector3 newPosition = new Vector3(x,y,0);
+                transform.position = newPosition;
+
+                // Facing rotation
+                transform.rotation = Quaternion.LookRotation(Vector3.forward, new Vector3(dX,dY,0));
+            }
+        }
     }
 }
 
