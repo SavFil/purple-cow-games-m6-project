@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8729142611344359696}
   - component: {fileID: 657156474269640863}
   - component: {fileID: -2815203094679398255}
+  - component: {fileID: -364046876817982941}
   m_Layer: 0
   m_Name: B15_S2
   m_TagString: Untagged
@@ -95,3 +96,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0808afd27fe5b8a4ebbd1ad8e82d4bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &-364046876817982941
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4863491766070078500}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 13, z: 0.2}
+  m_Center: {x: 0, y: 6.5, z: 0}
