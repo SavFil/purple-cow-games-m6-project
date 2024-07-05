@@ -120,8 +120,8 @@ public class BulletManager : MonoBehaviour
                 newBullet.gameObject.SetActive(false);
                 newBullet.transform.SetParent(transform);
                 bullets[index] = newBullet;
+                bulletTransforms.Add(bullets[index].transform);
                 index++;
-
             }
         }   
 
@@ -162,6 +162,11 @@ public class BulletManager : MonoBehaviour
     {
         ProcessBullets();
 
+        for (int b=0;b<MAX_BULLET_COUNT;b++)
+        {
+            if (!bulletData[b].active)
+                bullets[b].gameObject.SetActive(false);
+        }
     }
 
     void ProcessBullets()
