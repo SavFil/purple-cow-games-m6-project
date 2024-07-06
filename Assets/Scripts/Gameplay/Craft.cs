@@ -64,6 +64,19 @@ public class Craft : MonoBehaviour
                 spriteRenderer.material.SetColor("_Overbright", Color.black);
             }
         }
+
+        // Hit Detection
+        int maxColliders = 10;
+        Collider[] hits = new Collider[maxColliders];
+        Vector2 halfSize = new Vector2(3f, 4f);
+        int noOfhits = Physics.OverlapBoxNonAlloc(transform.position, halfSize, hits);
+        if (noOfhits > 0)
+        {
+            if (!invulnerable)
+                Explode();
+        }
+
+        // Movement
         if (InputManager.Instance && alive)
         {
             craftData.positionX += InputManager.Instance.playerState[0].movement.x * config.speed;
