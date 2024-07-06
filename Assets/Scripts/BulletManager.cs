@@ -98,23 +98,23 @@ public class BulletManager : MonoBehaviour
         MAX_TYPES,
     }
 
-    const int MAX_BULLET_PER_TYPE = 500;
-    const int MAX_BULLET_COUNT    = MAX_BULLET_PER_TYPE * (int)BulletType.MAX_TYPES;
-    private Bullet[] bullets      = new Bullet[MAX_BULLET_COUNT];
+    const int MAX_BULLET_PER_TYPE = 10;
+    const int MAX_BULLET_COUNT = MAX_BULLET_PER_TYPE * (int)BulletType.MAX_TYPES;
+    private Bullet[] bullets = new Bullet[MAX_BULLET_COUNT];
     private NativeArray<BulletData> bulletData;
-    private TransformAccessArray    bulletTransforms;
+    private TransformAccessArray bulletTransforms;
 
     ProcessBulletJob jobProcessor;
 
     void Start()
     {
-        bulletData       = new NativeArray<BulletData>(MAX_BULLET_COUNT, Allocator.Persistent);
+        bulletData = new NativeArray<BulletData>(MAX_BULLET_COUNT, Allocator.Persistent);
         bulletTransforms = new TransformAccessArray(MAX_BULLET_COUNT);
 
         int index = 0;
-        for (int bulletType = (int)BulletType.Bullet1_Size1; bulletType<(int)BulletType.MAX_TYPES; bulletType++)
+        for (int bulletType = (int)BulletType.Bullet1_Size1; bulletType < (int)BulletType.MAX_TYPES; bulletType++)
         {
-            for (int b=0;b<MAX_BULLET_PER_TYPE;b++)
+            for (int b = 0; b < MAX_BULLET_PER_TYPE; b++)
             {
                 Bullet newBullet = Instantiate(bulletPrefabs[bulletType]).GetComponent<Bullet>();
                 newBullet.gameObject.SetActive(false);
@@ -123,9 +123,8 @@ public class BulletManager : MonoBehaviour
                 bulletTransforms.Add(bullets[index].transform);
                 index++;
             }
-        }   
-
-        jobProcessor = new ProcessBulletJob {bullets = bulletData};
+        }
+        jobProcessor = new ProcessBulletJob { bullets = bulletData };
     }
     private void OnDestroy()
     {
@@ -136,22 +135,22 @@ public class BulletManager : MonoBehaviour
     private int NextFreeBulletIndex(BulletType type)
     {
         int startIndex = (int)type * MAX_BULLET_PER_TYPE;
-        for (int b=0;b<MAX_BULLET_PER_TYPE;b++)
+        for (int b = 0; b < MAX_BULLET_PER_TYPE; b++)
         {
-            if (!bulletData[startIndex+b].active)
-                return startIndex+b;
+            if (!bulletData[startIndex + b].active)
+                return startIndex + b;
         }
         return -1;
     }
 
-    public Bullet SpawnBullet (BulletType type, float x, float y, float dX, float dY, float angle)
+    public Bullet SpawnBullet(BulletType type, float x, float y, float dX, float dY, float angle)
     {
         int bulletIndex = NextFreeBulletIndex(type);
-        if (bulletIndex>-1)
+        if (bulletIndex > -1)
         {
             Bullet result = bullets[bulletIndex];
             result.gameObject.SetActive(true);
-            bulletData[bulletIndex] = new BulletData(x,y,dX,dY,angle,(int)type,true);
+            bulletData[bulletIndex] = new BulletData(x, y, dX, dY, angle, (int)type, true);
             bullets[bulletIndex].gameObject.transform.position = new Vector3(x, y, 0);
             return result;
         }
@@ -162,7 +161,7 @@ public class BulletManager : MonoBehaviour
     {
         ProcessBullets();
 
-        for (int b=0;b<MAX_BULLET_COUNT;b++)
+        for (int b = 0; b < MAX_BULLET_COUNT; b++)
         {
             if (!bulletData[b].active)
                 bullets[b].gameObject.SetActive(false);
@@ -180,35 +179,35 @@ public class BulletManager : MonoBehaviour
         public NativeArray<BulletData> bullets;
         public void Execute(int index, TransformAccess transform)
         {
-         bool active = bullets[index].active;
+            bool active = bullets[index].active;
             if (!active) return;
 
-            float dX    = bullets[index].dX;
-            float dY    = bullets[index].dY;
-            float x     = bullets[index].positionX;
-            float y     = bullets[index].positionY;
+            float dX = bullets[index].dX;
+            float dY = bullets[index].dY;
+            float x = bullets[index].positionX;
+            float y = bullets[index].positionY;
             float angle = bullets[index].angle;
-            int type    = bullets[index].type;
+            int type = bullets[index].type;
 
             // Movement
             x = x + dX;
             y = y + dY;
 
             // Check for out of bounds
-            if (x<-320) active = false;
-            if (x>320)  active = false;
-            if (y<-180) active = false;
-            if (y>180)  active = false;
+            if (x < -320) active = false;
+            if (x > 320) active = false;
+            if (y < -180) active = false;
+            if (y > 180) active = false;
 
             bullets[index] = new BulletData(x, y, dX, dY, angle, type, active);
 
             if (active)
             {
-                Vector3 newPosition = new Vector3(x,y,0);
+                Vector3 newPosition = new Vector3(x, y, 0);
                 transform.position = newPosition;
 
                 // Facing rotation
-                transform.rotation = Quaternion.LookRotation(Vector3.forward, new Vector3(dX,dY,0));
+                transform.rotation = Quaternion.LookRotation(Vector3.forward, new Vector3(dX, dY, 0));
             }
         }
     }
