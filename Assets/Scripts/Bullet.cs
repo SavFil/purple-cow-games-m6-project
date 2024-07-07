@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public int index; // index into the bullet pool
 }
 
 [Serializable]
