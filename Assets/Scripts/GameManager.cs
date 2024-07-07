@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
     public Craft playerOneCraft = null;
 
-    private BulletManager bulletManager = null;
+    public BulletManager bulletManager = null;
 
     private void Awake()
     {
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     public void SpawnPlayer(int playerIndex, int craftType)
     {
         Debug.Assert(craftType < craftPrefabs.Length);
-        Debug.Log("Spawning player" + playerIndex);
+        Debug.Log("Spawning player " + playerIndex);
         playerOneCraft = Instantiate(craftPrefabs[craftType]).GetComponent<Craft>();
         playerOneCraft.playerIndex = playerIndex;
     }
@@ -49,16 +49,34 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if (!playerOneCraft) SpawnPlayer(1, 0);
+            if (!playerOneCraft) SpawnPlayer(0, 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.O))
         {
-            if (playerOneCraft) playerOneCraft.Explode();
+            if (playerOneCraft)
+            {
+                playerOneCraft.AddOption();
+            }
         }
 
-        if (Input.GetKey(KeyCode.S))
-            if (bulletManager)
-                bulletManager.SpawnBullet(BulletManager.BulletType.Bullet1_Size3, 0, 150, Random.Range(-10f, 10f), Random.Range(-10f, 10f), 0);
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (playerOneCraft && playerOneCraft.craftData.shotPower < CraftConfiguration.MAX_SHOT_POWER - 1)
+            {
+                playerOneCraft.craftData.shotPower++;
+            }
+        }
+        
+        if (Input.GetKeyDown(KeyCode.RightBracket))
+        {
+            if (playerOneCraft)
+            {
+                playerOneCraft.IncreaseBeamStrength();
+            }
+        }
+
+
+
     }
 }

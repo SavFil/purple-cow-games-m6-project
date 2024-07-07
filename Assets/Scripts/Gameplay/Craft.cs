@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class Craft : MonoBehaviour
 {
-    CraftData craftData = new CraftData();
+    public CraftData craftData = new CraftData();
     Vector3 newPosition = new Vector3();
 
     public GameObject AftFlame1;
@@ -30,6 +31,22 @@ public class Craft : MonoBehaviour
 
     SpriteRenderer spriteRenderer = null;
 
+    int layerMask = 0;
+
+    public BulletSpawner[] bulletSpawner = new BulletSpawner[5];
+
+    public Option[] options = new Option[4];
+
+    public GameObject[] optionMarkersL1 = new GameObject[4];
+    public GameObject[] optionMarkersL2 = new GameObject[4];
+    public GameObject[] optionMarkersL3 = new GameObject[4];
+    public GameObject[] optionMarkersL4 = new GameObject[4];
+
+    public Beam beam = null;
+
+    public GameObject bombPrefab = null;
+
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -41,6 +58,9 @@ public class Craft : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         Debug.Assert(spriteRenderer);
 
+        layerMask = ~LayerMask.GetMask("PlayerBullets") & ~LayerMask.GetMask("PlayerBombs");
+
+        craftData.beamCharge = (char)100;
     }
 
     public void SetInvulnerable()
@@ -69,7 +89,7 @@ public class Craft : MonoBehaviour
         int maxColliders = 10;
         Collider[] hits = new Collider[maxColliders];
         Vector2 halfSize = new Vector2(3f, 4f);
-        int noOfhits = Physics.OverlapBoxNonAlloc(transform.position, halfSize, hits);
+        int noOfhits = Physics.OverlapBoxNonAlloc(transform.position, halfSize, hits, Quaternion.identity, layerMask);
         if (noOfhits > 0)
         {
             if (!invulnerable)
@@ -79,13 +99,13 @@ public class Craft : MonoBehaviour
         // Movement
         if (InputManager.Instance && alive)
         {
-            craftData.positionX += InputManager.Instance.playerState[0].movement.x * config.speed;
-            craftData.positionY += InputManager.Instance.playerState[0].movement.y * config.speed;
+            craftData.positionX += InputManager.Instance.playerState[playerIndex].movement.x * config.speed;
+            craftData.positionY += InputManager.Instance.playerState[playerIndex].movement.y * config.speed;
             newPosition.x = (int)craftData.positionX;
             newPosition.y = (int)craftData.positionY;
             gameObject.transform.position = newPosition;
 
-            if (InputManager.Instance.playerState[0].up)
+            if (InputManager.Instance.playerState[playerIndex].up)
             {
                 AftFlame1.SetActive(true);
                 AftFlame2.SetActive(true);
@@ -96,7 +116,7 @@ public class Craft : MonoBehaviour
                 AftFlame2.SetActive(false);
             }
 
-            if (InputManager.Instance.playerState[0].down)
+            if (InputManager.Instance.playerState[playerIndex].down)
             {
                 FrontFlame1.SetActive(true);
                 FrontFlame2.SetActive(true);
@@ -107,7 +127,7 @@ public class Craft : MonoBehaviour
                 FrontFlame2.SetActive(false);
             }
 
-            if (InputManager.Instance.playerState[0].left)
+            if (InputManager.Instance.playerState[playerIndex].left)
             {
                 RightFlame.SetActive(true);
                 animator.SetBool(leftBoolID, true);
@@ -119,7 +139,7 @@ public class Craft : MonoBehaviour
                 animator.SetBool(leftBoolID, false);
             }
 
-            if (InputManager.Instance.playerState[0].right)
+            if (InputManager.Instance.playerState[playerIndex].right)
             {
                 LeftFlame.SetActive(true);
                 animator.SetBool(rightBoolID, true);
@@ -130,7 +150,56 @@ public class Craft : MonoBehaviour
                 animator.SetBool(rightBoolID, false);
 
             }
+
+            // Shooting bullets
+            if (InputManager.Instance.playerState[playerIndex].shoot)
+            {
+                ShotConfiguration shotConfig = config.shotLevel[craftData.shotPower];
+                for (int s = 0; s < 5; s++)
+                {
+                    bulletSpawner[s].Shoot(shotConfig.spawnerSizes[s]);
+                }
+                for (int o = 0; o < craftData.noOfEnabledOptions; o++)
+                {
+                    if (options[o])
+                    {
+                        options[o].Shoot();
+                    }
+                }
+            }
+
+            if (InputManager.Instance.playerState[playerIndex].beam)
+            {
+                beam.Fire();
+            }
+            
+            // Bomb
+            if (!InputManager.Instance.playerPrevState[playerIndex].bomb &&
+                InputManager.Instance.playerState[playerIndex].bomb)
+            {
+                FireBomb();
+            }
+
+            // Bullets Layouts
+            if (!InputManager.Instance.playerPrevState[playerIndex].options &&
+                InputManager.Instance.playerState[playerIndex].options)
+            {
+                craftData.optionsLayout++;
+                if (craftData.optionsLayout > 3)
+                {
+                    craftData.optionsLayout = (char)0;
+                }
+                SetOptionsLayout(craftData.optionsLayout);
+            }
+
         }
+    }
+
+    private void FireBomb()
+    {
+        Vector3 pos = transform.position;
+        pos.y += 100;
+        Instantiate(bombPrefab, pos, Quaternion.identity);
     }
 
     public void Explode()
@@ -156,10 +225,71 @@ public class Craft : MonoBehaviour
 
         yield return null;
     }
+
+    internal void AddOption()
+    {
+        if (craftData.noOfEnabledOptions < 4)
+        {
+            options[craftData.noOfEnabledOptions].gameObject.SetActive(true);
+            craftData.noOfEnabledOptions++;
+        }
+    }
+
+    public void SetOptionsLayout(int layoutIndex)
+    {
+        Debug.Assert(layoutIndex < 4);
+
+        for (int o = 0; o < 4; o++)
+        {
+            switch (layoutIndex)
+            {
+                case 0:
+                    options[o].gameObject.transform.position = optionMarkersL1[o].transform.position;
+                    options[o].gameObject.transform.rotation = optionMarkersL1[o].transform.rotation;
+                    break;
+                case 1:
+                    options[o].gameObject.transform.position = optionMarkersL2[o].transform.position;
+                    options[o].gameObject.transform.rotation = optionMarkersL2[o].transform.rotation;
+                    break;
+                case 2:
+                    options[o].gameObject.transform.position = optionMarkersL3[o].transform.position;
+                    options[o].gameObject.transform.rotation = optionMarkersL3[o].transform.rotation;
+                    break;
+                case 3:
+                    options[o].gameObject.transform.position = optionMarkersL4[o].transform.position;
+                    options[o].gameObject.transform.rotation = optionMarkersL4[o].transform.rotation;
+                    break;
+            }
+        }
+    }
+
+    public void IncreaseBeamStrength()
+    {
+        if (craftData.beamPower < 5)
+        {
+            craftData.beamPower++;
+            UpdateBeam();
+        }
+    }
+
+    void UpdateBeam()
+    {
+        beam.beamWidth = (craftData.beamPower + 2) * 8f;
+    }
 }
 
 public class CraftData
 {
     public float positionX;
     public float positionY;
+
+    public char shotPower;
+
+    public char noOfEnabledOptions;
+    public char optionsLayout;
+
+    public bool beamFiring;
+    public char beamPower; // power settings and width
+    public char beamCharge; // max charge (upgradable)
+    public char beamTimer; // current charge level (how much beam is left)
 }

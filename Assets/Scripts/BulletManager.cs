@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.XPath;
 using Unity.Collections;
 using Unity.Jobs;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Jobs;
 
@@ -98,7 +100,7 @@ public class BulletManager : MonoBehaviour
         MAX_TYPES,
     }
 
-    const int MAX_BULLET_PER_TYPE = 10;
+    const int MAX_BULLET_PER_TYPE = 50;
     const int MAX_BULLET_COUNT = MAX_BULLET_PER_TYPE * (int)BulletType.MAX_TYPES;
     private Bullet[] bullets = new Bullet[MAX_BULLET_COUNT];
     private NativeArray<BulletData> bulletData;
@@ -117,6 +119,7 @@ public class BulletManager : MonoBehaviour
             for (int b = 0; b < MAX_BULLET_PER_TYPE; b++)
             {
                 Bullet newBullet = Instantiate(bulletPrefabs[bulletType]).GetComponent<Bullet>();
+                newBullet.index = index;
                 newBullet.gameObject.SetActive(false);
                 newBullet.transform.SetParent(transform);
                 bullets[index] = newBullet;
@@ -172,6 +175,19 @@ public class BulletManager : MonoBehaviour
     {
         JobHandle handler = jobProcessor.Schedule(bulletTransforms);
         handler.Complete();
+    }
+
+    public void DeActivateBullet(int index)
+    {
+        bullets[index].gameObject.SetActive(false);
+
+        float x = bulletData[index].positionX;
+        float y = bulletData[index].positionY;
+        float dX = bulletData[index].dX;
+        float dY = bulletData[index].dY;
+        float angle = bulletData[index].angle;
+        int type = bulletData[index].type;
+        bulletData[index] = new BulletData(x, y, dX, dY, angle, type, false);
     }
 
     public struct ProcessBulletJob : IJobParallelForTransform

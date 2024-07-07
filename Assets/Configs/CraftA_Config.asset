@@ -16,3 +16,14 @@ MonoBehaviour:
   bulletStrenth: 1
   beamSrength: 1
   craftSprite: {fileID: -1136510360149084540, guid: b124005b10ecc6242a3a3a9a4479607c, type: 3}
+  shotLevel:
+  - spawnerSizes: 00000000ffffffffffffffffffffffffffffffff
+  - spawnerSizes: 01000000ffffffffffffffffffffffffffffffff
+  - spawnerSizes: 02000000ffffffffffffffffffffffffffffffff
+  - spawnerSizes: 030000000100000001000000ffffffffffffffff
+  - spawnerSizes: 03000000ffffffffffffffffffffffffffffffff
+  - spawnerSizes: 000000000000000000000000ffffffffffffffff
+  - spawnerSizes: ffffffff000000000100000000000000ffffffff
+  - spawnerSizes: 0000000001000000020000000100000000000000
+  - spawnerSizes: 0100000002000000030000000200000001000000
+  - spawnerSizes: 0400000004000000040000000400000004000000
