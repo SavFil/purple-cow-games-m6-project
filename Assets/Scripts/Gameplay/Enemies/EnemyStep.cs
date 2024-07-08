@@ -1,18 +1,33 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyStep : MonoBehaviour
+[Serializable]
+public class EnemyStep
 {
-    // Start is called before the first frame update
-    void Start()
+   public enum MovementType
     {
-        
+        INVALID,
+
+        none,
+        direction,
+        spline,
+        atTarget,
+        homing,
+        follow,
+        circle,
+
+        NOOFMOVEMENTTYPES
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    public MovementType movement;
+
+    [SerializeField]
+    public Vector2 direction;
+
+    [SerializeField]
+    [Range(1, 20)]
+    public float movementSpeed = 4;
 }
