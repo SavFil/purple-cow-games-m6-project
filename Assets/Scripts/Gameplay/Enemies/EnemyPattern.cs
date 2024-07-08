@@ -7,7 +7,9 @@ public class EnemyPattern : MonoBehaviour
 {
     public List<EnemyStep> steps = new List<EnemyStep>();
 
-    public Enemy enemyPrefab;
+    public  Enemy enemyPrefab;
+
+    private Enemy spawnedEnemy;
 
     private int UID;
 
@@ -27,5 +29,11 @@ public class EnemyPattern : MonoBehaviour
             Selection.activeObject = go;
         }
         else Debug.LogError("Could not find Helper");
+    }
+
+    public void Spawn()
+    {
+        spawnedEnemy = Instantiate(enemyPrefab, transform.position, transform.rotation).GetComponent<Enemy>();
+        spawnedEnemy.SetPattern(this);
     }
 }
