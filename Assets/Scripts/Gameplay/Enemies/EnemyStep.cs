@@ -42,4 +42,18 @@ public class EnemyStep
         Debug.LogError("TimeToComplete unprocessed movement type, returning 1");
         return 1;
     }
+
+    public Vector2 EndPosition(Vector3 startPosition)
+    {
+        Vector2 result = startPosition;
+
+        if (movement == MovementType.direction)
+        {
+            result += direction;
+            return result;
+        }
+
+        Debug.LogError("EndPosition unprocessed movement type, returning start");
+        return result;
+    }
 }
