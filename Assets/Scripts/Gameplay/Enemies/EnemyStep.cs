@@ -11,7 +11,7 @@ public class EnemyStep
     {
         INVALID,
 
-        none,
+        none,          // Waiting at a position
         direction,
         spline,
         atTarget,
@@ -32,12 +32,19 @@ public class EnemyStep
     [Range(1, 20)]
     public float movementSpeed = 4;
 
+    [SerializeField]
+    public float framesToWait = 30;
+
     public float TimeToComplete()
     {
         if (movement == MovementType.direction)
         {
             float timeToTravel = direction.magnitude / movementSpeed;
             return timeToTravel;
+        }
+        else if (movement == MovementType.none)
+        {
+            return framesToWait;
         }
 
         Debug.LogError("TimeToComplete unprocessed movement type, returning 1");
@@ -52,6 +59,10 @@ public class EnemyStep
         {
             result += direction;
             return result;
+        }
+        else if (movement == MovementType.none) 
+        {
+            return startPosition;
         }
 
         Debug.LogError("EndPosition unprocessed movement type, returning start");
@@ -68,9 +79,12 @@ public class EnemyStep
             Vector2 place = startPos + (direction * ratio);
             return place;
         }
+        else if (movement == MovementType.none)
+        {
+            return startPos;
+        }
 
         Debug.LogError("CalculatePosition unprocessed movement type, returning startPosition");
         return startPos;
-
     }
 }

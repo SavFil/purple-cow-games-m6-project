@@ -61,7 +61,7 @@ public class EnemyPattern : MonoBehaviour
         {
             if (timeToCheck < steps[s].TimeToComplete())
                 return s;
-            timer -= steps[s].TimeToComplete();
+            timeToCheck -= steps[s].TimeToComplete();
         }
         return steps.Count- 1;
     }
