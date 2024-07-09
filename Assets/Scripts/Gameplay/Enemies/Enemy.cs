@@ -14,6 +14,17 @@ public class Enemy : MonoBehaviour
         pattern = inPattern; 
         pattern = inPattern; 
     }
+
+    private void FixedUpdate()
+    {
+        data.progressTimer++;
+
+        Vector3 pos = pattern.CalculatePosition(data.progressTimer);
+        Quaternion rot = pattern.CalculateRotation(data.progressTimer);
+
+        transform.position = pos;
+        transform.rotation = rot;
+    }
 }
 
 [Serializable]
