@@ -30,4 +30,16 @@ public class EnemyStep
     [SerializeField]
     [Range(1, 20)]
     public float movementSpeed = 4;
+
+    public float TimeToComplete()
+    {
+        if (movement == MovementType.direction)
+        {
+            float timeToTravel = direction.magnitude / movementSpeed;
+            return timeToTravel;
+        }
+
+        Debug.LogError("TimeToComplete unprocessed movement type, returning 1");
+        return 1;
+    }
 }
