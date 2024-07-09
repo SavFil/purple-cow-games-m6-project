@@ -89,4 +89,20 @@ public class EnemyStep
         Debug.LogError("CalculatePosition unprocessed movement type, returning startPosition");
         return startPos;
     }
+
+    public void FireActivateStates()
+    {
+        foreach (string state in activateStates)
+        {
+            Debug.Log("Fire Activate State:" + state);
+        }
+    }
+
+    public void FireDeactivateStates()
+    {
+        foreach (string state in deActivateStates)
+        {
+            Debug.Log("Fire Dectivate State:" + state);
+        }
+    }
 }

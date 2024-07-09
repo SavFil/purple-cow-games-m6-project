@@ -19,11 +19,7 @@ public class Enemy : MonoBehaviour
     {
         data.progressTimer++;
 
-        Vector3 pos = pattern.CalculatePosition(data.progressTimer);
-        Quaternion rot = pattern.CalculateRotation(data.progressTimer);
-
-        transform.position = pos;
-        transform.rotation = rot;
+        pattern.Calculate(transform, data.progressTimer);
     }
 }
 

@@ -15,6 +15,9 @@ public class EnemyPattern : MonoBehaviour
 
     public bool stayOnLast = true;
 
+    private int currentStateIndex = 0;
+    private int previousStateIndex = -1;
+
     [MenuItem("GameObject/SHMUP/EnemyPattern", false, 10)]
     static void CreateEnemyPatternObject(MenuCommand menuCommand)
     {
@@ -39,15 +42,42 @@ public class EnemyPattern : MonoBehaviour
         spawnedEnemy.SetPattern(this);
     }
 
-    public Vector2 CalculatePosition(float progressTimer)
+    public void Calculate (Transform enemyTransform, float progressTimer)
     {
-        int s = WhichStep(progressTimer);
-        if (s < 0) return spawnedEnemy.transform.position;
-        EnemyStep step = steps[s];
+        Vector3 pos = CalculatePosition(progressTimer);
+        Quaternion rot = CalculateRotation(progressTimer);
 
-        float stepTime = progressTimer - StartTime(s);
+        enemyTransform.position = pos;
+        enemyTransform.rotation = rot;
 
-        Vector3 startPos = EndPosition(s-1);
+        if (currentStateIndex != previousStateIndex)                        // State has changed
+        {
+            if (previousStateIndex>=0)
+            {
+                // Call deAactivate state
+                EnemyStep prevStep = steps[previousStateIndex];
+                prevStep.FireDeactivateStates();
+            }
+            if (currentStateIndex>=0)
+            {
+                // Call activate states
+                EnemyStep currStep = steps[currentStateIndex];
+                currStep.FireActivateStates();
+
+            }
+            previousStateIndex = currentStateIndex;
+        }
+    }
+
+    public Vector2 CalculatePosition(float progressTimer)                  // Incharge of calculating stateIndex
+    {
+        currentStateIndex = WhichStep(progressTimer);
+        if (currentStateIndex < 0) return spawnedEnemy.transform.position;
+        EnemyStep step = steps[currentStateIndex];
+
+        float stepTime = progressTimer - StartTime(currentStateIndex);
+
+        Vector3 startPos = EndPosition(currentStateIndex-1);
 
         return step.CalculatePosition(startPos, stepTime);
     }
