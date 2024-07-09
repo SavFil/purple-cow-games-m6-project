@@ -46,4 +46,16 @@ public class EnemyPattern : MonoBehaviour
     {
         return Quaternion.identity;
     }
+
+    int WhichStep(float timer)
+    {
+        float timeToCheck = timer;
+        for(int s=0; s<steps.Count;s++)
+        {
+            if (timeToCheck < steps[s].TimeToComplete())
+                return s;
+            timer -= steps[s].TimeToComplete();
+        }
+        return steps.Count- 1;
+    }
 }
