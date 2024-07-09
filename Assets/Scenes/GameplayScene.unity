@@ -731,6 +731,7 @@ MonoBehaviour:
     movementSpeed: 2
     framesToWait: 0
   enemyPrefab: {fileID: 1311060986460152104, guid: 23591034d47186346b35feabc11b271a, type: 3}
+  stayOnLast: 0
 --- !u!4 &823902616
 Transform:
   m_ObjectHideFlags: 0
