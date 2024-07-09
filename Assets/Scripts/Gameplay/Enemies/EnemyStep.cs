@@ -35,6 +35,8 @@ public class EnemyStep
     [SerializeField]
     public float framesToWait = 30;
 
+    public List<String> activateStates   = new List<String>();
+    public List<String> deActivateStates = new List<String>();
     public float TimeToComplete()
     {
         if (movement == MovementType.direction)

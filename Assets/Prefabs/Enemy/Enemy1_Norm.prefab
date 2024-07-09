@@ -206,6 +206,7 @@ MonoBehaviour:
   rate: 30
   speed: 5
   muzzleFlash: {fileID: 0}
+  autoFireActive: 0
 --- !u!1 &8240263691909380934
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,3 +251,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf2798a33ab191b4499f9a388db7a6c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  states:
+  - stateName: Nothing
+    eventOnStart:
+      m_PersistentCalls:
+        m_Calls: []
+    eventonEnd:
+      m_PersistentCalls:
+        m_Calls: []
+    eventofTime:
+      m_PersistentCalls:
+        m_Calls: []
+    userTimer: 0
+    timer: 0
+  - stateName: Shooting
+    eventOnStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 774498511397816816}
+          m_TargetAssemblyTypeName: BulletSpawner, Assembly-CSharp
+          m_MethodName: Activate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    eventonEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 774498511397816816}
+          m_TargetAssemblyTypeName: BulletSpawner, Assembly-CSharp
+          m_MethodName: DeActivate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    eventofTime:
+      m_PersistentCalls:
+        m_Calls: []
+    userTimer: 0
+    timer: 0

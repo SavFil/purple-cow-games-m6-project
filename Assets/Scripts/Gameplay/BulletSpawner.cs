@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,8 @@ public class BulletSpawner : MonoBehaviour
     private float timer = 0;
 
     public GameObject muzzleFlash = null;
+
+    public bool autoFireActive = false;
 
     public void Shoot(int size)
     {
@@ -38,7 +41,21 @@ public class BulletSpawner : MonoBehaviour
             if (muzzleFlash)
             {
                 muzzleFlash.SetActive(false);
+                if (autoFireActive)
+                    Shoot(1);
             }
         }
     }
+
+        public void Activate()
+        {
+            autoFireActive = true;
+            timer = 0;
+            Shoot(1);
+        }
+
+        public void DeActivate()
+        {
+            autoFireActive = false;
+        }
 }
