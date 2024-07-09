@@ -38,8 +38,11 @@ public class EnemyPattern : MonoBehaviour
 
     public void Spawn()
     {
-        spawnedEnemy = Instantiate(enemyPrefab, transform.position, transform.rotation).GetComponent<Enemy>();
-        spawnedEnemy.SetPattern(this);
+        if (spawnedEnemy == null)
+        {
+            spawnedEnemy = Instantiate(enemyPrefab, transform.position, transform.rotation).GetComponent<Enemy>();
+            spawnedEnemy.SetPattern(this);
+        }
     }
 
     public void Calculate (Transform enemyTransform, float progressTimer)
