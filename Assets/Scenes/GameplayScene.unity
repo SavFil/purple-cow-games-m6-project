@@ -680,6 +680,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &823902614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 823902616}
+  - component: {fileID: 823902615}
+  m_Layer: 0
+  m_Name: EnemyPattern0
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: 546326722fa27ff44ad0bc0c2c87e708, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &823902615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823902614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd37064cb2fe1724c9fc82d39b36040c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steps:
+  - movement: 2
+    direction: {x: 0, y: -100}
+    movementSpeed: 2
+    framesToWait: 30
+    activateStates: []
+    deActivateStates: []
+  - movement: 1
+    direction: {x: 0, y: 0}
+    movementSpeed: 1
+    framesToWait: 60
+    activateStates:
+    - Shooting
+    deActivateStates:
+    - Shooting
+  - movement: 2
+    direction: {x: 100, y: 0}
+    movementSpeed: 2
+    framesToWait: 0
+    activateStates: []
+    deActivateStates: []
+  - movement: 1
+    direction: {x: 0, y: 0}
+    movementSpeed: 1
+    framesToWait: 60
+    activateStates:
+    - Shooting
+    deActivateStates:
+    - Shooting
+  - movement: 2
+    direction: {x: 0, y: -100}
+    movementSpeed: 2
+    framesToWait: 0
+    activateStates: []
+    deActivateStates: []
+  enemyPrefab: {fileID: 1311060986460152104, guid: 23591034d47186346b35feabc11b271a, type: 3}
+  stayOnLast: 0
+--- !u!4 &823902616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823902614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 160.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &866397505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,7 +2171,7 @@ GameObject:
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

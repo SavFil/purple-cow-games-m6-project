@@ -67,16 +67,19 @@ public class GameManager : MonoBehaviour
                 playerOneCraft.craftData.shotPower++;
             }
         }
-        
-        if (Input.GetKeyDown(KeyCode.RightBracket))
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            EnemyPattern testPattern = GameObject.FindObjectOfType<EnemyPattern>();
+            testPattern.Spawn();
+        }
+
+            if (Input.GetKeyDown(KeyCode.RightBracket))
         {
             if (playerOneCraft)
             {
                 playerOneCraft.IncreaseBeamStrength();
             }
         }
-
-
-
     }
 }
