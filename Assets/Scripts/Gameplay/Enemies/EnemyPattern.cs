@@ -56,13 +56,13 @@ public class EnemyPattern : MonoBehaviour
             {
                 // Call deAactivate state
                 EnemyStep prevStep = steps[previousStateIndex];
-                prevStep.FireDeactivateStates();
+                prevStep.FireDeactivateStates(spawnedEnemy);
             }
             if (currentStateIndex>=0)
             {
                 // Call activate states
                 EnemyStep currStep = steps[currentStateIndex];
-                currStep.FireActivateStates();
+                currStep.FireActivateStates(spawnedEnemy);
 
             }
             previousStateIndex = currentStateIndex;

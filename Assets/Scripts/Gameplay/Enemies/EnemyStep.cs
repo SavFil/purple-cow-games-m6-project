@@ -90,19 +90,19 @@ public class EnemyStep
         return startPos;
     }
 
-    public void FireActivateStates()
+    public void FireActivateStates(Enemy enemy)
     {
         foreach (string state in activateStates)
         {
-            Debug.Log("Fire Activate State:" + state);
+            enemy.EnableState(state);
         }
     }
 
-    public void FireDeactivateStates()
+    public void FireDeactivateStates(Enemy enemy)
     {
         foreach (string state in deActivateStates)
         {
-            Debug.Log("Fire Dectivate State:" + state);
+            enemy.DisableState(state);
         }
     }
 }

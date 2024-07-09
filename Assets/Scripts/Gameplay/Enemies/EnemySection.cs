@@ -4,5 +4,23 @@ using UnityEngine;
 
 public class EnemySection : MonoBehaviour
 {
- public List<EnemyState> states = new List<EnemyState>();
+     public List<EnemyState> states = new List<EnemyState>();
+
+     public void EnableState(string name)
+    {
+        foreach (EnemyState state in states)
+        {
+            if (state.stateName == name)
+                state.Enable();
+        }
+    }
+
+    public void DisableState(string name)
+    {
+        foreach (EnemyState state in states)
+        {
+            if (state.stateName == name)
+                state.Disable();
+        }
+    }
 }

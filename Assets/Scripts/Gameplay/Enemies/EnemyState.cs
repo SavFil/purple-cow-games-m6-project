@@ -26,7 +26,17 @@ public class EnemyState
     [Space(10)]
     public UnityEvent eventofTime  = null;
 
-    public bool userTimer     = false;
-    public float timer        = 0;
+    public bool   userTimer   = false;
+    public float  timer       = 0;
     private float currentTime = 0;
+
+    public void Enable()
+    {
+        eventOnStart.Invoke();
+    }
+
+    public void Disable()
+    {
+        eventonEnd.Invoke();
+    }
 }
