@@ -44,7 +44,9 @@ public class EnemyPattern : MonoBehaviour
 
         float stepTime = progressTimer - StartTime(s);
 
-        return Vector2.zero;
+        Vector3 startPos = EndPosition(s-1);
+
+        return step.CalculatePosition(startPos, stepTime);
     }
 
     public Quaternion CalculateRotation(float progressTimer)
