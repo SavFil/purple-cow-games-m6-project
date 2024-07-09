@@ -39,6 +39,11 @@ public class EnemyPattern : MonoBehaviour
 
     public Vector2 CalculatePosition(float progressTimer)
     {
+        int s = WhichStep(progressTimer);
+        EnemyStep step = steps[s];
+
+        float stepTime = progressTimer - StartTime(s);
+
         return Vector2.zero;
     }
 
@@ -57,5 +62,31 @@ public class EnemyPattern : MonoBehaviour
             timer -= steps[s].TimeToComplete();
         }
         return steps.Count- 1;
+    }
+
+    public float StartTime(int step)
+    {
+        if (step <= 0) return 0;
+
+        float result = 0;
+        for (int s=0; s<step;s++) 
+        {
+            result += steps[s].TimeToComplete();
+        }
+
+        return result;
+    }
+
+    public Vector3 EndPosition(int stepIndex)
+    {
+        Vector3 result = transform.position;
+        if (stepIndex>=0) 
+        {
+            for (int s=0; s<=stepIndex; s++)
+            {
+                result = steps[s].EndPosition(result);
+            }
+        }
+        return result;
     }
 }
