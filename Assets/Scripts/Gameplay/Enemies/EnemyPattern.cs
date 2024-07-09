@@ -13,6 +13,8 @@ public class EnemyPattern : MonoBehaviour
 
     private int UID;
 
+    public bool stayOnLast = true;
+
     [MenuItem("GameObject/SHMUP/EnemyPattern", false, 10)]
     static void CreateEnemyPatternObject(MenuCommand menuCommand)
     {
@@ -40,6 +42,7 @@ public class EnemyPattern : MonoBehaviour
     public Vector2 CalculatePosition(float progressTimer)
     {
         int s = WhichStep(progressTimer);
+        if (s < 0) return spawnedEnemy.transform.position;
         EnemyStep step = steps[s];
 
         float stepTime = progressTimer - StartTime(s);
@@ -63,7 +66,9 @@ public class EnemyPattern : MonoBehaviour
                 return s;
             timeToCheck -= steps[s].TimeToComplete();
         }
-        return steps.Count- 1;
+        if (stayOnLast)
+            return steps.Count-1;
+        return -1;
     }
 
     public float StartTime(int step)
