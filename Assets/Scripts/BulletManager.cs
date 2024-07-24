@@ -146,14 +146,14 @@ public class BulletManager : MonoBehaviour
         return -1;
     }
 
-    public Bullet SpawnBullet(BulletType type, float x, float y, float dX, float dY, float angle)
+    public Bullet SpawnBullet(BulletType type, float x, float y, float dX, float dY, float angle, float dAngle, bool homing)
     {
         int bulletIndex = NextFreeBulletIndex(type);
         if (bulletIndex > -1)
         {
             Bullet result = bullets[bulletIndex];
             result.gameObject.SetActive(true);
-            bulletData[bulletIndex] = new BulletData(x, y, dX, dY, angle, (int)type, true);
+            bulletData[bulletIndex] = new BulletData(x, y, dX, dY, angle, dAngle, (int)type, true, homing);
             bullets[bulletIndex].gameObject.transform.position = new Vector3(x, y, 0);
             return result;
         }
@@ -162,6 +162,15 @@ public class BulletManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GameManager.Instance && GameManager.Instance.playerOneCraft)
+        {
+            jobProcessor.player1Position = GameManager.Instance.playerOneCraft.transform.position;
+        }
+        else
+        {
+            jobProcessor.player1Position = new Vector2(-9999, -9999);
+        }
+
         ProcessBullets();
 
         for (int b = 0; b < MAX_BULLET_COUNT; b++)
@@ -186,13 +195,16 @@ public class BulletManager : MonoBehaviour
         float dX = bulletData[index].dX;
         float dY = bulletData[index].dY;
         float angle = bulletData[index].angle;
+        float dAngle = bulletData[index].dAngle;
         int type = bulletData[index].type;
-        bulletData[index] = new BulletData(x, y, dX, dY, angle, type, false);
+        bool homing = bulletData[index].homing;
+        bulletData[index] = new BulletData(x, y, dX, dY, angle, dAngle, type, false, homing);
     }
 
     public struct ProcessBulletJob : IJobParallelForTransform
     {
         public NativeArray<BulletData> bullets;
+        public Vector2 player1Position;
         public void Execute(int index, TransformAccess transform)
         {
             bool active = bullets[index].active;
@@ -203,7 +215,26 @@ public class BulletManager : MonoBehaviour
             float x = bullets[index].positionX;
             float y = bullets[index].positionY;
             float angle = bullets[index].angle;
+            float dAngle = bullets[index].dAngle;
             int type = bullets[index].type;
+            bool homing = bullets[index].homing;
+
+
+            // Homing
+            if (player1Position.y < -1000)
+            {
+                active = false;
+            }
+            else
+            {
+                Vector2 velocity = new Vector2(dX, dY);
+                float speed = velocity.magnitude;
+                Vector2 toPlayer= new Vector2(player1Position.x - x, player1Position.y - y);
+                Vector2 newVelocity = Vector2.Lerp(velocity.normalized, toPlayer.normalized, 0.05f).normalized;
+                newVelocity *= speed;
+                dX = newVelocity.x;
+                dY = newVelocity.y;
+            }
 
             // Movement
             x = x + dX;
@@ -215,7 +246,7 @@ public class BulletManager : MonoBehaviour
             if (y < -180) active = false;
             if (y > 180) active = false;
 
-            bullets[index] = new BulletData(x, y, dX, dY, angle, type, active);
+            bullets[index] = new BulletData(x, y, dX, dY, angle, dAngle, type, active, homing);
 
             if (active)
             {

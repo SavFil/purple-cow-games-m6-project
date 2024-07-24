@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7550748029624201748}
   - component: {fileID: 1311060986460152104}
+  - component: {fileID: 959830037741238405}
+  - component: {fileID: -7036047809792821577}
   m_Layer: 7
   m_Name: Enemy1_Norm
   m_TagString: Untagged
@@ -49,6 +51,35 @@ MonoBehaviour:
     positionX: 0
     positionY: 0
     patternUID: 0
+--- !u!135 &959830037741238405
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261208404580603371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 20, y: 0, z: 0}
+--- !u!114 &-7036047809792821577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261208404580603371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b279c59777e1a304085caad9d0e920ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+  radiusOrWidth: 12
+  height: 10
+  box: 0
 --- !u!1 &6459982791919856870
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,11 +233,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a392a39d8577b6498fa7b793efb3562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletType: 18
+  bulletType: 45
+  sequence:
+    emmitFrames: 000000000200000004000000
+    totalFrames: 10
   rate: 30
-  speed: 5
+  speed: 1
+  startAngle: 0
+  endAngle: 0
+  radialNumber: 1
+  dAngle: 0
   muzzleFlash: {fileID: 2293839730220326849, guid: 4a6884e4536428d43a985884cfc88b73, type: 3}
   autoFireActive: 0
+  fireAtPlayer: 1
+  fireAtTarget: 0
+  target: {fileID: 0}
+  homing: 0
 --- !u!1 &8240263691909380934
 GameObject:
   m_ObjectHideFlags: 0

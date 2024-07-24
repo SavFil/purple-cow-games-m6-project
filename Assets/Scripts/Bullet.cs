@@ -16,24 +16,30 @@ public struct BulletData
     public float dX;
     public float dY;
     public float angle;
-    public int   type;
-    public bool  active;
+    public float dAngle;
+    public int type;
+    public bool active;
+    public bool homing;
 
-    public BulletData( float inX,
+    public BulletData(float inX,
                        float inY,
                        float inDX,
                        float inDY,
                        float inAngle,
-                       int   inType,
-                       bool  inActive)
+                       float inDAngle,
+                       int inType,
+                       bool inActive,
+                       bool inHoming)
     {
         positionX = inX;
         positionY = inY;
-        dX        = inDX;
-        dY        = inDY;
-        angle     = inAngle;
-        type      = inType;
-        active    = inActive;
+        dX = inDX;
+        dY = inDY;
+        angle = inAngle;
+        dAngle = inDAngle;
+        type = inType;
+        active = inActive;
+        homing = inHoming;
     }
 
 }
