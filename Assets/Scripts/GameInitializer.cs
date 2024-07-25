@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameInitializer : MonoBehaviour
 {
@@ -12,13 +13,21 @@ public class GameInitializer : MonoBehaviour
 
     public GameMode gameMode;
     public GameObject gameManagerPrefab = null;
+
+    private Scene displayScene;
     void Start()
     {
         if (GameManager.Instance == null)
         {
+            if (!displayScene.isLoaded)
+            {
+                SceneManager.LoadScene("DisplayScene", LoadSceneMode.Additive);
+            }
+
             if (gameManagerPrefab)
             {
                 Instantiate(gameManagerPrefab);
+                displayScene = SceneManager.GetSceneByName("DisplayScene");
             }
             else
             {
