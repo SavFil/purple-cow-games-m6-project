@@ -14649,8 +14649,8 @@ Transform:
   m_LocalPosition: {x: 185.90094, y: 107.8194, z: -4534.7534}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1312668618}
   - {fileID: 1188112558}
+  - {fileID: 1312668618}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14670,15 +14670,17 @@ MonoBehaviour:
     progress: 0
     positionX: 0
     positionY: 0
-  levelSize: 3200
+  levelSize: 3800
+  midGroundTileGrid: {fileID: 505243480}
+  midGroundRate: 0.75
   speedCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1.1956427
-      inSlope: -1.8700478
-      outSlope: -1.8700478
+      value: 1.2
+      inSlope: -1.91079
+      outSlope: -1.91079
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
@@ -14703,7 +14705,7 @@ MonoBehaviour:
       outWeight: 0.32109085
     - serializedVersion: 3
       time: 0.9472511
-      value: -0.0043573976
+      value: 0
       inSlope: -0.0014688469
       outSlope: -0.0014688469
       tangentMode: 0
@@ -14712,7 +14714,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: -0.0043573976
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 34
@@ -14836,7 +14838,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 551070159}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1312668614
 GameObject:
@@ -14912,7 +14914,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 2000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -14943,7 +14945,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 551070159}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1427996164
 PrefabInstance:
@@ -14962,7 +14964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566a777441f83d5498a0b5989cb00069, type: 3}
       propertyPath: m_LocalScale.z
-      value: -418.56042
+      value: -418.56036
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566a777441f83d5498a0b5989cb00069, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14974,7 +14976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566a777441f83d5498a0b5989cb00069, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 598
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566a777441f83d5498a0b5989cb00069, type: 3}
       propertyPath: m_LocalRotation.w
