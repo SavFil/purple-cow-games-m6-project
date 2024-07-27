@@ -11,14 +11,12 @@ public class LevelProgress : MonoBehaviour
 
     public AnimationCurve speedCurve = new AnimationCurve();
 
-    // Start is called before the first frame update
     void Start()
     {
         data.positionX = transform.position.x;
         data.positionY = transform.position.y;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (data.progress < levelSize)
