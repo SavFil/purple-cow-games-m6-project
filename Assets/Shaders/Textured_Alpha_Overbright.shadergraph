@@ -534,7 +534,7 @@
     },
     "m_Name": "Overbright",
     "m_DefaultReferenceName": "Color_7cf1d8159868435693815b3bc425c603",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_Overbright",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
