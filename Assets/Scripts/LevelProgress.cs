@@ -35,7 +35,7 @@ public class LevelProgress : MonoBehaviour
     {
         data.positionY += movement;
         transform.position = new Vector3(data.positionX, data.positionY, 0);
-        midGroundTileGrid.transform.position = new Vector3(0, data.positionY, 0);
+        //midGroundTileGrid.transform.position = new Vector3(0, data.positionY, 0);
     }
 }
 
