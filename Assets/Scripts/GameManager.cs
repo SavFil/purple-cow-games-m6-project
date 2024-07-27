@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
         currentVersion = gameVersionSO.Version;
 
         bulletManager = GetComponent<BulletManager>();
+
+        Application.targetFrameRate = 60;
     }
 
     public void SpawnPlayer(int playerIndex, int craftType)
