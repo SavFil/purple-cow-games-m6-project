@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LoadMenu : MonoBehaviour
+public class LoadMenu : Menu
 {
     public static LoadMenu Instance { get; private set; }
 
