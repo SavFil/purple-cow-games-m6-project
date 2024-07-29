@@ -107,6 +107,8 @@ public class Craft : MonoBehaviour
             if (craftData.positionX > 120) craftData.positionX = 120;
 
             newPosition.x = (int)craftData.positionX;
+            if (!GameManager.Instance.progressWindow)
+                GameManager.Instance.progressWindow = GameObject.FindObjectOfType<LevelProgress>();
             if (GameManager.Instance.progressWindow)
                 newPosition.y = (int)craftData.positionY + GameManager.Instance.progressWindow.transform.position.y;
             else

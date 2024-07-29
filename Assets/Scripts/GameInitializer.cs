@@ -44,6 +44,7 @@ public class GameInitializer : MonoBehaviour
                     if (!displayScene.isLoaded)
                     {
                         SceneManager.LoadScene("DisplayScene", LoadSceneMode.Additive);
+                    }
                     MenuManager.Instance.SwitchToGameplayMenus();
                     break;
             };
