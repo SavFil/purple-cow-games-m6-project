@@ -51,13 +51,19 @@ public class Beam : MonoBehaviour
             return;
         }
 
+        float topY = 180;
+        if (GameManager.Instance.progressWindow)
+        {
+            topY += GameManager.Instance.progressWindow.transform.position.y;
+        }
+     
         int maxColliders = 20;
         Collider[] hits = new Collider[maxColliders];
         float middleY = (craft.transform.position.y + 180) * .5f;
         Vector2 halfSize = new Vector2(beamWidth * .5f, (180 - craft.transform.position.y) * .5f);
         Vector3 center = new Vector3(craft.transform.position.x, middleY, 0);
         int noOfHits = Physics.OverlapBoxNonAlloc(center, halfSize, hits, Quaternion.identity, layerMask);
-        float lowest = 180;
+        float lowest = topY;
         Shootable lowestShootable = null;
         Collider lowestCollider = null;
         if (noOfHits > 0)

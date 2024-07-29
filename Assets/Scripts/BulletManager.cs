@@ -171,6 +171,15 @@ public class BulletManager : MonoBehaviour
             jobProcessor.player1Position = new Vector2(-9999, -9999);
         }
 
+        if (GameManager.Instance && GameManager.Instance.progressWindow)
+        {
+            jobProcessor.progessY = GameManager.Instance.progressWindow.transform.position.y;
+        }
+        else
+        {
+            jobProcessor.progessY = 0;
+        }
+
         ProcessBullets();
 
         for (int b = 0; b < MAX_BULLET_COUNT; b++)
@@ -205,6 +214,7 @@ public class BulletManager : MonoBehaviour
     {
         public NativeArray<BulletData> bullets;
         public Vector2 player1Position;
+        public float progessY;
         public void Execute(int index, TransformAccess transform)
         {
             bool active = bullets[index].active;
@@ -225,7 +235,7 @@ public class BulletManager : MonoBehaviour
             {
                 active = false;
             }
-            else
+            else if (homing)
             {
                 Vector2 velocity = new Vector2(dX, dY);
                 float speed = velocity.magnitude;
@@ -243,8 +253,8 @@ public class BulletManager : MonoBehaviour
             // Check for out of bounds
             if (x < -320) active = false;
             if (x > 320) active = false;
-            if (y < -180) active = false;
-            if (y > 180) active = false;
+            if (y-progessY < -180) active = false;
+            if (y-progessY > 180) active = false;
 
             bullets[index] = new BulletData(x, y, dX, dY, angle, dAngle, type, active, homing);
 
