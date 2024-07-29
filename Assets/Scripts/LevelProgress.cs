@@ -15,10 +15,15 @@ public class LevelProgress : MonoBehaviour
 
     public AnimationCurve speedCurve = new AnimationCurve();
 
+    private Craft player1craft = null;
+
     void Start()
     {
         data.positionX = transform.position.x;
         data.positionY = transform.position.y;
+
+        if (GameManager.Instance)
+            GameManager.Instance.progressWindow = this;
     }
 
     void Update()
@@ -28,14 +33,24 @@ public class LevelProgress : MonoBehaviour
             float ratio = (float)data.progress / (float)levelSize;
             float movement = speedCurve.Evaluate(ratio);
             data.progress++;
-            UpdateProgressWindow(movement);
+
+            if (player1craft == null)
+            {
+                player1craft = GameManager.Instance.playerOneCraft;
+            }
+            if (player1craft)
+            {
+                UpdateProgressWindow(player1craft.craftData.positionX, movement);
+            }
         }
     }
-    void UpdateProgressWindow(float movement)
+    void UpdateProgressWindow(float shipX, float movement)
     {
+
+        data.positionX += shipX / 500f; 
         data.positionY += movement;
         transform.position = new Vector3(data.positionX, data.positionY, 0);
-        //midGroundTileGrid.transform.position = new Vector3(0, data.positionY, 0);
+        midGroundTileGrid.transform.position = new Vector3(0, midGroundRate * data.positionY, 0);
     }
 }
 

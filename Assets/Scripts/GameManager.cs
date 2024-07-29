@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     public BulletManager bulletManager = null;
 
+    public LevelProgress progressWindow = null;
+
     private void Awake()
     {
         if (Instance)
@@ -76,12 +78,17 @@ public class GameManager : MonoBehaviour
             testPattern.Spawn();
         }
 
-            if (Input.GetKeyDown(KeyCode.RightBracket))
+        if (Input.GetKeyDown(KeyCode.RightBracket))
         {
             if (playerOneCraft)
             {
                 playerOneCraft.IncreaseBeamStrength();
             }
         }
+    }
+
+    public void StartGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Stage01");
     }
 }

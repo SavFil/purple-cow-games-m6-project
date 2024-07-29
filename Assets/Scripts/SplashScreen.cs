@@ -14,6 +14,6 @@ public class SplashScreen : MonoBehaviour
 
     private void VideoFinished()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenuScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenusScene");
     }
 }

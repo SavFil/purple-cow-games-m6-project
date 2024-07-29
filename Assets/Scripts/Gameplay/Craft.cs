@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class Craft : MonoBehaviour
@@ -101,8 +102,15 @@ public class Craft : MonoBehaviour
         {
             craftData.positionX += InputManager.Instance.playerState[playerIndex].movement.x * config.speed;
             craftData.positionY += InputManager.Instance.playerState[playerIndex].movement.y * config.speed;
+
+            if (craftData.positionX < -170) craftData.positionX = -170;
+            if (craftData.positionX > 120) craftData.positionX = 120;
+
             newPosition.x = (int)craftData.positionX;
-            newPosition.y = (int)craftData.positionY;
+            if (GameManager.Instance.progressWindow)
+                newPosition.y = (int)craftData.positionY + GameManager.Instance.progressWindow.transform.position.y;
+            else
+                newPosition.y = (int)craftData.positionY;
             gameObject.transform.position = newPosition;
 
             if (InputManager.Instance.playerState[playerIndex].up)
@@ -172,7 +180,7 @@ public class Craft : MonoBehaviour
             {
                 beam.Fire();
             }
-            
+
             // Bomb
             if (!InputManager.Instance.playerPrevState[playerIndex].bomb &&
                 InputManager.Instance.playerState[playerIndex].bomb)

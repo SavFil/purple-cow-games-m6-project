@@ -149,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258497687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -22, y: -300, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 505243482}
@@ -14672,7 +14672,7 @@ MonoBehaviour:
     positionY: 0
   levelSize: 3800
   midGroundTileGrid: {fileID: 505243480}
-  midGroundRate: 0.75
+  midGroundRate: 0.25
   speedCurve:
     serializedVersion: 2
     m_Curve:
@@ -14968,7 +14968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566a777441f83d5498a0b5989cb00069, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0417
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 566a777441f83d5498a0b5989cb00069, type: 3}
       propertyPath: m_LocalPosition.y

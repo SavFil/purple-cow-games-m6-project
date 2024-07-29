@@ -19,11 +19,6 @@ public class GameInitializer : MonoBehaviour
     {
         if (GameManager.Instance == null)
         {
-            if (!displayScene.isLoaded)
-            {
-                SceneManager.LoadScene("DisplayScene", LoadSceneMode.Additive);
-            }
-
             if (gameManagerPrefab)
             {
                 Instantiate(gameManagerPrefab);
@@ -46,6 +41,9 @@ public class GameInitializer : MonoBehaviour
                     MenuManager.Instance.SwitchToMainMenuMenus();
                     break;
                 case GameMode.Gameplay:
+                    if (!displayScene.isLoaded)
+                    {
+                        SceneManager.LoadScene("DisplayScene", LoadSceneMode.Additive);
                     MenuManager.Instance.SwitchToGameplayMenus();
                     break;
             };

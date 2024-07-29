@@ -20,7 +20,7 @@ public class CraftSelectMenu : Menu
 
     public void OnPlayButton()
     {
-        SceneManager.LoadScene(1);
+        GameManager.Instance.StartGame();
     }
 
     public void OnBackButton()
