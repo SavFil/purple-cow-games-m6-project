@@ -29,6 +29,10 @@ public class GameInitializer : MonoBehaviour
                 Debug.LogError("gameMangerPrefab isn't set!");
             }
         }
+        if (!displayScene.isLoaded)
+        {
+            SceneManager.LoadScene("DisplayScene", LoadSceneMode.Additive);
+        }
     }
 
     public void Update()
@@ -41,10 +45,6 @@ public class GameInitializer : MonoBehaviour
                     MenuManager.Instance.SwitchToMainMenuMenus();
                     break;
                 case GameMode.Gameplay:
-                    if (!displayScene.isLoaded)
-                    {
-                        SceneManager.LoadScene("DisplayScene", LoadSceneMode.Additive);
-                    }
                     MenuManager.Instance.SwitchToGameplayMenus();
                     break;
             };
