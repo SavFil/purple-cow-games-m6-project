@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2897793673980360307}
   - component: {fileID: 3692089713669467407}
   - component: {fileID: 7402964246246876360}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TurretBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 7340833624244787486}
   - component: {fileID: 8151691518775031151}
   - component: {fileID: 5328054817167797857}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tank1_Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,6 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6eb7d6a04c79a439bd2fd38478e526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facePlayer: 1
+  faceTarget: 0
+  target: {fileID: 0}
 --- !u!1 &3848621013782749617
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2723132847867762238}
   - component: {fileID: 4948434726346075239}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,11 +269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a392a39d8577b6498fa7b793efb3562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletType: 18
+  bulletType: 12
   sequence:
     emmitFrames: 01000000
-    totalFrames: 10
-  rate: 30
+    totalFrames: 120
+  rate: 120
   speed: 3
   startAngle: 0
   endAngle: 0
@@ -292,7 +295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3774917950504602309}
   - component: {fileID: 7835707142732153828}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MainSection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,12 +346,36 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 5328054817167797857}
+          m_TargetAssemblyTypeName: RotateToFace, Assembly-CSharp
+          m_MethodName: Activate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     eventonEnd:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 4948434726346075239}
           m_TargetAssemblyTypeName: BulletSpawner, Assembly-CSharp
           m_MethodName: DeActivate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 5328054817167797857}
+          m_TargetAssemblyTypeName: RotateToFace, Assembly-CSharp
+          m_MethodName: Deactivate
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -373,7 +400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3206798874006200017}
   - component: {fileID: 96139919327107819}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Turret1_Norm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
