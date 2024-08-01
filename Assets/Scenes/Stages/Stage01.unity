@@ -14840,6 +14840,66 @@ Transform:
   m_Father: {fileID: 551070159}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1236433163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1236433165}
+  - component: {fileID: 1236433164}
+  m_Layer: 0
+  m_Name: Turret1_Pat
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: d29a2d4693d06cc4fa73b77c16af6743, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1236433164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236433163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd37064cb2fe1724c9fc82d39b36040c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steps:
+  - movement: 0
+    direction: {x: 0, y: -20}
+    movementSpeed: 0
+    framesToWait: 0
+    activateStates: []
+    deActivateStates: []
+  - movement: 1
+    direction: {x: 0, y: 0}
+    movementSpeed: 0
+    framesToWait: 1
+    activateStates:
+    - Shooting
+    deActivateStates: []
+  enemyPrefab: {fileID: 7594944989068671163, guid: 7454ad8bbcedc2f449b29f64ba219cd1, type: 3}
+  stayOnLast: 0
+  startActive: 1
+--- !u!4 &1236433165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236433163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.99, y: -75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1312668614
 GameObject:
   m_ObjectHideFlags: 0
@@ -15020,6 +15080,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 566a777441f83d5498a0b5989cb00069, type: 3}
+--- !u!1 &1606734765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1606734767}
+  - component: {fileID: 1606734766}
+  m_Layer: 0
+  m_Name: Turret1_Pat(UNORIGINAL)
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: d29a2d4693d06cc4fa73b77c16af6743, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1606734766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606734765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd37064cb2fe1724c9fc82d39b36040c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steps:
+  - movement: 0
+    direction: {x: 0, y: -2}
+    movementSpeed: 2
+    framesToWait: 0
+    activateStates: []
+    deActivateStates: []
+  - movement: 1
+    direction: {x: 0, y: -100}
+    movementSpeed: 2
+    framesToWait: 1
+    activateStates:
+    - Shooting
+    deActivateStates: []
+  enemyPrefab: {fileID: 1311060986460152104, guid: 176d3f5e7f1a9ab4da8c25f96ebeaa4d, type: 3}
+  stayOnLast: 0
+  startActive: 1
+--- !u!4 &1606734767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606734765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 109.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609569923
 GameObject:
   m_ObjectHideFlags: 0
@@ -15063,60 +15183,6 @@ Transform:
   - {fileID: 2053134836}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1868087173
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1868087175}
-  - component: {fileID: 1868087174}
-  m_Layer: 0
-  m_Name: Turret1_Pat
-  m_TagString: Untagged
-  m_Icon: {fileID: 2800000, guid: d29a2d4693d06cc4fa73b77c16af6743, type: 3}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1868087174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868087173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd37064cb2fe1724c9fc82d39b36040c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  steps:
-  - movement: 1
-    direction: {x: 0, y: 0}
-    movementSpeed: 0
-    framesToWait: 0
-    activateStates:
-    - Shooting
-    deActivateStates: []
-  enemyPrefab: {fileID: 96139919327107819, guid: 7454ad8bbcedc2f449b29f64ba219cd1, type: 3}
-  stayOnLast: 1
-  startActive: 1
---- !u!4 &1868087175
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868087173}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.12, y: 33.27, z: -108.58472}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053134835
 GameObject:

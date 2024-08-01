@@ -18,7 +18,7 @@ public class EnemyPattern : MonoBehaviour
     private int currentStateIndex = 0;
     private int previousStateIndex = -1;
 
-    public bool startActive = false; 
+    public bool startActive = false;
 
     [MenuItem("GameObject/SHMUP/EnemyPattern", false, 10)]
     static void CreateEnemyPatternObject(MenuCommand menuCommand)
@@ -52,7 +52,7 @@ public class EnemyPattern : MonoBehaviour
         }
     }
 
-    public void Calculate (Transform enemyTransform, float progressTimer)
+    public void Calculate(Transform enemyTransform, float progressTimer)
     {
         Vector3 pos = CalculatePosition(progressTimer);
         Quaternion rot = CalculateRotation(progressTimer);
@@ -60,15 +60,15 @@ public class EnemyPattern : MonoBehaviour
         enemyTransform.position = pos;
         enemyTransform.rotation = rot;
 
-        if (currentStateIndex != previousStateIndex)                        // State has changed
+        if (currentStateIndex != previousStateIndex) // State has changed
         {
-            if (previousStateIndex>=0)
+            if (previousStateIndex >= 0)
             {
                 // Call deAactivate state
                 EnemyStep prevStep = steps[previousStateIndex];
                 prevStep.FireDeactivateStates(spawnedEnemy);
             }
-            if (currentStateIndex>=0)
+            if (currentStateIndex >= 0)
             {
                 // Call activate states
                 EnemyStep currStep = steps[currentStateIndex];
@@ -79,7 +79,7 @@ public class EnemyPattern : MonoBehaviour
         }
     }
 
-    public Vector2 CalculatePosition(float progressTimer)                  // Incharge of calculating stateIndex
+    public Vector2 CalculatePosition(float progressTimer) // Incharge of calculating stateIndex
     {
         currentStateIndex = WhichStep(progressTimer);
         if (currentStateIndex < 0) return spawnedEnemy.transform.position;
@@ -87,7 +87,7 @@ public class EnemyPattern : MonoBehaviour
 
         float stepTime = progressTimer - StartTime(currentStateIndex);
 
-        Vector3 startPos = EndPosition(currentStateIndex-1);
+        Vector3 startPos = EndPosition(currentStateIndex - 1);
 
         return step.CalculatePosition(startPos, stepTime);
     }
@@ -100,14 +100,14 @@ public class EnemyPattern : MonoBehaviour
     int WhichStep(float timer)
     {
         float timeToCheck = timer;
-        for(int s=0; s<steps.Count;s++)
+        for (int s = 0; s < steps.Count; s++)
         {
             if (timeToCheck < steps[s].TimeToComplete())
                 return s;
             timeToCheck -= steps[s].TimeToComplete();
         }
         if (stayOnLast)
-            return steps.Count-1;
+            return steps.Count - 1;
         return -1;
     }
 
@@ -116,7 +116,7 @@ public class EnemyPattern : MonoBehaviour
         if (step <= 0) return 0;
 
         float result = 0;
-        for (int s=0; s<step;s++) 
+        for (int s = 0; s < step; s++)
         {
             result += steps[s].TimeToComplete();
         }
@@ -127,9 +127,9 @@ public class EnemyPattern : MonoBehaviour
     public Vector3 EndPosition(int stepIndex)
     {
         Vector3 result = transform.position;
-        if (stepIndex>=0) 
+        if (stepIndex >= 0)
         {
-            for (int s=0; s<=stepIndex; s++)
+            for (int s = 0; s <= stepIndex; s++)
             {
                 result = steps[s].EndPosition(result);
             }

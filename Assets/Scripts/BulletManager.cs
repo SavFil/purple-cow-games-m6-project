@@ -138,9 +138,9 @@ public class BulletManager : MonoBehaviour
     private int NextFreeBulletIndex(BulletType type)
     {
         int startIndex = (int)type * MAX_BULLET_PER_TYPE;
-        for (int b = 0; b < MAX_BULLET_PER_TYPE; b++)
+        for (int b = 0; b < MAX_BULLET_PER_TYPE; b++) 
         {
-            if (!bulletData[startIndex + b].active)
+            if (bulletData.Length > startIndex + b && !bulletData[startIndex + b].active)
                 return startIndex + b;
         }
         return -1;
@@ -251,10 +251,10 @@ public class BulletManager : MonoBehaviour
             y = y + dY;
 
             // Check for out of bounds
-            if (x < -320) active = false;
-            if (x > 320) active = false;
-            if (y-progessY < -180) active = false;
-            if (y-progessY > 180) active = false;
+            if (x < -1000) active = false;
+            if (x > 1000) active = false;
+            if (y-progessY < -1000) active = false;
+            if (y-progessY > 1000) active = false;
 
             bullets[index] = new BulletData(x, y, dX, dY, angle, dAngle, type, active, homing);
 
