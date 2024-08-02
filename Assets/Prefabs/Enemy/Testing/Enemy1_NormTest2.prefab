@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 959830037741238405}
   - component: {fileID: -7036047809792821577}
   m_Layer: 7
-  m_Name: Enemy1_Norm
+  m_Name: Enemy1_NormTest2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,9 +233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a392a39d8577b6498fa7b793efb3562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletType: 17
+  bulletType: 81
   sequence:
-    emmitFrames: 000000000200000004000000
+    emmitFrames: 00000000
     totalFrames: 10
   rate: 30
   speed: 1
@@ -245,7 +245,7 @@ MonoBehaviour:
   dAngle: 0
   muzzleFlash: {fileID: 2293839730220326849, guid: 4a6884e4536428d43a985884cfc88b73, type: 3}
   autoFireActive: 0
-  fireAtPlayer: 1
+  fireAtPlayer: 0
   fireAtTarget: 0
   target: {fileID: 0}
   homing: 0
