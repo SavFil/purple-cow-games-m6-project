@@ -245,7 +245,7 @@ MonoBehaviour:
   dAngle: 0
   muzzleFlash: {fileID: 2293839730220326849, guid: 4a6884e4536428d43a985884cfc88b73, type: 3}
   autoFireActive: 0
-  fireAtPlayer: 0
+  fireAtPlayer: 1
   fireAtTarget: 0
   target: {fileID: 0}
   homing: 0
