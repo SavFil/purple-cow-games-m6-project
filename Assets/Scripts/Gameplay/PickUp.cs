@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    enum PickUpType
+    public enum PickUpType
     {
         INVALID,
 

@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "PickupConfig", menuName ="SHMUP/PickupConfig")]
+
+public class PickUpConfig : ScriptableObject
+{
+    public PickUp.PickUpType type;
+
+    public int powerLevl = 1;
+    public int bombPower = 1;
+    public int medalValue = 100;
+    public float fallSpeed = 0;
+    public int coinValue = 1;
+    public int medalLevel = 1;
+    public int surplusValue = 100;
+   
+}
