@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public Craft playerOneCraft = null;
 
+    public PlayerData[] playerDatas;
+
     public BulletManager bulletManager = null;
 
     public LevelProgress progressWindow = null;
@@ -28,6 +30,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        playerDatas = new PlayerData[2];
+        playerDatas[0] = new PlayerData();
+        playerDatas[1] = new PlayerData();
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
