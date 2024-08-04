@@ -59,7 +59,10 @@ public class Craft : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         Debug.Assert(spriteRenderer);
 
-        layerMask = ~LayerMask.GetMask("PlayerBullets") & ~LayerMask.GetMask("PlayerBombs");
+        layerMask = ~LayerMask.GetMask("PlayerBullets") &
+            ~LayerMask.GetMask("PlayerBombs") &
+            ~LayerMask.GetMask("Player") &
+            ~LayerMask.GetMask("GroundEnemy");
 
         craftData.beamCharge = (char)100;
     }
@@ -105,6 +108,9 @@ public class Craft : MonoBehaviour
 
             if (craftData.positionX < -170) craftData.positionX = -170;
             if (craftData.positionX > 120) craftData.positionX = 120;
+
+            if (craftData.positionY < -290) craftData.positionY = -290; // bottom part
+            if (craftData.positionY > 40) craftData.positionY = 40;   // top part
 
             newPosition.x = (int)craftData.positionX;
             if (!GameManager.Instance.progressWindow)

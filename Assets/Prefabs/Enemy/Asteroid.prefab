@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3463456417817884514}
   - component: {fileID: 6761757644490275631}
   - component: {fileID: 3233604308845944037}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Asteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,3 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b279c59777e1a304085caad9d0e920ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 10
+  radiusOrWidth: 10
+  height: 10
+  box: 0
+  damagedByBullets: 1
+  damagedByBeams: 1
+  damagedByBombs: 1
