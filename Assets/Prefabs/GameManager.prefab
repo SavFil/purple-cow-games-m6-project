@@ -53,6 +53,21 @@ MonoBehaviour:
   craftPrefabs:
   - {fileID: 5926266032888430355, guid: 5a1cf9d5cede6ab488486f846befbc56, type: 3}
   playerOneCraft: {fileID: 0}
+  playerDatas: []
+  bulletManager: {fileID: 0}
+  progressWindow: {fileID: 0}
+  gameSession:
+    hardness: 1
+    stage: 1
+    practice: 0
+    arenaPractice: 0
+    stagePractice: 0
+    infiniteLives: 0
+    infiniteContinues: 0
+    infiniteBombs: 0
+    invincible: 0
+    halfSpeed: 0
+    doubleSpeed: 0
 --- !u!114 &347930484269923544
 MonoBehaviour:
   m_ObjectHideFlags: 0

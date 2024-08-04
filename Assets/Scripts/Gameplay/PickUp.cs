@@ -45,6 +45,11 @@ public class PickUp : MonoBehaviour
                     GameManager.Instance.playerDatas[playerIndex].score += config.coinValue;
                     break;
                 }
+                case PickUpType.PowerUp:
+                {
+                    GameManager.Instance.playerOneCraft.PowerUp((char)config.powerLevel);
+                    break;
+                }
             default:
                 {
                     Debug.LogError("Unprocessed config type: " + config.type);

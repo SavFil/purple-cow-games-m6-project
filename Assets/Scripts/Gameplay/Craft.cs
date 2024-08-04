@@ -228,6 +228,12 @@ public class Craft : MonoBehaviour
         Instantiate(bombPrefab, pos, Quaternion.identity);
     }
 
+    public void PowerUp(char powerLevel)
+    {
+        craftData.shotPower += powerLevel;
+        if (craftData.shotPower > 8)
+            craftData.shotPower = (char)8;
+    }
     public void PickUp(PickUp pickUp)
     {
         if (pickUp)

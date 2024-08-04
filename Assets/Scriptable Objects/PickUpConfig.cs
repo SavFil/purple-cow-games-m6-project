@@ -8,7 +8,7 @@ public class PickUpConfig : ScriptableObject
 {
     public PickUp.PickUpType type;
 
-    public int powerLevl = 1;
+    public int powerLevel = 1;
     public int bombPower = 1;
     public int medalValue = 100;
     public float fallSpeed = 0;
