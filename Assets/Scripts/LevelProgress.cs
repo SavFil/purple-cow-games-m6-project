@@ -47,7 +47,7 @@ public class LevelProgress : MonoBehaviour
     void UpdateProgressWindow(float shipX, float movement)
     {
 
-        data.positionX += shipX / 500f; 
+        data.positionX += shipX / 500f;
         data.positionY += movement;
         transform.position = new Vector3(data.positionX, data.positionY, 0);
         midGroundTileGrid.transform.position = new Vector3(0, midGroundRate * data.positionY, 0);

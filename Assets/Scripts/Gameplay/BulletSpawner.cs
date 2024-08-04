@@ -33,12 +33,24 @@ public class BulletSpawner : MonoBehaviour
 
     public bool homing = false;
 
+    public bool isPlayer = false;
+
     public void Shoot(int size)
     {
-        if (size < 0)
-        {
-            return;
-        }
+        if (size < 0) return;
+        
+        // this code checks bounds to make turrets shoot or not based on their vertical position on the screen to adjust fairness..
+        // the bounds need adjustment 
+        //if (!isPlayer)
+        //{
+        //    float y = transform.position.y;
+        //    if (GameManager.Instance && GameManager.Instance.progressWindow)
+        //    {
+        //        y -= GameManager.Instance.progressWindow.data.positionY;
+        //    }
+        //    if (y < -100 || y > 180)
+        //        return;
+        //}
 
         Vector2 primaryDirection = transform.up;
 
@@ -87,11 +99,11 @@ public class BulletSpawner : MonoBehaviour
             if (muzzleFlash)
             {
                 muzzleFlash.SetActive(false);
-                if (autoFireActive)
-                {
-                    firing = true;
-                    frame = 0;
-                }
+            }
+            if (autoFireActive) /// once youre ready tellz me- i am weadddy- you were to tell me something UHHHHHHHHHHHHHHHH UHHHHH WHATS? QUACK?AAA
+            {
+                firing = true;
+                frame = 0;
             }
         }
 

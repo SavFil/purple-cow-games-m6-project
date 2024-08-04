@@ -56,11 +56,11 @@ public class Beam : MonoBehaviour
         {
             topY += GameManager.Instance.progressWindow.transform.position.y;
         }
-     
+
         int maxColliders = 20;
         Collider[] hits = new Collider[maxColliders];
-        float middleY = (craft.transform.position.y + 180) * .5f;
-        Vector2 halfSize = new Vector2(beamWidth * .5f, (180 - craft.transform.position.y) * .5f);
+        float middleY = (craft.transform.position.y + topY) * .5f;
+        Vector2 halfSize = new Vector2(beamWidth * .5f, (topY - craft.transform.position.y) * .5f);
         Vector3 center = new Vector3(craft.transform.position.x, middleY, 0);
         int noOfHits = Physics.OverlapBoxNonAlloc(center, halfSize, hits, Quaternion.identity, layerMask);
         float lowest = topY;
@@ -71,16 +71,21 @@ public class Beam : MonoBehaviour
             // Find lowest hit
             for (int hit = 0; hit < noOfHits; hit++)
             {
-                RaycastHit hitInfo;
-                Ray ray = new Ray(craft.transform.position, Vector3.up);
-                float height = 180 - craft.transform.position.y;
-                if (hits[hit].Raycast(ray, out hitInfo, height))
+                Shootable shootable = hits[hit].GetComponent<Shootable>();
+
+                if (shootable && shootable.damagedByBeams)
                 {
-                    if (hitInfo.point.y < lowest)
+                    RaycastHit hitInfo;
+                    Ray ray = new Ray(craft.transform.position, Vector3.up);
+                    float height = topY - craft.transform.position.y;
+                    if (hits[hit].Raycast(ray, out hitInfo, height))
                     {
-                        lowest = hitInfo.point.y;
-                        lowestShootable = hits[hit].GetComponent<Shootable>();
-                        lowestCollider = hits[hit];
+                        if (hitInfo.point.y < lowest)
+                        {
+                            lowest = hitInfo.point.y;
+                            lowestShootable = hits[hit].GetComponent<Shootable>();
+                            lowestCollider = hits[hit];
+                        }
                     }
                 }
             }
@@ -103,7 +108,7 @@ public class Beam : MonoBehaviour
                         pos.y += Random.Range(-3f, 3f);
                         beamHits[h].transform.position = pos;
                         beamHits[h].SetActive(true);
-                        lowestShootable.TakeDamage(craft.craftData.beamPower+1);
+                        lowestShootable.TakeDamage(craft.craftData.beamPower + 1);
                     }
                     else
                     {

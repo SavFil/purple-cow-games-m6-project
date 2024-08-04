@@ -269,9 +269,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a392a39d8577b6498fa7b793efb3562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletType: 12
+  bulletType: 45
   sequence:
-    emmitFrames: 01000000
+    emmitFrames: 000000000200000004000000
     totalFrames: 120
   rate: 120
   speed: 3
@@ -280,8 +280,8 @@ MonoBehaviour:
   radialNumber: 1
   dAngle: 0
   muzzleFlash: {fileID: 0}
-  autoFireActive: 0
-  fireAtPlayer: 0
+  autoFireActive: 1
+  fireAtPlayer: 1
   fireAtTarget: 0
   target: {fileID: 0}
   homing: 0
@@ -358,7 +358,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    eventonEnd:
+    eventOnEnd:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 4948434726346075239}
@@ -385,7 +385,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    eventofTime:
+    eventOnTime:
       m_PersistentCalls:
         m_Calls: []
     userTimer: 0
