@@ -38,6 +38,20 @@ public class PickUp : MonoBehaviour
 
     public void ProcessPickUp(int playerIndex, CraftData craftData)
     {
+        switch (config.type)
+        {
+            case PickUpType.Coin:
+                {
+                    GameManager.Instance.playerDatas[playerIndex].score += config.coinValue;
+                    break;
+                }
+            default:
+                {
+                    Debug.LogError("Unprocessed config type: " + config.type);
+                    break;
+                }
+        };
+
         Destroy(gameObject);
     }
 }
