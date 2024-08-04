@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    enum PickUpType
     {
-        
-    }
+        INVALID,
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        Bomb,
+        Coin,
+        PowerUp,
+        BeamUp,
+        Options,
+        Medal,
+        Secret,
+        Lives,
+
+        NOOFPICKUPTYPES
+    };
+
+    public PickUpConfig config;
 }
