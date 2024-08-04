@@ -59,7 +59,7 @@ public class BulletSpawner : MonoBehaviour
             Vector2 targetPosition = Vector2.zero;
             if (fireAtPlayer)
             {
-                targetPosition = GameManager.Instance.playerOneCraft.transform.position;
+                targetPosition = GameManager.Instance.playerCrafts[0].transform.position;
             }
             else if (fireAtTarget && target != null)
             {
@@ -100,7 +100,7 @@ public class BulletSpawner : MonoBehaviour
             {
                 muzzleFlash.SetActive(false);
             }
-            if (autoFireActive) /// once youre ready tellz me- i am weadddy- you were to tell me something UHHHHHHHHHHHHHHHH UHHHHH WHATS? QUACK?AAA
+            if (autoFireActive) 
             {
                 firing = true;
                 frame = 0;

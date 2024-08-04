@@ -17,6 +17,9 @@ public class Shootable : MonoBehaviour
     public bool damagedByBeams = true;
     public bool damagedByBombs = true;
 
+    public bool spawnCyclicPickup = false;
+    public PickUp[] spawnSpecificPickup;
+
     private void Start()
     {
         layerMask = ~LayerMask.GetMask("Enemy") & ~LayerMask.GetMask("EnemyBullets");
@@ -67,6 +70,27 @@ public class Shootable : MonoBehaviour
         health -= ammount;
         if (health <= 0)
         {
+            Vector2 pos = transform.position;
+            if (spawnCyclicPickup)
+            {
+                PickUp spawn = GameManager.Instance.GetNextDrop();
+                PickUp p = Instantiate(spawn, pos, Quaternion.identity);
+                if (p)
+                {
+                    p.transform.SetParent(GameManager.Instance.transform);
+                }
+            }
+
+            foreach (PickUp pickup in spawnSpecificPickup)
+            {
+                PickUp p = Instantiate(pickup, pos, Quaternion.identity);
+                if (p)
+                {
+                    p.transform.SetParent(GameManager.Instance.transform);
+                }
+                else Debug.LogError("Failed to spawn pickup");
+            }
+
             Destroy(gameObject);
         }
     }
