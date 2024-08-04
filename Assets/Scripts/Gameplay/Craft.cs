@@ -33,6 +33,7 @@ public class Craft : MonoBehaviour
     SpriteRenderer spriteRenderer = null;
 
     int layerMask = 0;
+    int pickUpLayer = 0;
 
     public BulletSpawner[] bulletSpawner = new BulletSpawner[5];
 
@@ -64,6 +65,8 @@ public class Craft : MonoBehaviour
             ~LayerMask.GetMask("Player") &
             ~LayerMask.GetMask("GroundEnemy");
 
+        pickUpLayer = LayerMask.GetMask("PickUp");
+
         craftData.beamCharge = (char)100;
     }
 
@@ -94,10 +97,17 @@ public class Craft : MonoBehaviour
         Collider[] hits = new Collider[maxColliders];
         Vector2 halfSize = new Vector2(3f, 4f);
         int noOfhits = Physics.OverlapBoxNonAlloc(transform.position, halfSize, hits, Quaternion.identity, layerMask);
-        if (noOfhits > 0)
+        foreach (Collider hit in hits)
         {
-            if (!invulnerable)
-                Explode();
+            if (hit)
+            {
+                if (hit.gameObject.layer == pickUpLayer)
+                    PickUp(hit.GetComponent<PickUp>());
+                else
+                {
+                    Hit();
+                }
+            }
         }
 
         // Movement
@@ -216,6 +226,20 @@ public class Craft : MonoBehaviour
         Vector3 pos = transform.position;
         pos.y += 100;
         Instantiate(bombPrefab, pos, Quaternion.identity);
+    }
+
+    public void PickUp(PickUp pickUp)
+    {
+        if (pickUp)
+        {
+         pickUp.ProcessPickUp(playerIndex, craftData);
+        }
+    }
+
+    public void Hit()
+    {
+        if (!invulnerable)
+            Explode();
     }
 
     public void Explode()

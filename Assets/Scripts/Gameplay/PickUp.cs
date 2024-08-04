@@ -21,4 +21,23 @@ public class PickUp : MonoBehaviour
     };
 
     public PickUpConfig config;
+    public Vector2 position;
+    public Vector2 velocity;
+
+    private void OnEnable()
+    {
+        position = transform.position;
+    }
+
+    private void FixedUpdate()
+    {
+        //Move
+        position.y -= config.fallSpeed;
+        transform.position = position;
+    }
+
+    public void ProcessPickUp(int playerIndex, CraftData craftData)
+    {
+        Destroy(gameObject);
+    }
 }
