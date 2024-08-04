@@ -65,7 +65,7 @@ public class Craft : MonoBehaviour
             ~LayerMask.GetMask("Player") &
             ~LayerMask.GetMask("GroundEnemy");
 
-        pickUpLayer = LayerMask.GetMask("PickUp");
+        pickUpLayer = LayerMask.NameToLayer("PickUp");
 
         craftData.beamCharge = (char)100;
     }
