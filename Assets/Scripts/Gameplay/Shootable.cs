@@ -73,7 +73,12 @@ public class Shootable : MonoBehaviour
             Vector2 pos = transform.position;
             if (spawnCyclicPickup)
             {
-
+                PickUp spawn = GameManager.Instance.GetNextDrop();
+                PickUp p = Instantiate(spawn, pos, Quaternion.identity);
+                if (p)
+                {
+                    p.transform.SetParent(GameManager.Instance.transform);
+                }
             }
 
             foreach (PickUp pickup in spawnSpecificPickup)

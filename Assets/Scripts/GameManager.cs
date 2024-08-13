@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public Session gameSession = new Session();
 
     public PickUp[] cyclicDrops = new PickUp[15];
+    public PickUp[] medals = new PickUp[10];
     private int currentDropIndex = 0;
     private int currentMedalIndex = 0;
 
@@ -107,6 +108,28 @@ public class GameManager : MonoBehaviour
 
     public void PickUpFallOffScreen(PickUp pickup)
     {
+        if (pickup.config.type == PickUp.PickUpType.Medal)
+        {
+            currentMedalIndex = 0;
+        }
+    }
 
+    public PickUp GetNextDrop()
+    {
+        PickUp result = cyclicDrops[currentDropIndex];
+
+        if (result.config.type == PickUp.PickUpType.Medal)
+        {
+            result = medals[currentMedalIndex];
+            currentMedalIndex++;
+            if (currentMedalIndex > 9)
+                currentMedalIndex = 0;
+        }
+
+        currentDropIndex++;
+        if (currentDropIndex > 14)
+            currentDropIndex = 0;
+
+        return result;
     }
 }

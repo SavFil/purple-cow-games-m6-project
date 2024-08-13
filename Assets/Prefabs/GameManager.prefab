@@ -52,7 +52,9 @@ MonoBehaviour:
   twoPlayer: 0
   craftPrefabs:
   - {fileID: 5926266032888430355, guid: 5a1cf9d5cede6ab488486f846befbc56, type: 3}
-  playerOneCraft: {fileID: 0}
+  playerCrafts:
+  - {fileID: 0}
+  - {fileID: 0}
   playerDatas: []
   bulletManager: {fileID: 0}
   progressWindow: {fileID: 0}
@@ -68,6 +70,22 @@ MonoBehaviour:
     invincible: 0
     halfSpeed: 0
     doubleSpeed: 0
+  cyclicDrops:
+  - {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
+  - {fileID: 8624359605830576328, guid: 769ccedc1b59372448b7e731e7b79271, type: 3}
+  - {fileID: 8487592036162695540, guid: b671bf44c2ec0884ca583c60a5821574, type: 3}
+  - {fileID: 4527144528028949816, guid: 6c6e7fd234a36424ebb7d6837a398992, type: 3}
+  - {fileID: 4260780783647525011, guid: 459d2aca0311ef840a14e10c5757b2f0, type: 3}
+  - {fileID: 4077765400207312784, guid: 2676929a0535a1f4b8236c37eb7df601, type: 3}
+  - {fileID: 8624359605830576328, guid: 769ccedc1b59372448b7e731e7b79271, type: 3}
+  - {fileID: 4527144528028949816, guid: 6c6e7fd234a36424ebb7d6837a398992, type: 3}
+  - {fileID: 6339480540960626380, guid: 721014f1e406044439fed57b1888ff8b, type: 3}
+  - {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
+  - {fileID: 250782328296364611, guid: edab9caafd2c4814089a44aead0578ba, type: 3}
+  - {fileID: 4077765400207312784, guid: 2676929a0535a1f4b8236c37eb7df601, type: 3}
+  - {fileID: 6339480540960626380, guid: 721014f1e406044439fed57b1888ff8b, type: 3}
+  - {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
+  - {fileID: 250782328296364611, guid: edab9caafd2c4814089a44aead0578ba, type: 3}
 --- !u!114 &347930484269923544
 MonoBehaviour:
   m_ObjectHideFlags: 0
