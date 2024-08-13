@@ -23,6 +23,11 @@ public class GameManager : MonoBehaviour
     public LevelProgress progressWindow = null;
 
     public Session gameSession = new Session();
+
+    public PickUp[] cyclicDrops = new PickUp[15];
+    private int currentDropIndex = 0;
+    private int currentMedalIndex = 0;
+
     private void Awake()
     {
         if (Instance)
