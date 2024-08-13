@@ -2666,6 +2666,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9a5d83180483d4e803be993ec136d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  craftData:
+    positionX: 0
+    positionY: 0
+    shotPower: 0
+    noOfEnabledOptions: 0
+    optionsLayout: 0
+    beamFiring: 0
+    beamPower: 0
+    beamCharge: 0
+    beamTimer: 0
+    smallBombs: 3
+    largeBombs: 3
   AftFlame1: {fileID: 1296115737}
   AftFlame2: {fileID: 1642120930}
   LeftFlame: {fileID: 3004964092287338273}

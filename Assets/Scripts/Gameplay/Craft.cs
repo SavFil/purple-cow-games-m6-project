@@ -67,7 +67,7 @@ public class Craft : MonoBehaviour
 
         pickUpLayer = LayerMask.NameToLayer("PickUp");
 
-        craftData.beamCharge = (char)100;
+        craftData.beamCharge = 100;
     }
 
     public void SetInvulnerable()
@@ -213,7 +213,7 @@ public class Craft : MonoBehaviour
                 craftData.optionsLayout++;
                 if (craftData.optionsLayout > 3)
                 {
-                    craftData.optionsLayout = (char)0;
+                    craftData.optionsLayout = 0;
                 }
                 SetOptionsLayout(craftData.optionsLayout);
             }
@@ -223,22 +223,52 @@ public class Craft : MonoBehaviour
 
     private void FireBomb()
     {
-        Vector3 pos = transform.position;
-        pos.y += 100;
-        Instantiate(bombPrefab, pos, Quaternion.identity);
+        if (craftData.smallBombs > 0)
+        {
+            craftData.smallBombs--;
+            Vector3 pos = transform.position;
+            pos.y += 100;
+            Instantiate(bombPrefab, pos, Quaternion.identity);
+        }
     }
 
-    public void PowerUp(char powerLevel)
+    public void PowerUp(byte powerLevel)
     {
         craftData.shotPower += powerLevel;
         if (craftData.shotPower > 8)
-            craftData.shotPower = (char)8;
+            craftData.shotPower = 8;
     }
+
+    public void IncreaseScore(int value)
+    {
+        GameManager.Instance.playerDatas[playerIndex].score += value;
+    }
+
+    public void OneUp()
+    {
+        GameManager.Instance.playerDatas[playerIndex].lives++;
+    }
+
+    public void AddBomb(int power)
+    {
+        if (power == 1)
+            craftData.smallBombs++;
+        else if (power == 2)
+            craftData.largeBombs++;
+        else
+            Debug.LogError("Invalid bomb power pickup");
+    }
+
+    public void AddMedal(int level, int value)
+    {
+        IncreaseScore(value);
+    }
+
     public void PickUp(PickUp pickUp)
     {
         if (pickUp)
         {
-         pickUp.ProcessPickUp(playerIndex, craftData);
+            pickUp.ProcessPickUp(playerIndex, craftData);
         }
     }
 
@@ -267,7 +297,7 @@ public class Craft : MonoBehaviour
 
         EffectSystem.instance.CraftExplosion(transform.position);
         Destroy(gameObject);
-        GameManager.Instance.playerOneCraft = null;
+        GameManager.Instance.playerCrafts[0] = null;
 
         yield return null;
     }
@@ -324,18 +354,23 @@ public class Craft : MonoBehaviour
     }
 }
 
+[Serializable]
+
 public class CraftData
 {
     public float positionX;
     public float positionY;
 
-    public char shotPower;
+    public byte shotPower;
 
-    public char noOfEnabledOptions;
-    public char optionsLayout;
+    public byte noOfEnabledOptions;
+    public byte optionsLayout;
 
     public bool beamFiring;
-    public char beamPower; // power settings and width
-    public char beamCharge; // max charge (upgradable)
-    public char beamTimer; // current charge level (how much beam is left)
+    public byte beamPower; // power settings and width
+    public byte beamCharge; // max charge (upgradable)
+    public byte beamTimer; // current charge level (how much beam is left)
+
+    public byte smallBombs;
+    public byte largeBombs;
 }

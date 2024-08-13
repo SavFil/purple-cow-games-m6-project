@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 815ba3261fceae940b7dcb583de84342, type: 3}
-  m_Name: MediumCoin
+  m_Name: LargeBombs
   m_EditorClassIdentifier: 
-  type: 2
+  type: 1
   powerLevel: 1
-  bombPower: 1
+  bombPower: 2
   medalValue: 100
   fallSpeed: 0
-  coinValue: 10
+  coinValue: 1
   medalLevel: 1
   surplusValue: 100

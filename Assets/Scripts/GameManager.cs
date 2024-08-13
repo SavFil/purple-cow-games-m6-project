@@ -99,4 +99,9 @@ public class GameManager : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Stage01");
     }
+
+    public void PickUpFallOffScreen(PickUp pickup)
+    {
+
+    }
 }

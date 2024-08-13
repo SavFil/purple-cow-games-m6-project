@@ -33,6 +33,16 @@ public class PickUp : MonoBehaviour
     {
         //Move
         position.y -= config.fallSpeed;
+        if (GameManager.Instance && GameManager.Instance.progressWindow)
+        {
+            float posY = position.y - GameManager.Instance.progressWindow.transform.position.y;
+            if (posY <- 180) // Offscreen
+            {
+                GameManager.Instance.PickUpFallOffScreen(this);
+                Destroy(gameObject);
+                return;
+            }
+        }
         transform.position = position;
     }
 
@@ -42,14 +52,52 @@ public class PickUp : MonoBehaviour
         {
             case PickUpType.Coin:
                 {
-                    GameManager.Instance.playerDatas[playerIndex].score += config.coinValue;
+                    GameManager.Instance.playerCrafts[playerIndex].IncreaseScore(config.coinValue);
                     break;
                 }
-                case PickUpType.PowerUp:
+            case PickUpType.PowerUp:
                 {
-                    GameManager.Instance.playerOneCraft.PowerUp((char)config.powerLevel);
+                    GameManager.Instance.playerCrafts[playerIndex].PowerUp((byte)config.powerLevel);
                     break;
                 }
+
+            case PickUpType.Lives:
+                {
+                    GameManager.Instance.playerCrafts[playerIndex].OneUp();
+                    break;
+                }
+
+            case PickUpType.Secret:
+                {
+                    GameManager.Instance.playerCrafts[playerIndex].IncreaseScore(config.coinValue);
+                    break;
+                }
+
+            case PickUpType.BeamUp:
+                {
+                    GameManager.Instance.playerCrafts[playerIndex].IncreaseBeamStrength();
+                    break;
+                }
+
+            case PickUpType.Options:
+                {
+                    GameManager.Instance.playerCrafts[playerIndex].AddOption();
+                    break;
+                }
+
+            case PickUpType.Bomb:
+                {
+                    GameManager.Instance.playerCrafts[playerIndex].AddBomb(config.bombPower);
+                    break;
+                }
+
+            case PickUpType.Medal:
+                {
+                    GameManager.Instance.playerCrafts[playerIndex].AddMedal(config.medalLevel, 
+                                                                            config.medalValue);
+                    break;
+                }
+
             default:
                 {
                     Debug.LogError("Unprocessed config type: " + config.type);
