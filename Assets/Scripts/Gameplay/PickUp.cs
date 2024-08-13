@@ -27,11 +27,15 @@ public class PickUp : MonoBehaviour
     private void OnEnable()
     {
         position = transform.position;
+        velocity.x = Random.Range(-4, 4);
+        velocity.y = Random.Range(-4, 4);
     }
 
     private void FixedUpdate()
     {
         //Move
+        position += velocity;
+        velocity /= 1.3f;
         position.y -= config.fallSpeed;
         if (GameManager.Instance && GameManager.Instance.progressWindow)
         {
