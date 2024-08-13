@@ -66,8 +66,6 @@ public class Craft : MonoBehaviour
             ~LayerMask.GetMask("GroundEnemy");
 
         pickUpLayer = LayerMask.NameToLayer("PickUp");
-
-        craftData.beamCharge = 100;
     }
 
     public void SetInvulnerable()
@@ -95,17 +93,36 @@ public class Craft : MonoBehaviour
         // Hit Detection
         int maxColliders = 10;
         Collider[] hits = new Collider[maxColliders];
+
+        // Bullet hits
         Vector2 halfSize = new Vector2(3f, 4f);
         int noOfhits = Physics.OverlapBoxNonAlloc(transform.position, halfSize, hits, Quaternion.identity, layerMask);
-        foreach (Collider hit in hits)
+        if (noOfhits > 0)
         {
-            if (hit)
+            foreach (Collider hit in hits)
             {
-                if (hit.gameObject.layer == pickUpLayer)
-                    PickUp(hit.GetComponent<PickUp>());
-                else
+                if (hit)
                 {
-                    Hit();
+                    if (hit.gameObject.layer != pickUpLayer)
+                        Hit();
+                }
+            }
+        }
+             
+        // Pickups and bullet grazing
+
+        halfSize = new Vector2(15f, 21f);
+        noOfhits = Physics.OverlapBoxNonAlloc(transform.position, halfSize, hits, Quaternion.identity, layerMask);
+        if (noOfhits > 0)
+        {
+            foreach (Collider hit in hits)
+            {
+                if (hit)
+                {
+                    if (hit.gameObject.layer == pickUpLayer)
+                        PickUp(hit.GetComponent<PickUp>());
+                    else // Bullet graze
+                        craftData.beamCharge++;
                 }
             }
         }
@@ -368,7 +385,7 @@ public class CraftData
 
     public bool beamFiring;
     public byte beamPower; // power settings and width
-    public byte beamCharge; // max charge (upgradable)
+    public byte beamCharge; // picked by charge
     public byte beamTimer; // current charge level (how much beam is left)
 
     public byte smallBombs;
