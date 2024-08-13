@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5049327723990301002, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: m_Name
       value: Asteroid (4)
@@ -14672,6 +14676,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5049327723990301002, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: m_Name
       value: Asteroid (8)
@@ -14799,6 +14807,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: spawnSpecificPickup.Array.size
       value: 1
@@ -15079,6 +15091,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5049327723990301002, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: m_Name
       value: Asteroid (3)
@@ -15161,6 +15177,18 @@ PrefabInstance:
       propertyPath: damagedByBullets
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.data[0]
+      value: 
+      objectReference: {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
     - target: {fileID: 5049327723990301002, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
       propertyPath: m_Name
       value: AsteroidLarge (1)
@@ -15230,6 +15258,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5049327723990301002, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: m_Name
       value: Asteroid (7)
@@ -15307,6 +15339,18 @@ PrefabInstance:
       propertyPath: damagedByBullets
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.data[0]
+      value: 
+      objectReference: {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
     - target: {fileID: 5049327723990301002, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
       propertyPath: m_Name
       value: AsteroidLarge (3)
@@ -15384,6 +15428,18 @@ PrefabInstance:
       propertyPath: damagedByBullets
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.data[0]
+      value: 
+      objectReference: {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
     - target: {fileID: 5049327723990301002, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
       propertyPath: m_Name
       value: AsteroidLarge (4)
@@ -15800,6 +15856,14 @@ PrefabInstance:
       propertyPath: spawnCyclicPickup
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.data[0]
+      value: 
+      objectReference: {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
     - target: {fileID: 5049327723990301002, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
       propertyPath: m_Name
       value: AsteroidLarge
@@ -16015,6 +16079,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5049327723990301002, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: m_Name
       value: Asteroid (9)
@@ -16138,6 +16206,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5049327723990301002, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: m_Name
       value: Asteroid (5)
@@ -16207,6 +16279,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5049327723990301002, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: m_Name
       value: Asteroid (2)
@@ -16276,6 +16352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5049327723990301002, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: m_Name
       value: Asteroid
@@ -16416,6 +16496,18 @@ PrefabInstance:
       propertyPath: damagedByBullets
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233604308845944037, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
+      propertyPath: spawnSpecificPickup.Array.data[0]
+      value: 
+      objectReference: {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
     - target: {fileID: 5049327723990301002, guid: 2167fb7bdcc59fa45bb6243819bf5974, type: 3}
       propertyPath: m_Name
       value: AsteroidLarge (2)
@@ -21305,6 +21397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461378548}
     m_Modifications:
+    - target: {fileID: 3233604308845944037, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
+      propertyPath: spawnCyclicPickup
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5049327723990301002, guid: 06a16be8e170aa54f92256c0d0e133c5, type: 3}
       propertyPath: m_Name
       value: Asteroid (6)
