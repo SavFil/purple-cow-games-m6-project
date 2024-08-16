@@ -19,7 +19,7 @@ public class Shootable : MonoBehaviour
 
     private void Start()
     {
-        layerMask = ~LayerMask.GetMask("Enemy") & ~LayerMask.GetMask("EnemyBullets");
+        layerMask = ~LayerMask.GetMask("Enemy") & ~LayerMask.GetMask("GroundEnemy") & ~LayerMask.GetMask("EnemyBullets");
 
         halfExtent = new Vector3(radiusOrWidth / 2, height / 2, 1);
     }
