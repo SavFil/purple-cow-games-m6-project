@@ -38,11 +38,16 @@ public class BulletSpawner : MonoBehaviour
     public void Shoot(int size)
     {
         if (size < 0) return;
-        
-        // this code checks bounds to make turrets shoot or not based on their vertical position on the screen to adjust fairness..
+
+        // this code checks bounds to make turrets shoot or not based on their position on the screen to make them shoot or not..
         // the bounds need adjustment 
         //if (!isPlayer)
         //{
+        //float x = transform.position.x;
+        //if (GameManager.Instance && GameManager.Instance.progressWindow)
+        //    x -= GameManager.Instance.progressWindow.data.positionX;
+        //if (char < -110 || x > 110)
+        //    return;
         //    float y = transform.position.y;
         //    if (GameManager.Instance && GameManager.Instance.progressWindow)
         //    {

@@ -80,6 +80,9 @@ MonoBehaviour:
   radiusOrWidth: 12
   height: 10
   box: 0
+  damagedByBullets: 1
+  damagedByBeams: 1
+  damagedByBombs: 1
 --- !u!1 &6459982791919856870
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,17 +241,18 @@ MonoBehaviour:
     emmitFrames: 000000000200000004000000
     totalFrames: 10
   rate: 30
-  speed: 1
+  speed: 4
   startAngle: 0
   endAngle: 0
   radialNumber: 1
   dAngle: 0
   muzzleFlash: {fileID: 2293839730220326849, guid: 4a6884e4536428d43a985884cfc88b73, type: 3}
   autoFireActive: 0
-  fireAtPlayer: 1
+  fireAtPlayer: 0
   fireAtTarget: 0
   target: {fileID: 0}
   homing: 0
+  isPlayer: 0
 --- !u!1 &8240263691909380934
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,10 +302,10 @@ MonoBehaviour:
     eventOnStart:
       m_PersistentCalls:
         m_Calls: []
-    eventonEnd:
+    eventOnEnd:
       m_PersistentCalls:
         m_Calls: []
-    eventofTime:
+    eventOnTime:
       m_PersistentCalls:
         m_Calls: []
     userTimer: 0
@@ -322,22 +326,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    eventonEnd:
+    eventOnEnd:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 774498511397816816}
-          m_TargetAssemblyTypeName: BulletSpawner, Assembly-CSharp
-          m_MethodName: DeActivate
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    eventofTime:
+        m_Calls: []
+    eventOnTime:
       m_PersistentCalls:
         m_Calls: []
     userTimer: 0
