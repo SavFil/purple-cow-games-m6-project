@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AnimatedChar : MonoBehaviour
 {
     public Sprite[] charSprites;
     public SpriteRenderer spriteRenderer;
+    private Image image;
 
     public int digit = 0;
     private int frame = 0;
@@ -16,23 +18,33 @@ public class AnimatedChar : MonoBehaviour
 
     public int noOfCharacters;
     public int noOfFrames;
-    
+
     public float FPS = 10f;
     private float timer;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        Debug.Assert(spriteRenderer != null);
+        if (!spriteRenderer)
+        {
+            image = GetComponent<Image>();
+            Debug.Assert(image != null);
+        }
         timer = 1f / FPS;
-        UpdateSprite(0);
+        UpdateSprite();
     }
 
-    public void UpdateSprite(int newFrame)
+    public void UpdateSprite()
     {
-        int loopedFrame = (newFrame + offset) % noOfFrames;
+        int loopedFrame = (frame + offset) % noOfFrames;
         int spriteIndex = digit + (loopedFrame * noOfCharacters);
-        spriteRenderer.sprite = charSprites[spriteIndex];
+        if (spriteIndex >= 0 && spriteIndex < charSprites.Length)
+        {
+            if (spriteRenderer)
+                spriteRenderer.sprite = charSprites[spriteIndex];
+            else if (image)
+                image.sprite = charSprites[spriteIndex];
+        }
     }
 
     void Update()
@@ -43,11 +55,11 @@ public class AnimatedChar : MonoBehaviour
         {
             timer = 1f / FPS;
             frame++;
-            if (frame>=noOfFrames)
+            if (frame >= noOfFrames)
             {
                 frame = 0;
             }
-            UpdateSprite(frame);
+            UpdateSprite();
         }
     }
 }
