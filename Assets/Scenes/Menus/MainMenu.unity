@@ -879,7 +879,7 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 540
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 32
@@ -2305,8 +2305,6 @@ MonoBehaviour:
   ROOT: {fileID: 1249189717}
   previousMenu: {fileID: 0}
   previousItem: {fileID: 0}
-  canvasGroup: {fileID: 0}
-  duration: 1
 --- !u!1 &2073522324
 GameObject:
   m_ObjectHideFlags: 0
