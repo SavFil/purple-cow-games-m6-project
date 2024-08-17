@@ -12,7 +12,6 @@ public class Beam : MonoBehaviour
     public GameObject beamFlash = null;
     public GameObject[] beamHits = new GameObject[5];
 
-    const int MINIMUMCHARGE = 10;
 
     private void Start()
     {
@@ -22,21 +21,13 @@ public class Beam : MonoBehaviour
     {
         if (!craft.craftData.beamFiring)
         {
-            if (craft.craftData.beamCharge > MINIMUMCHARGE)
-            {
-                craft.craftData.beamFiring = true;
-                craft.craftData.beamTimer = craft.craftData.beamCharge;
-                craft.craftData.beamCharge = 0;
-                UpdateBeam();
-                float scale = beamWidth / 30;
-                beamFlash.transform.localScale = new Vector3(scale, scale, 1);
-                gameObject.SetActive(true);
-                beamFlash.SetActive(true);
-            }
-            else
-            {
-                UpdateBeam();
-            }
+            craft.craftData.beamFiring = true;
+            craft.craftData.beamTimer = craft.craftData.beamCharge;
+            UpdateBeam();
+            float scale = beamWidth / 30;
+            beamFlash.transform.localScale = new Vector3(scale, scale, 1);
+            gameObject.SetActive(true);
+            beamFlash.SetActive(true);
         }
     }
 
@@ -50,7 +41,7 @@ public class Beam : MonoBehaviour
 
     void UpdateBeam()
     {
-        if (craft.craftData.beamTimer>0) craft.craftData.beamTimer--;
+        craft.craftData.beamTimer--;
         if (craft.craftData.beamTimer == 0)
         {
             craft.craftData.beamFiring = false;

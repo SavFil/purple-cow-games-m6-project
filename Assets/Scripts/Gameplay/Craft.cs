@@ -33,7 +33,6 @@ public class Craft : MonoBehaviour
     SpriteRenderer spriteRenderer = null;
 
     int layerMask = 0;
-    int pickUpLayer = 0;
 
     public BulletSpawner[] bulletSpawner = new BulletSpawner[5];
 
@@ -65,7 +64,7 @@ public class Craft : MonoBehaviour
             ~LayerMask.GetMask("Player") &
             ~LayerMask.GetMask("GroundEnemy");
 
-        pickUpLayer = LayerMask.NameToLayer("PickUp");
+        craftData.beamCharge = (char)100;
     }
 
     public void SetInvulnerable()
@@ -93,38 +92,12 @@ public class Craft : MonoBehaviour
         // Hit Detection
         int maxColliders = 10;
         Collider[] hits = new Collider[maxColliders];
-
-        // Bullet hits
         Vector2 halfSize = new Vector2(3f, 4f);
         int noOfhits = Physics.OverlapBoxNonAlloc(transform.position, halfSize, hits, Quaternion.identity, layerMask);
         if (noOfhits > 0)
         {
-            foreach (Collider hit in hits)
-            {
-                if (hit)
-                {
-                    if (hit.gameObject.layer != pickUpLayer)
-                        Hit();
-                }
-            }
-        }
-             
-        // Pickups and bullet grazing
-
-        halfSize = new Vector2(15f, 21f);
-        noOfhits = Physics.OverlapBoxNonAlloc(transform.position, halfSize, hits, Quaternion.identity, layerMask);
-        if (noOfhits > 0)
-        {
-            foreach (Collider hit in hits)
-            {
-                if (hit)
-                {
-                    if (hit.gameObject.layer == pickUpLayer)
-                        PickUp(hit.GetComponent<PickUp>());
-                    else // Bullet graze
-                        craftData.beamCharge++;
-                }
-            }
+            if (!invulnerable)
+                Explode();
         }
 
         // Movement
@@ -230,7 +203,7 @@ public class Craft : MonoBehaviour
                 craftData.optionsLayout++;
                 if (craftData.optionsLayout > 3)
                 {
-                    craftData.optionsLayout = 0;
+                    craftData.optionsLayout = (char)0;
                 }
                 SetOptionsLayout(craftData.optionsLayout);
             }
@@ -240,59 +213,9 @@ public class Craft : MonoBehaviour
 
     private void FireBomb()
     {
-        if (craftData.smallBombs > 0)
-        {
-            craftData.smallBombs--;
-            Vector3 pos = transform.position;
-            pos.y += 100;
-            Instantiate(bombPrefab, pos, Quaternion.identity);
-        }
-    }
-
-    public void PowerUp(byte powerLevel)
-    {
-        craftData.shotPower += powerLevel;
-        if (craftData.shotPower > 8)
-            craftData.shotPower = 8;
-    }
-
-    public void IncreaseScore(int value)
-    {
-        GameManager.Instance.playerDatas[playerIndex].score += value;
-    }
-
-    public void OneUp()
-    {
-        GameManager.Instance.playerDatas[playerIndex].lives++;
-    }
-
-    public void AddBomb(int power)
-    {
-        if (power == 1)
-            craftData.smallBombs++;
-        else if (power == 2)
-            craftData.largeBombs++;
-        else
-            Debug.LogError("Invalid bomb power pickup");
-    }
-
-    public void AddMedal(int level, int value)
-    {
-        IncreaseScore(value);
-    }
-
-    public void PickUp(PickUp pickUp)
-    {
-        if (pickUp)
-        {
-            pickUp.ProcessPickUp(playerIndex, craftData);
-        }
-    }
-
-    public void Hit()
-    {
-        if (!invulnerable)
-            Explode();
+        Vector3 pos = transform.position;
+        pos.y += 100;
+        Instantiate(bombPrefab, pos, Quaternion.identity);
     }
 
     public void Explode()
@@ -314,7 +237,7 @@ public class Craft : MonoBehaviour
 
         EffectSystem.instance.CraftExplosion(transform.position);
         Destroy(gameObject);
-        GameManager.Instance.playerCrafts[0] = null;
+        GameManager.Instance.playerOneCraft = null;
 
         yield return null;
     }
@@ -371,23 +294,18 @@ public class Craft : MonoBehaviour
     }
 }
 
-[Serializable]
-
 public class CraftData
 {
     public float positionX;
     public float positionY;
 
-    public byte shotPower;
+    public char shotPower;
 
-    public byte noOfEnabledOptions;
-    public byte optionsLayout;
+    public char noOfEnabledOptions;
+    public char optionsLayout;
 
     public bool beamFiring;
-    public byte beamPower; // power settings and width
-    public byte beamCharge; // picked by charge
-    public byte beamTimer; // current charge level (how much beam is left)
-
-    public byte smallBombs;
-    public byte largeBombs;
+    public char beamPower; // power settings and width
+    public char beamCharge; // max charge (upgradable)
+    public char beamTimer; // current charge level (how much beam is left)
 }
