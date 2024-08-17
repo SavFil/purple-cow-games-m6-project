@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     public LevelProgress progressWindow = null;
 
+    public Session gameSession = new Session();
 
     //TESTING RESOLUTION\
     public Resolution resolution4K;

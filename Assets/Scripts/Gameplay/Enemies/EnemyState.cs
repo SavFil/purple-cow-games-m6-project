@@ -19,15 +19,15 @@ public class EnemyState
     [Space(10)]
     [Header("--End Events--")]
     [Space(10)]
-    public UnityEvent eventonEnd   = null;
+    public UnityEvent eventOnEnd = null;
 
     [Space(10)]
     [Header("--Timer Events--")]
     [Space(10)]
-    public UnityEvent eventofTime  = null;
+    public UnityEvent eventOnTime = null;
 
-    public bool   userTimer   = false;
-    public float  timer       = 0;
+    public bool userTimer = false;
+    public float timer = 0;
     private float currentTime = 0;
 
     public void Enable()
@@ -37,6 +37,6 @@ public class EnemyState
 
     public void Disable()
     {
-        eventonEnd.Invoke();
+        eventOnEnd.Invoke();
     }
 }
