@@ -1,9 +1,15 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CraftSelectMenu : Menu
 {
     public static CraftSelectMenu Instance { get; private set; }
+
+
+    [Header("FADE CANVAS")]
+    public CanvasGroup canvasGroup = null;
+    private float duration = .5f;
 
     private void Start()
     {
@@ -20,11 +26,36 @@ public class CraftSelectMenu : Menu
 
     public void OnPlayButton()
     {
-        GameManager.Instance.StartGame();
+        StartCoroutine(FadeCutscene());
     }
 
     public void OnBackButton()
     {
         TurnOff(true);
+    }
+
+
+
+    IEnumerator FadeCutscene()
+    {
+        canvasGroup.interactable = false;
+        canvasGroup.LeanAlpha(0, duration);
+        while (canvasGroup.alpha > 0)
+        {
+            
+            yield return null;
+        }
+        //canvasGroup.alpha = 0;
+        TurnOff(false);
+
+        yield return new WaitForSeconds(duration);
+        CutSceneMenu.Instance.TurnOn(this);
+        CutSceneMenu.Instance.canvasGroup.LeanAlpha(1, CutSceneMenu.Instance.duration);
+        while (CutSceneMenu.Instance.canvasGroup.alpha <1)
+        {
+            
+            yield return null;
+        }
+        StartCoroutine(CutSceneMenu.Instance.CutsceneSequence());
     }
 }

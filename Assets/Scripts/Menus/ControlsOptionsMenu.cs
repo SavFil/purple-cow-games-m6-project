@@ -7,6 +7,7 @@ public class ControlsOptionsMenu : Menu
 {
     public static ControlsOptionsMenu Instance { get; private set; }
 
+    [Header("CONTROL OPTION SETTINGS")]
     public Button[] p1_buttons = new Button[8];
     public Button[] p2_buttons = new Button[8];
     public Button[] p1_keys = new Button[12];

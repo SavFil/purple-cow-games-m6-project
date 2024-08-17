@@ -232,6 +232,8 @@ MonoBehaviour:
   ROOT: {fileID: 1418482620}
   previousMenu: {fileID: 0}
   previousItem: {fileID: 0}
+  canvasGroup: {fileID: 0}
+  duration: 1
   whichPlayer: 0
   textUI: {fileID: 1067822551}
 --- !u!4 &244605873
