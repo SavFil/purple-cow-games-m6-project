@@ -250,10 +250,10 @@ public class BulletManager : MonoBehaviour
             x = x + dX;
             y = y + dY;
 
-            // Check for out of bounds
+            // Check for out of bounds - numbers might need adgustment
             if (x < -320) active = false;
             if (x > 320) active = false;
-            if (y-progessY < -180) active = false;
+            if (y - progessY < -300) active = false;
             if (y-progessY > 180) active = false;
 
             bullets[index] = new BulletData(x, y, dX, dY, angle, dAngle, type, active, homing);
