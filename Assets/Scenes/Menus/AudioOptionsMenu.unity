@@ -2389,6 +2389,8 @@ MonoBehaviour:
   ROOT: {fileID: 1249189717}
   previousMenu: {fileID: 0}
   previousItem: {fileID: 0}
+  canvasGroup: {fileID: 0}
+  duration: 1
 --- !u!1 &1790887214
 GameObject:
   m_ObjectHideFlags: 0

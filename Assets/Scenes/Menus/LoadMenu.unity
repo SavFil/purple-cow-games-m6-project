@@ -482,6 +482,8 @@ MonoBehaviour:
   ROOT: {fileID: 396132517}
   previousMenu: {fileID: 0}
   previousItem: {fileID: 0}
+  canvasGroup: {fileID: 0}
+  duration: 1
 --- !u!4 &1546816582
 Transform:
   m_ObjectHideFlags: 0

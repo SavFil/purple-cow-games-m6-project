@@ -45,5 +45,7 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("YesNoMenu", LoadSceneMode.Additive);
         SceneManager.LoadScene("TitleScreenMenu", LoadSceneMode.Additive);
         SceneManager.LoadScene("ControllerMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("CutSceneMenu", LoadSceneMode.Additive);
+        
     }
 }

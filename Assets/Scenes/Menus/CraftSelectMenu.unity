@@ -1816,6 +1816,7 @@ GameObject:
   - component: {fileID: 941003075}
   - component: {fileID: 941003074}
   - component: {fileID: 941003073}
+  - component: {fileID: 941003076}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1908,6 +1909,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!225 &941003076
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941003071}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &965503340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,6 +3838,7 @@ MonoBehaviour:
   ROOT: {fileID: 1249189717}
   previousMenu: {fileID: 0}
   previousItem: {fileID: 0}
+  canvasGroup: {fileID: 941003076}
 --- !u!1 &1851813556
 GameObject:
   m_ObjectHideFlags: 0

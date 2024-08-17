@@ -15080,6 +15080,8 @@ MonoBehaviour:
   ROOT: {fileID: 1249189717}
   previousMenu: {fileID: 0}
   previousItem: {fileID: 0}
+  canvasGroup: {fileID: 0}
+  duration: 1
   p1_buttons:
   - {fileID: 1673522804}
   - {fileID: 165020828}

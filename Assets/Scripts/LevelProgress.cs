@@ -44,7 +44,7 @@ public class LevelProgress : MonoBehaviour
     }
     void UpdateProgressWindow(float shipX, float movement)
     {
-        data.positionX += shipX / 500f; 
+        data.positionX = shipX / 10f;
         data.positionY += movement;
         transform.position = new Vector3(data.positionX, data.positionY, 0);
     }

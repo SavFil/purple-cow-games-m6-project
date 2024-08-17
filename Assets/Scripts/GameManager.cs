@@ -19,6 +19,11 @@ public class GameManager : MonoBehaviour
 
     public LevelProgress progressWindow = null;
 
+
+    //TESTING RESOLUTION\
+    public Resolution resolution4K;
+    public Resolution resolutionFHD;
+
     private void Awake()
     {
         if (Instance)
@@ -37,7 +42,28 @@ public class GameManager : MonoBehaviour
         bulletManager = GetComponent<BulletManager>();
 
         Application.targetFrameRate = 60;
+
+
+        //TESTING RESOLUTION\
+        
+        resolution4K.width = 3840;
+        resolution4K.height = 2160;
+        resolution4K.refreshRate = 60;
+
+        resolutionFHD.width = 1920;
+        resolutionFHD.height = 1080;
+        resolutionFHD.refreshRate = 60;
+
+        SetResolution(resolution4K);
     }
+
+
+    //TESTING RESOLUTION\
+    public void SetResolution(Resolution res)
+    {
+        Screen.SetResolution(res.width, res.height, FullScreenMode.ExclusiveFullScreen, res.refreshRate);
+    }
+
 
     public void SpawnPlayer(int playerIndex, int craftType)
     {
@@ -89,6 +115,6 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Stage01");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("StageGeneral");
     }
 }
