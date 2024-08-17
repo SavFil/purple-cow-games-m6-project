@@ -6,19 +6,20 @@ using UnityEngine;
 public class WaveTrigger : MonoBehaviour
 {
     public EnemyPattern[] patterns = null;
+    public float[] delays = null;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SpawnWave();
-        Debug.Log("trigger");
+        StartCoroutine(SpawnWave());
     }
 
-    private void SpawnWave()
+    IEnumerator SpawnWave()
     {
+        int i = 0;
         foreach (EnemyPattern pattern in patterns)
         {
             Session.Hardness hardness = GameManager.Instance.gameSession.hardness;
-
+            if (delays!=null && i<delays.Length) yield return new WaitForSeconds(delays[i]);
             if (pattern.spawnOnEasy && hardness == Session.Hardness.Easy)
                 pattern.Spawn();
             if (pattern.spawnOnNormal && hardness == Session.Hardness.Normal)
@@ -27,6 +28,7 @@ public class WaveTrigger : MonoBehaviour
                 pattern.Spawn();
             if (pattern.spawnOnInsane && hardness == Session.Hardness.Insane)
                 pattern.Spawn();
+            i++;
         }
     }
 
