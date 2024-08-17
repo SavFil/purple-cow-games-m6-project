@@ -16,8 +16,9 @@ public class AnimatedNumber : MonoBehaviour
     }
 
     // Update is called once per frame
-    void UpdateNumber(int newNumberToDisplay)
+    public void UpdateNumber(int newNumberToDisplay)
     {
+        Debug.Log("update score " + newNumberToDisplay);
         NumberToDisplay = newNumberToDisplay;
         string numbers = NumberToDisplay.ToString();
         int d = numbers.Length - 1;
