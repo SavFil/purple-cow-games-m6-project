@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NoirToColorBlock3Mat
-  m_Shader: {fileID: -6465566751694194690, guid: c927c72cbb6f14c4bb7a991f0b718ea5, type: 3}
+  m_Name: TallGrassMat
+  m_Shader: {fileID: -6465566751694194690, guid: e8073d51efe168442bc703d5bdfb49b9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a564eccbb88fe5a46bdc7f4131289be9, type: 3}
+        m_Texture: {fileID: 2800000, guid: b8303b70ff924ec41ae78556bee852a3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -35,11 +35,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - Vector1_207f82e1b92346108ad11d91d391589b: 1.5
-    - _Opacity: 0
-    - _Saturation: 0
-    m_Colors:
-    - Color_7ea0385106aa4fffbb52e96e5d7b22fd: {r: 1, g: 1, b: 1, a: 1}
-    - Color_86aa211318b24a57a7f21cfcd737d478: {r: 0, g: 0, b: 0, a: 0}
+    m_Floats: []
+    m_Colors: []
   m_BuildTextureStacks: []
