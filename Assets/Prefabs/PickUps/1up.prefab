@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 250782328296364613}
   - component: {fileID: 250782328296364610}
   - component: {fileID: 250782328296364611}
-  - component: {fileID: 920196006276670647}
+  - component: {fileID: -7975292037410737049}
   m_Layer: 12
   m_Name: 1up
   m_TagString: Untagged
@@ -99,16 +99,19 @@ MonoBehaviour:
   config: {fileID: 11400000, guid: c95eab3441a46694fa933738aaf85b89, type: 2}
   position: {x: 0, y: 0}
   velocity: {x: 0, y: 0}
---- !u!135 &920196006276670647
-SphereCollider:
+--- !u!58 &-7975292037410737049
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250782328296364608}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 14.5
-  m_Center: {x: 0, y: 0, z: 0}

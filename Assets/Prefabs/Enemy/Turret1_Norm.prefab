@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2934746843943069238}
   - component: {fileID: 2897793673980360307}
   - component: {fileID: 3692089713669467407}
-  - component: {fileID: 7402964246246876360}
+  - component: {fileID: 3830549763125127029}
   m_Layer: 11
   m_Name: TurretBase
   m_TagString: Untagged
@@ -113,20 +113,39 @@ MonoBehaviour:
   health: 10
   radiusOrWidth: 10
   height: 10
-  box: 0
---- !u!65 &7402964246246876360
-BoxCollider:
+  box: 1
+  polygon: 0
+  damagedByBullets: 1
+  damagedByBeams: 1
+  damagedByBombs: 1
+  spawnCyclicPickup: 0
+  spawnSpecificPickup: []
+--- !u!61 &3830549763125127029
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3160221708978470906}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 22, y: 23}
+    newSize: {x: 22, y: 23}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22, y: 23, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 22, y: 23}
+  m_EdgeRadius: 0
 --- !u!1 &3647463517160160247
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +304,7 @@ MonoBehaviour:
   fireAtTarget: 0
   target: {fileID: 0}
   homing: 0
+  isPlayer: 0
 --- !u!1 &7360106129959843332
 GameObject:
   m_ObjectHideFlags: 0

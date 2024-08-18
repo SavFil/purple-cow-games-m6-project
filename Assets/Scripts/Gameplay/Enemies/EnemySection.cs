@@ -23,4 +23,22 @@ public class EnemySection : MonoBehaviour
                 state.Disable();
         }
     }
+
+    public void TimeOutMessage()
+    {
+        Enemy enemy = transform.parent.GetComponent<Enemy>();
+        if (enemy)
+            enemy.TimeOutDestruct();
+    }
+
+    public void UpdateStateTimers()
+    {
+        foreach(EnemyState state in states)
+        {
+            if (state.active)
+            {
+                state.IncrementTime();
+            }
+        }
+    }
 }

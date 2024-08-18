@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4527144528028949814}
   - component: {fileID: 4527144528028949815}
   - component: {fileID: 4527144528028949816}
-  - component: {fileID: 1796222021497655701}
+  - component: {fileID: 9082008336493511238}
   m_Layer: 12
   m_Name: LaserBeam
   m_TagString: Untagged
@@ -99,16 +99,19 @@ MonoBehaviour:
   config: {fileID: 11400000, guid: 6604fa5dd3f507e4ca99bc49524e9e18, type: 2}
   position: {x: 0, y: 0}
   velocity: {x: 0, y: 0}
---- !u!135 &1796222021497655701
-SphereCollider:
+--- !u!58 &9082008336493511238
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4527144528028949817}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 15
-  m_Center: {x: 0, y: 0, z: 0}
