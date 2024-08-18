@@ -48,6 +48,8 @@ public class Craft : MonoBehaviour
 
     public GameObject bombPrefab = null;
 
+    public AudioSource audioSource;
+
 
     private void Start()
     {
@@ -66,6 +68,8 @@ public class Craft : MonoBehaviour
             ~LayerMask.GetMask("GroundEnemy");
 
         pickUpLayer = LayerMask.NameToLayer("PickUp");
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void SetInvulnerable()
@@ -198,6 +202,7 @@ public class Craft : MonoBehaviour
             if (InputManager.Instance.playerState[playerIndex].shoot)
             {
                 ShotConfiguration shotConfig = config.shotLevel[craftData.shotPower];
+                PlaySFX();
                 for (int s = 0; s < 5; s++)
                 {
                     bulletSpawner[s].Shoot(shotConfig.spawnerSizes[s]);
@@ -235,6 +240,18 @@ public class Craft : MonoBehaviour
                 SetOptionsLayout(craftData.optionsLayout);
             }
 
+        }
+    }
+
+    private void PlaySFX()
+    {
+        if (audioSource != null && audioSource.clip != null)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or AudioClip is missing.");
         }
     }
 
