@@ -20,7 +20,6 @@ public class AnimatedChar : MonoBehaviour
     [Header("Animation Settings")]
     public Sprite[] charSprites;
     public SpriteRenderer spriteRenderer;
-
     private Image image;
 
     public int digit = 0;
@@ -38,29 +37,25 @@ public class AnimatedChar : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-
         if (!spriteRenderer)
         {
             image = GetComponent<Image>();
             Debug.Assert(image != null);
         }
-
-        //Debug.Assert(spriteRenderer != null);
         timer = 1f / FPS;
-        UpdateSprite(0);
+        UpdateSprite();
     }
 
-    public void UpdateSprite(int newFrame)
+    public void UpdateSprite()
     {
-        int loopedFrame = (newFrame + offset) % noOfFrames;
+        int loopedFrame = (frame + offset) % noOfFrames;
         int spriteIndex = digit + (loopedFrame * noOfCharacters);
-        if (spriteRenderer)
+        if (spriteIndex >= 0 && spriteIndex < charSprites.Length)
         {
-            spriteRenderer.sprite = charSprites[spriteIndex];
-        }
-        else if (image)
-        {
-            image.sprite = charSprites[spriteIndex];
+            if (spriteRenderer)
+                spriteRenderer.sprite = charSprites[spriteIndex];
+            else if (image)
+                image.sprite = charSprites[spriteIndex];
         }
     }
 
@@ -73,7 +68,6 @@ public class AnimatedChar : MonoBehaviour
         {
             timer = 1f / FPS;
             frame++;
-            
             if (frame >= noOfFrames)
             {
                 frame = 0;
@@ -83,7 +77,7 @@ public class AnimatedChar : MonoBehaviour
                     EndAnimation();
                 }
             }
-            UpdateSprite(frame);
+            UpdateSprite();
         }
     }
 
