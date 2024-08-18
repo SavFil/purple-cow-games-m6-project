@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PollBotomMat
-  m_Shader: {fileID: -6465566751694194690, guid: e8073d51efe168442bc703d5bdfb49b9, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: a3cd9d494b7b75e4da16e20336de67da, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
