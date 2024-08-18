@@ -34,6 +34,7 @@ public class EnemyPattern : MonoBehaviour
     [HideInInspector]
     public Quaternion lastAngle = Quaternion.identity;
 
+#if UNITY_EDITOR
     [MenuItem("GameObject/SHMUP/EnemyPattern", false, 10)]
     static void CreateEnemyPatternObject(MenuCommand menuCommand)
     {
@@ -52,11 +53,15 @@ public class EnemyPattern : MonoBehaviour
         else Debug.LogError("Could not find Helper");
     }
 
+#endif
+
+
     private void Start()
     {
         if (startActive)
             Spawn();
     }
+
     public void Spawn()
     {
         if (spawnedEnemy == null)

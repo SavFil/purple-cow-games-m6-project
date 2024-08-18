@@ -6,7 +6,7 @@ using UnityEngine;
 public class ControllerMenu : Menu
 {
     public static ControllerMenu Instance { get; private set; }
-
+    [Header ("CONTROLLER SETTINGS")]
     public int whichPlayer = 0;
 
     public TextMeshProUGUI textUI = null;

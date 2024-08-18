@@ -7,6 +7,17 @@ using UnityEngine.UI;
 
 public class AnimatedChar : MonoBehaviour
 {
+
+    public enum TypeOfAnimation
+    {
+        Number, Hit, Bullet
+    }
+    [Header("Type Of Animation")]
+    public TypeOfAnimation typeOfAnimation;
+    public bool notHavingLoop;
+    bool loopEnded;
+
+    [Header("Animation Settings")]
     public Sprite[] charSprites;
     public SpriteRenderer spriteRenderer;
     private Image image;
@@ -21,6 +32,7 @@ public class AnimatedChar : MonoBehaviour
 
     public float FPS = 10f;
     private float timer;
+
 
     void Start()
     {
@@ -47,8 +59,9 @@ public class AnimatedChar : MonoBehaviour
         }
     }
 
-    void Update()
+    public virtual void Update()
     {
+        if (notHavingLoop && loopEnded) return;
         timer -= Time.deltaTime;
 
         if (timer <= 0f)
@@ -58,8 +71,38 @@ public class AnimatedChar : MonoBehaviour
             if (frame >= noOfFrames)
             {
                 frame = 0;
+                if (notHavingLoop)
+                {
+                    loopEnded = true;
+                    EndAnimation();
+                }
             }
             UpdateSprite();
         }
     }
+
+    public void EndAnimation()
+    {
+        switch (typeOfAnimation)
+        {
+            case TypeOfAnimation.Number:
+                break;
+            case TypeOfAnimation.Hit:
+                Destroy(gameObject);
+                break;
+            case TypeOfAnimation.Bullet:
+                //need the bullet hit for the craft when the health system is implemented
+                //trial with no hit
+                Bullet bullet = gameObject.GetComponent<Bullet>();
+                if (bullet != null)
+                {
+                    GameManager.Instance.bulletManager.DeActivateBullet(bullet.index);
+                    loopEnded = false;
+                }
+                break;
+        }
+    }
+
+
+
 }
