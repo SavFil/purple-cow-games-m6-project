@@ -34,7 +34,7 @@ public class LevelProgress : MonoBehaviour
 
             if (player1craft == null)
             {
-                player1craft = GameManager.Instance.playerOneCraft;
+                player1craft = GameManager.Instance.playerCrafts[0];
             }
             if (player1craft)
             {

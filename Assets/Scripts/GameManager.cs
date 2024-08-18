@@ -13,13 +13,22 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] craftPrefabs;
 
-    public Craft playerOneCraft = null;
+    // public Craft playerOneCraft = null;
+    public Craft[] playerCrafts = new Craft[2];
+
+    public PlayerData[] playerDatas;
 
     public BulletManager bulletManager = null;
 
     public LevelProgress progressWindow = null;
 
     public Session gameSession = new Session();
+
+    public PickUp[] cyclicDrops = new PickUp[15];
+    public PickUp[] medals = new PickUp[10];
+    private int currentDropIndex = 0;
+    private int currentMedalIndex = 0;
+
 
     //TESTING RESOLUTION\
     public Resolution resolution4K;
@@ -33,6 +42,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        playerDatas = new PlayerData[2];
+        playerDatas[0] = new PlayerData();
+        playerDatas[1] = new PlayerData();
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
@@ -70,8 +83,8 @@ public class GameManager : MonoBehaviour
     {
         Debug.Assert(craftType < craftPrefabs.Length);
         Debug.Log("Spawning player " + playerIndex);
-        playerOneCraft = Instantiate(craftPrefabs[craftType]).GetComponent<Craft>();
-        playerOneCraft.playerIndex = playerIndex;
+        playerCrafts[playerIndex] = Instantiate(craftPrefabs[craftType]).GetComponent<Craft>();
+        playerCrafts[playerIndex].playerIndex = playerIndex;
     }
 
     //Debug code for testing purposes.
@@ -80,22 +93,22 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if (!playerOneCraft) SpawnPlayer(0, 0);
+            if (!playerCrafts[0]) SpawnPlayer(0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.O))
         {
-            if (playerOneCraft)
+            if (playerCrafts[0])
             {
-                playerOneCraft.AddOption();
+                playerCrafts[0].AddOption();
             }
         }
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            if (playerOneCraft && playerOneCraft.craftData.shotPower < CraftConfiguration.MAX_SHOT_POWER - 1)
+            if (playerCrafts[0] && playerCrafts[0].craftData.shotPower < CraftConfiguration.MAX_SHOT_POWER - 1)
             {
-                playerOneCraft.craftData.shotPower++;
+                playerCrafts[0].craftData.shotPower++;
             }
         }
 
@@ -107,9 +120,9 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightBracket))
         {
-            if (playerOneCraft)
+            if (playerCrafts[0])
             {
-                playerOneCraft.IncreaseBeamStrength();
+                playerCrafts[0].IncreaseBeamStrength();
             }
         }
     }
@@ -117,5 +130,32 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("StageGeneral");
+    }
+
+    public void PickUpFallOffScreen(PickUp pickup)
+    {
+        if (pickup.config.type == PickUp.PickUpType.Medal)
+        {
+            currentMedalIndex = 0;
+        }
+    }
+
+    public PickUp GetNextDrop()
+    {
+        PickUp result = cyclicDrops[currentDropIndex];
+
+        if (result.config.type == PickUp.PickUpType.Medal)
+        {
+            result = medals[currentMedalIndex];
+            currentMedalIndex++;
+            if (currentMedalIndex > 9)
+                currentMedalIndex = 0;
+        }
+
+        currentDropIndex++;
+        if (currentDropIndex > 14)
+            currentDropIndex = 0;
+
+        return result;
     }
 }
