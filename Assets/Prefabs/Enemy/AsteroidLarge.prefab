@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8292588961135893310}
   - component: {fileID: 3463456417817884514}
-  - component: {fileID: 6761757644490275631}
   - component: {fileID: 3233604308845944037}
+  - component: {fileID: 4086219757224350226}
   m_Layer: 11
   m_Name: AsteroidLarge
   m_TagString: Untagged
@@ -84,19 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!135 &6761757644490275631
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5049327723990301002}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 16
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3233604308845944037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +100,25 @@ MonoBehaviour:
   radiusOrWidth: 10
   height: 10
   box: 0
+  polygon: 0
   damagedByBullets: 1
   damagedByBeams: 1
   damagedByBombs: 1
+  spawnCyclicPickup: 0
+  spawnSpecificPickup: []
+--- !u!58 &4086219757224350226
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5049327723990301002}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 16

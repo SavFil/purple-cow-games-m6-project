@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7606973948108345729}
   - component: {fileID: 8701568265204700023}
   - component: {fileID: -1704924341014441084}
-  - component: {fileID: -2686911819622618806}
+  - component: {fileID: 5955995271413381123}
   m_Layer: 9
   m_Name: B12_S3
   m_TagString: Untagged
@@ -97,16 +97,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
---- !u!65 &-2686911819622618806
-BoxCollider:
+--- !u!61 &5955995271413381123
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6971599187452559974}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 6}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 7, y: 12}
+    newSize: {x: 33, y: 43}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7, y: 12, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 7, y: 12}
+  m_EdgeRadius: 0

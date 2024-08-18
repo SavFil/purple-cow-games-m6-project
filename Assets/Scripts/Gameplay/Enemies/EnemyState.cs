@@ -9,7 +9,7 @@ using UnityEngine.Events;
 public class EnemyState
 {
     public string stateName;
-    private bool active = false;
+    public bool active = false;
 
     [Space(10)]
     [Header("--Start Events--")]
@@ -26,17 +26,33 @@ public class EnemyState
     [Space(10)]
     public UnityEvent eventOnTime = null;
 
-    public bool userTimer = false;
+    public bool usesTimer = false;
     public float timer = 0;
     private float currentTime = 0;
 
     public void Enable()
     {
+        currentTime = 0;
         eventOnStart.Invoke();
+        active = true;
     }
 
     public void Disable()
     {
         eventOnEnd.Invoke();
+        active = false;
+    }
+
+    public void IncrementTime()
+    {
+        if (usesTimer)
+        {
+            currentTime++;
+            if (currentTime >= timer)
+            {
+                eventOnTime.Invoke();
+                currentTime = 0;
+            }
+        }
     }
 }

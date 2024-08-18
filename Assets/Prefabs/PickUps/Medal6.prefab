@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6129504931088552105}
   - component: {fileID: 4388435721364278719}
   - component: {fileID: 8487592036162695540}
-  - component: {fileID: 4217946512203574769}
+  - component: {fileID: 8728650276822222648}
   m_Layer: 12
   m_Name: Medal6
   m_TagString: Untagged
@@ -99,16 +99,19 @@ MonoBehaviour:
   config: {fileID: 11400000, guid: b964030a7052fb244aaad9e9759d9691, type: 2}
   position: {x: 0, y: 0}
   velocity: {x: 0, y: 0}
---- !u!135 &4217946512203574769
-SphereCollider:
+--- !u!58 &8728650276822222648
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7369875564571188623}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 6.5
-  m_Center: {x: 0, y: 0, z: 0}

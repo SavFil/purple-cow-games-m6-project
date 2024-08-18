@@ -50,7 +50,7 @@ public class Beam : MonoBehaviour
 
     void UpdateBeam()
     {
-        if (craft.craftData.beamTimer>0) craft.craftData.beamTimer--;
+        if (craft.craftData.beamTimer > 0) craft.craftData.beamTimer--;
         if (craft.craftData.beamTimer == 0)
         {
             craft.craftData.beamFiring = false;
@@ -67,14 +67,15 @@ public class Beam : MonoBehaviour
         }
 
         int maxColliders = 20;
-        Collider[] hits = new Collider[maxColliders];
+        Collider2D[] hits = new Collider2D[maxColliders];
         float middleY = (craft.transform.position.y + topY) * .5f;
         Vector2 halfSize = new Vector2(beamWidth * .5f, (topY - craft.transform.position.y) * .5f);
         Vector3 center = new Vector3(craft.transform.position.x, middleY, 0);
-        int noOfHits = Physics.OverlapBoxNonAlloc(center, halfSize, hits, Quaternion.identity, layerMask);
+        int noOfHits = Physics2D.OverlapBoxNonAlloc(center, halfSize, 0, hits, layerMask);
         float lowest = topY;
         Shootable lowestShootable = null;
-        Collider lowestCollider = null;
+        Collider2D lowestCollider = null;
+        const int MAXRAYHITS = 10;
         if (noOfHits > 0)
         {
             // Find lowest hit
@@ -84,14 +85,14 @@ public class Beam : MonoBehaviour
 
                 if (shootable && shootable.damagedByBeams)
                 {
-                    RaycastHit hitInfo;
-                    Ray ray = new Ray(craft.transform.position, Vector3.up);
+                    RaycastHit2D[] hitInfo = new RaycastHit2D[MAXRAYHITS];
+                    Vector2 ray = Vector3.up;
                     float height = topY - craft.transform.position.y;
-                    if (hits[hit].Raycast(ray, out hitInfo, height))
+                    if (hits[hit].Raycast(ray, hitInfo, height) > 0)
                     {
-                        if (hitInfo.point.y < lowest)
+                        if (hitInfo[0].point.y < lowest)
                         {
-                            lowest = hitInfo.point.y;
+                            lowest = hitInfo[0].point.y;
                             lowestShootable = hits[hit].GetComponent<Shootable>();
                             lowestCollider = hits[hit];
                         }
@@ -108,11 +109,11 @@ public class Beam : MonoBehaviour
 
                 for (int h = 0; h < 5; h++)
                 {
-                    RaycastHit hitInfo;
-                    Ray ray = new Ray(start, Vector3.up);
-                    if (lowestCollider.Raycast(ray, out hitInfo, 360))
+                    RaycastHit2D[] hitInfo = new RaycastHit2D[MAXRAYHITS];
+                    Vector2 ray = Vector3.up;
+                    if (lowestCollider.Raycast(ray, hitInfo, 360) > 0)
                     {
-                        Vector3 pos = hitInfo.point;
+                        Vector3 pos = hitInfo[0].point;
                         pos.x += Random.Range(-3f, 3f);
                         pos.y += Random.Range(-3f, 3f);
                         beamHits[h].transform.position = pos;
