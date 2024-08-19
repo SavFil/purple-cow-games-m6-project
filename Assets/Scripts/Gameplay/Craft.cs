@@ -224,7 +224,7 @@ public class Craft : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("AudioSource or AudioClip is missing.");
+            Debug.Log("AudioSource or AudioClip is missing.");
         }
     }
 
