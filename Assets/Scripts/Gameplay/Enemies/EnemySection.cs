@@ -41,4 +41,11 @@ public class EnemySection : MonoBehaviour
             }
         }
     }
+
+
+    public void Win()
+    {
+        Debug.Log("win");
+        WellDoneMenu.Instance.WellDone();
+    }
 }

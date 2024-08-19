@@ -29,7 +29,6 @@ public class GameOverMenu : Menu
 
     public void GameOver()
     {
-        Debug.Log("gameOvr");
         TurnOn(null);
         // AudioManager.instance.PlayMusic(AudioManager.Tracks.GameOver, true, 0.5f);
         scoreReadout.text = GameManager.Instance.playerDatas[0].score.ToString(); 

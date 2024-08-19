@@ -140,4 +140,5 @@ public class Shootable : MonoBehaviour
                 gameObject.SetActive(false);
         }
     }
+
 }
