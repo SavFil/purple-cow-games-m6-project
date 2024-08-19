@@ -19,7 +19,7 @@ public class ButtonRefocus : MonoBehaviour
         if (EventSystem.current.currentSelectedGameObject == null)
         {
             EventSystem.current.SetSelectedGameObject(lastselect);
-        }s
+        }
         else
         {
             lastselect = EventSystem.current.currentSelectedGameObject;
