@@ -531,6 +531,7 @@ MonoBehaviour:
     positionX: 0
     positionY: 0
   levelSize: 4925
+  progressCamera: {fileID: 1188112557}
   speedCurve:
     serializedVersion: 2
     m_Curve:
