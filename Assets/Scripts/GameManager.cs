@@ -30,9 +30,6 @@ public class GameManager : MonoBehaviour
     private int currentMedalIndex = 0;
 
 
-    //TESTING RESOLUTION\
-    public Resolution resolution4K;
-    public Resolution resolutionFHD;
 
     private void Awake()
     {
@@ -58,25 +55,10 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 60;
 
 
-        //TESTING RESOLUTION\
-        
-        resolution4K.width = 3840;
-        resolution4K.height = 2160;
-        resolution4K.refreshRate = 60;
-
-        resolutionFHD.width = 1920;
-        resolutionFHD.height = 1080;
-        resolutionFHD.refreshRate = 60;
-
-        SetResolution(resolution4K);
     }
 
 
-    //TESTING RESOLUTION\
-    public void SetResolution(Resolution res)
-    {
-        Screen.SetResolution(res.width, res.height, FullScreenMode.ExclusiveFullScreen, res.refreshRate);
-    }
+
 
 
     public void SpawnPlayer(int playerIndex, int craftType)

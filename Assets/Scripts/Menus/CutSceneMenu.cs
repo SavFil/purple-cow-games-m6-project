@@ -17,9 +17,6 @@ public class CutSceneMenu : Menu
     bool canInteractSkip;
     public Text skipText;
 
-    [Header("--TESTING RESOLUTION")]
-    //TESTING RESOLUTION\
-    public Text res;
     [Header("--IMAGE BLOCKS")]
     public Image blockOneImage;
     public Image blockTwoImage;
@@ -43,9 +40,6 @@ public class CutSceneMenu : Menu
 
         Instance = this;
         Debug.Log("MainMenu Created!");
-
-        //TESTING RESOLUTION\
-        res.text = Screen.currentResolution.width.ToString() + " x " + Screen.currentResolution.height + " / " + Screen.currentResolution.refreshRate;
 
 
         skipText.text = "Skip";
@@ -81,17 +75,7 @@ public class CutSceneMenu : Menu
         }
     }
 
-    //TESTING RESOLUTION\
-
-    void SetResolution1920()
-    {
-        GameManager.Instance.SetResolution(GameManager.Instance.resolutionFHD);
-    }
-    void SetResolution3840()
-    {
-        GameManager.Instance.SetResolution(GameManager.Instance.resolution4K);
-    }
-
+  
 
 
     public IEnumerator CutsceneSequence()
