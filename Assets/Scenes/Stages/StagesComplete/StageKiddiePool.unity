@@ -10917,7 +10917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6ec6084d391b5147a86b960017d4567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: StageTallGrass
+  sceneName: StageAntNest
 --- !u!61 &755938676
 BoxCollider2D:
   m_ObjectHideFlags: 0
