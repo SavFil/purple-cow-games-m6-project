@@ -8,15 +8,6 @@ public class Craft : MonoBehaviour
     public CraftData craftData = new CraftData();
     Vector3 newPosition = new Vector3();
 
-    public GameObject AftFlame1;
-    public GameObject AftFlame2;
-
-    public GameObject LeftFlame;
-    public GameObject RightFlame;
-
-    public GameObject FrontFlame1;
-    public GameObject FrontFlame2;
-
     public int playerIndex;
 
     public CraftConfiguration config;
@@ -105,18 +96,18 @@ public class Craft : MonoBehaviour
         {
             foreach (Collider2D hit in hits)
             {
-                if (hit)
-                {
-                    if (hit.gameObject.layer != pickUpLayer)
-                        Hit();
-                }
+                //if (hit)
+                //{
+                //    if (hit.gameObject.layer != pickUpLayer)
+                //        Hit();
+                //}
             }
         }
-             
+
         // Pickups and bullet grazing
 
         halfSize = new Vector2(15f, 21f);
-        noOfhits = Physics2D.OverlapBoxNonAlloc(transform.position, halfSize, 0,  hits, layerMask);
+        noOfhits = Physics2D.OverlapBoxNonAlloc(transform.position, halfSize, 0, hits, layerMask);
         if (noOfhits > 0)
         {
             foreach (Collider2D hit in hits)
@@ -137,11 +128,11 @@ public class Craft : MonoBehaviour
             craftData.positionX += InputManager.Instance.playerState[playerIndex].movement.x * config.speed;
             craftData.positionY += InputManager.Instance.playerState[playerIndex].movement.y * config.speed;
 
-            if (craftData.positionX < -170) craftData.positionX = -170;
-            if (craftData.positionX > 120) craftData.positionX = 120;
+            if (craftData.positionX < -158) craftData.positionX = -158;
+            if (craftData.positionX > 158) craftData.positionX = 158;
 
-            if (craftData.positionY < -290) craftData.positionY = -290; // bottom part
-            if (craftData.positionY > 40) craftData.positionY = 40;   // top part
+            if (craftData.positionY < -68) craftData.positionY = -68; // bottom part
+            if (craftData.positionY > 68) craftData.positionY = 68;   // top part
 
             newPosition.x = (int)craftData.positionX;
             if (!GameManager.Instance.progressWindow)
@@ -152,50 +143,26 @@ public class Craft : MonoBehaviour
                 newPosition.y = (int)craftData.positionY;
             gameObject.transform.position = newPosition;
 
-            if (InputManager.Instance.playerState[playerIndex].up)
-            {
-                AftFlame1.SetActive(true);
-                AftFlame2.SetActive(true);
-            }
-            else
-            {
-                AftFlame1.SetActive(false);
-                AftFlame2.SetActive(false);
-            }
+          
 
-            if (InputManager.Instance.playerState[playerIndex].down)
-            {
-                FrontFlame1.SetActive(true);
-                FrontFlame2.SetActive(true);
-            }
-            else
-            {
-                FrontFlame1.SetActive(false);
-                FrontFlame2.SetActive(false);
-            }
+
 
             if (InputManager.Instance.playerState[playerIndex].left)
             {
-                RightFlame.SetActive(true);
                 animator.SetBool(leftBoolID, true);
-
             }
             else
             {
-                RightFlame.SetActive(false);
                 animator.SetBool(leftBoolID, false);
             }
 
             if (InputManager.Instance.playerState[playerIndex].right)
             {
-                LeftFlame.SetActive(true);
                 animator.SetBool(rightBoolID, true);
             }
             else
             {
-                LeftFlame.SetActive(false);
                 animator.SetBool(rightBoolID, false);
-
             }
 
             // Shooting bullets

@@ -1,0 +1,4200 @@
+fileFormatVersion: 2
+guid: 41bee2277549f3d479cbe2ef00256067
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8367065182964705692
+    second: Sprite_insect_0
+  - first:
+      213: 2421628645107594945
+    second: Sprite_insect_1
+  - first:
+      213: 1105126075240202576
+    second: DragonFly1
+  - first:
+      213: -6936359188395461897
+    second: DragonFly5
+  - first:
+      213: -4625128990132511439
+    second: DragonFly6
+  - first:
+      213: -2484059459659840152
+    second: DragonFly7
+  - first:
+      213: -8667833059343173693
+    second: Sprite_insect_6
+  - first:
+      213: 4624798284033857879
+    second: Sprite_insect_7
+  - first:
+      213: -120223129632426811
+    second: Sprite_insect_8
+  - first:
+      213: -8783056377800147166
+    second: Sprite_insect_9
+  - first:
+      213: 6868492399167534249
+    second: Sprite_insect_10
+  - first:
+      213: -7890351033579226670
+    second: Sprite_insect_11
+  - first:
+      213: -7132194867611664115
+    second: Sprite_insect_12
+  - first:
+      213: -7992916074666075428
+    second: Sprite_insect_13
+  - first:
+      213: -359456872496917761
+    second: Sprite_insect_14
+  - first:
+      213: -7404091640907910974
+    second: Sprite_insect_15
+  - first:
+      213: 218516378012418603
+    second: Sprite_insect_16
+  - first:
+      213: -3989102454361230667
+    second: Sprite_insect_17
+  - first:
+      213: -1941091715719798598
+    second: Sprite_insect_18
+  - first:
+      213: -4525014161846829681
+    second: Sprite_insect_19
+  - first:
+      213: -1116620198682785125
+    second: DragonFly2
+  - first:
+      213: -3165179961331562474
+    second: DragonFly3
+  - first:
+      213: -5577783944526175731
+    second: DragonFly4
+  - first:
+      213: 7666608048888221306
+    second: Sprite_insect_23
+  - first:
+      213: 2274825167289136039
+    second: Sprite_insect_24
+  - first:
+      213: 5390764162106462924
+    second: Sprite_insect_25
+  - first:
+      213: 8807394689019117118
+    second: Sprite_insect_26
+  - first:
+      213: -2449688269334228272
+    second: Sprite_insect_27
+  - first:
+      213: -5705515910215427114
+    second: Sprite_insect_28
+  - first:
+      213: -3091749706427713639
+    second: Sprite_insect_29
+  - first:
+      213: -6902909930546667891
+    second: Sprite_insect_30
+  - first:
+      213: -9074195185778634367
+    second: Sprite_insect_31
+  - first:
+      213: -8858452625178921356
+    second: Sprite_insect_32
+  - first:
+      213: 4451881185153250434
+    second: Sprite_insect_33
+  - first:
+      213: 2616916979376637382
+    second: Sprite_insect_34
+  - first:
+      213: -6857509788525834660
+    second: Sprite_insect_35
+  - first:
+      213: 6908348343639397749
+    second: Sprite_insect_36
+  - first:
+      213: 7171294579166167406
+    second: Sprite_insect_37
+  - first:
+      213: 6085217667149196934
+    second: Sprite_insect_38
+  - first:
+      213: 6898339986206013185
+    second: Sprite_insect_39
+  - first:
+      213: 3961392741160863637
+    second: Sprite_insect_40
+  - first:
+      213: 3318845649276839435
+    second: Sprite_insect_41
+  - first:
+      213: -4058123376004281938
+    second: Sprite_insect_42
+  - first:
+      213: -5233122793456327581
+    second: Sprite_insect_43
+  - first:
+      213: -7636020044371935604
+    second: Sprite_insect_44
+  - first:
+      213: -2776569969866084336
+    second: Sprite_insect_45
+  - first:
+      213: -3715098457588670786
+    second: Sprite_insect_46
+  - first:
+      213: 5304987481720979872
+    second: Sprite_insect_47
+  - first:
+      213: -4136068080774861926
+    second: Sprite_insect_48
+  - first:
+      213: -5451807416978147686
+    second: Sprite_insect_49
+  - first:
+      213: 6982272665718421680
+    second: Sprite_insect_50
+  - first:
+      213: -726320967497745172
+    second: Sprite_insect_51
+  - first:
+      213: 232758593932464762
+    second: Sprite_insect_52
+  - first:
+      213: -4539197728920995802
+    second: Sprite_insect_53
+  - first:
+      213: 2801411782298789450
+    second: Sprite_insect_54
+  - first:
+      213: 7442699885732431418
+    second: Sprite_insect_55
+  - first:
+      213: -7549292050706119329
+    second: Sprite_insect_56
+  - first:
+      213: 5811192699511884785
+    second: Sprite_insect_57
+  - first:
+      213: -7907956190185252363
+    second: Sprite_insect_58
+  - first:
+      213: -8428504213657844457
+    second: Sprite_insect_59
+  - first:
+      213: 2057448819588242544
+    second: Sprite_insect_60
+  - first:
+      213: 4070136950050404448
+    second: Sprite_insect_61
+  - first:
+      213: -1841366563971073382
+    second: Sprite_insect_62
+  - first:
+      213: -2436887057866496993
+    second: Sprite_insect_63
+  - first:
+      213: -4894473784927846058
+    second: Sprite_insect_64
+  - first:
+      213: -733120134896582451
+    second: Sprite_insect_65
+  - first:
+      213: -1897030733752151177
+    second: Sprite_insect_66
+  - first:
+      213: 2218679063042352842
+    second: Sprite_insect_67
+  - first:
+      213: -2452330538666010817
+    second: Sprite_insect_68
+  - first:
+      213: 7839047576590290101
+    second: Sprite_insect_69
+  - first:
+      213: 3264617221662286860
+    second: Sprite_insect_70
+  - first:
+      213: -1754778210354997958
+    second: Sprite_insect_71
+  - first:
+      213: -2994438020527662405
+    second: Sprite_insect_72
+  - first:
+      213: 8432217382538537567
+    second: Sprite_insect_73
+  - first:
+      213: -4694585035478186657
+    second: Sprite_insect_74
+  - first:
+      213: -1443949089969509091
+    second: Sprite_insect_75
+  - first:
+      213: 7906085651699513803
+    second: WaterStrider2
+  - first:
+      213: 698303929401312600
+    second: WaterStrider1
+  - first:
+      213: 8173971926593349938
+    second: Sprite_insect_78
+  - first:
+      213: -9040565162322661462
+    second: Sprite_insect_79
+  - first:
+      213: 3674708889670123601
+    second: Sprite_insect_80
+  - first:
+      213: 3810747005231324908
+    second: Sprite_insect_81
+  - first:
+      213: -7921699815305846269
+    second: Sprite_insect_82
+  - first:
+      213: -6636485795630955212
+    second: Sprite_insect_83
+  - first:
+      213: 2316264378526031424
+    second: Sprite_insect_84
+  - first:
+      213: -69833717745090256
+    second: Sprite_insect_85
+  - first:
+      213: -2235455095551340679
+    second: Sprite_insect_86
+  - first:
+      213: 3577279492750897492
+    second: Sprite_insect_87
+  - first:
+      213: 4753661634122081331
+    second: Sprite_insect_88
+  - first:
+      213: 8657051555251367383
+    second: Sprite_insect_89
+  - first:
+      213: -3529411138841385281
+    second: Sprite_insect_90
+  - first:
+      213: 78154975363924592
+    second: Sprite_insect_91
+  - first:
+      213: -3288423080756989569
+    second: Sprite_insect_92
+  - first:
+      213: 7433190865459964401
+    second: Sprite_insect_93
+  - first:
+      213: -4663766766471053153
+    second: Sprite_insect_94
+  - first:
+      213: 4698422814508346260
+    second: WaterStrider4
+  - first:
+      213: -6387577338461920847
+    second: WaterStrider3
+  - first:
+      213: -6102256967669960171
+    second: Sprite_insect_97
+  - first:
+      213: -2780233537125108226
+    second: Sprite_insect_98
+  - first:
+      213: 30738441521697755
+    second: Sprite_insect_99
+  - first:
+      213: -8314120936997524681
+    second: Sprite_insect_100
+  - first:
+      213: 9062388724143339627
+    second: Sprite_insect_101
+  - first:
+      213: -2845908767624418289
+    second: Sprite_insect_102
+  - first:
+      213: -4783881277346898345
+    second: Sprite_insect_103
+  - first:
+      213: 6874829211334782303
+    second: Sprite_insect_104
+  - first:
+      213: 1639938823994558390
+    second: Sprite_insect_105
+  - first:
+      213: -6878083666994021425
+    second: Sprite_insect_106
+  - first:
+      213: -5368714533999665481
+    second: Sprite_insect_107
+  - first:
+      213: 5956797077610106117
+    second: Sprite_insect_108
+  - first:
+      213: 8001327569037791063
+    second: Sprite_insect_109
+  - first:
+      213: 5903876447131873202
+    second: Sprite_insect_110
+  - first:
+      213: -648624363258832191
+    second: Sprite_insect_111
+  - first:
+      213: 1631724951510741240
+    second: Sprite_insect_112
+  - first:
+      213: -4649419746737508147
+    second: Sprite_insect_113
+  - first:
+      213: 5791160397728352441
+    second: Sprite_insect_114
+  - first:
+      213: -6500901539470801743
+    second: Sprite_insect_115
+  - first:
+      213: -1610415511423584783
+    second: WaterStrider5
+  - first:
+      213: -7497731136907621062
+    second: Sprite_insect_117
+  - first:
+      213: -2966541163220668109
+    second: Sprite_insect_118
+  - first:
+      213: 6969948476058858195
+    second: Sprite_insect_119
+  - first:
+      213: -8521903320655149292
+    second: Sprite_insect_120
+  - first:
+      213: 8524052271390029820
+    second: Sprite_insect_121
+  - first:
+      213: 5434628149527363586
+    second: Sprite_insect_122
+  - first:
+      213: -9147507720322871177
+    second: Sprite_insect_123
+  - first:
+      213: 4866569925543722393
+    second: Sprite_insect_124
+  - first:
+      213: 4251456378316348668
+    second: Sprite_insect_125
+  - first:
+      213: -2279792240117792871
+    second: Sprite_insect_126
+  - first:
+      213: -1148040005761974252
+    second: Sprite_insect_127
+  - first:
+      213: 691769136825050546
+    second: Sprite_insect_128
+  - first:
+      213: -9100595782843966094
+    second: Sprite_insect_129
+  - first:
+      213: -9185114135329419001
+    second: Sprite_insect_130
+  - first:
+      213: -8829387189755384182
+    second: Sprite_insect_131
+  - first:
+      213: 8704102740204466600
+    second: Sprite_insect_132
+  - first:
+      213: -4032266812044556696
+    second: Sprite_insect_133
+  - first:
+      213: 7089020457518659876
+    second: Sprite_insect_134
+  - first:
+      213: 7219389878207420176
+    second: Sprite_insect_135
+  - first:
+      213: -2477747176090877749
+    second: Sprite_insect_136
+  - first:
+      213: -5684771612841100857
+    second: Sprite_insect_137
+  - first:
+      213: 3068276181693903034
+    second: Sprite_insect_138
+  - first:
+      213: 3244172388051992126
+    second: Sprite_insect_139
+  - first:
+      213: 3607186939207822931
+    second: Sprite_insect_140
+  - first:
+      213: -5310212583341070455
+    second: Sprite_insect_141
+  - first:
+      213: -5845139859494608521
+    second: Sprite_insect_142
+  - first:
+      213: -7241403566960816020
+    second: Sprite_insect_143
+  - first:
+      213: 4130552139502230467
+    second: Sprite_insect_144
+  - first:
+      213: -1942005731104094822
+    second: Sprite_insect_145
+  - first:
+      213: 3838723152468768282
+    second: Sprite_insect_146
+  - first:
+      213: -4573777844986669376
+    second: Sprite_insect_147
+  - first:
+      213: -1736585095860482592
+    second: Sprite_insect_148
+  - first:
+      213: -1919276241102341652
+    second: Sprite_insect_149
+  - first:
+      213: 3643021254619398153
+    second: Sprite_insect_150
+  - first:
+      213: -6460824195254194493
+    second: Sprite_insect_151
+  - first:
+      213: 9184151695808310953
+    second: Sprite_insect_152
+  - first:
+      213: -2952152081257839334
+    second: Sprite_insect_153
+  - first:
+      213: 1611322541621370379
+    second: Sprite_insect_154
+  - first:
+      213: -2260804468961870105
+    second: Sprite_insect_155
+  - first:
+      213: 6336686302474280805
+    second: Sprite_insect_156
+  - first:
+      213: 7914316742225446414
+    second: Sprite_insect_157
+  - first:
+      213: 1623885158060988769
+    second: Sprite_insect_158
+  - first:
+      213: -4518071541573957295
+    second: Sprite_insect_159
+  - first:
+      213: 8397551251066466413
+    second: Sprite_insect_160
+  - first:
+      213: -8204722528881584011
+    second: Sprite_insect_161
+  - first:
+      213: 9200678785317659006
+    second: Sprite_insect_162
+  - first:
+      213: -3117585210445275498
+    second: Sprite_insect_163
+  - first:
+      213: 3155024871812073328
+    second: Sprite_insect_164
+  - first:
+      213: 7442962556810526068
+    second: Sprite_insect_165
+  - first:
+      213: -2514353206349576549
+    second: Sprite_insect_166
+  - first:
+      213: 8544173778047551831
+    second: Sprite_insect_167
+  - first:
+      213: 978468516662856856
+    second: Sprite_insect_168
+  - first:
+      213: -7203305544532855349
+    second: Sprite_insect_169
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite_insect_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 469
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46699d4fb8632eb80800000000000000
+      internalID: -8367065182964705692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 469
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c67c812c6a5b9120800000000000000
+      internalID: 2421628645107594945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFly1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 471
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051c6ba6f42365f00800000000000000
+      internalID: 1105126075240202576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFly5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 469
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2fb2d811a1dbf90800000000000000
+      internalID: -6936359188395461897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFly6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 469
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d5ace30bd30dfb0800000000000000
+      internalID: -4625128990132511439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFly7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 469
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865c6022519d68dd0800000000000000
+      internalID: -2484059459659840152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_6
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 459
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c77675b1cba5b780800000000000000
+      internalID: -8667833059343173693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 469
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7599cad39859e2040800000000000000
+      internalID: 4624798284033857879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 470
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4397853b1e45ef0800000000000000
+      internalID: -120223129632426811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 464
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f3efe42c05c1680800000000000000
+      internalID: -8783056377800147166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_10
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 454
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4f9da3279c15f50800000000000000
+      internalID: 6868492399167534249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_11
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 461
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9bf523a87df7290800000000000000
+      internalID: -7890351033579226670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_12
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 471
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01842f4e8a550d90800000000000000
+      internalID: -7132194867611664115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_13
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 469
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdad40aad25731190800000000000000
+      internalID: -7992916074666075428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_14
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 464
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff29fb201e3f20bf0800000000000000
+      internalID: -359456872496917761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_15
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 464
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0be3391e16f3990800000000000000
+      internalID: -7404091640907910974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_16
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 467
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b220901fc73580300800000000000000
+      internalID: 218516378012418603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 421
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2f823f37cd3a8c0800000000000000
+      internalID: -3989102454361230667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 421
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab061107e5bdf05e0800000000000000
+      internalID: -1941091715719798598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 423
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8df187289be331c0800000000000000
+      internalID: -4525014161846829681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFly2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 439
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a8c7c68d7f080f0800000000000000
+      internalID: -1116620198682785125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFly3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 439
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618c5a258950314d0800000000000000
+      internalID: -3165179961331562474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonFly4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 439
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02e3a80e0bb792b0800000000000000
+      internalID: -5577783944526175731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_23
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 431
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e022aa663456a60800000000000000
+      internalID: 7666608048888221306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_24
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 440
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a33366ef6dc19f10800000000000000
+      internalID: 2274825167289136039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_25
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 444
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc21346a177dfca40800000000000000
+      internalID: 5390764162106462924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_26
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 425
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e75ab5ec62a3a70800000000000000
+      internalID: 8807394689019117118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_27
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 405
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d254ef7f75f00ed0800000000000000
+      internalID: -2449688269334228272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_28
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 403
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db154f328fe1d0b0800000000000000
+      internalID: -5705515910215427114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_29
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 419
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99735f5d506e715d0800000000000000
+      internalID: -3091749706427713639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_30
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 417
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8edf39cdffe330a0800000000000000
+      internalID: -6902909930546667891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 373
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181da114e8bf11280800000000000000
+      internalID: -9074195185778634367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 373
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47675908544701580800000000000000
+      internalID: -8858452625178921356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 374
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284fd4fc95248cd30800000000000000
+      internalID: 4451881185153250434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_34
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 374
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5ce62b028215420800000000000000
+      internalID: 2616916979376637382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_35
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 389
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e47231e2b35d0a0800000000000000
+      internalID: -6857509788525834660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_36
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 390
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575d84f67326fdf50800000000000000
+      internalID: 6908348343639397749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_37
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 396
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6142e2bc6e858360800000000000000
+      internalID: 7171294579166167406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_38
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 389
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68eeb573a39037450800000000000000
+      internalID: 6085217667149196934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_39
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 392
+        width: 73
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107bea12ba3dbbf50800000000000000
+      internalID: 6898339986206013185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_40
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 387
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59744b0b5b1b9f630800000000000000
+      internalID: 3961392741160863637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_41
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 385
+        width: 67
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b062f75b888ee0e20800000000000000
+      internalID: 3318845649276839435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_42
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 373
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea94e865a46aea7c0800000000000000
+      internalID: -4058123376004281938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_43
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 374
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364290eab863067b0800000000000000
+      internalID: -5233122793456327581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_44
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 378
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8eb27d1a38670690800000000000000
+      internalID: -7636020044371935604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_45
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 378
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0107d14c254a779d0800000000000000
+      internalID: -2776569969866084336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_46
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 373
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe53d1e2a1517cc0800000000000000
+      internalID: -3715098457588670786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_47
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 342
+        width: 55
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a18fd1f10a1f9940800000000000000
+      internalID: 5304987481720979872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_48
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 302
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b259e8efbb996c0800000000000000
+      internalID: -4136068080774861926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_49
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 310
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a967d270a0a4754b0800000000000000
+      internalID: -5451807416978147686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_50
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 345
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8f01deef306e060800000000000000
+      internalID: 6982272665718421680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_51
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 345
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecf063ade69be5f0800000000000000
+      internalID: -726320967497745172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_52
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 346
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7293cd35bcea3300800000000000000
+      internalID: 232758593932464762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_53
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 346
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628776a17b78101c0800000000000000
+      internalID: -4539197728920995802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_54
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 345
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4663896c2d90e620800000000000000
+      internalID: 2801411782298789450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_55
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 342
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a360ceaec18c94760800000000000000
+      internalID: 7442699885732431418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_56
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 341
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f554bf3b0e68b3790800000000000000
+      internalID: -7549292050706119329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_57
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 341
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbcfbf98f085a050800000000000000
+      internalID: 5811192699511884785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_58
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 341
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f918a04ebb414290800000000000000
+      internalID: -7907956190185252363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_59
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 316
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7158a05e210f70b80800000000000000
+      internalID: -8428504213657844457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_60
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 325
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c9a13fcc68d8c10800000000000000
+      internalID: 2057448819588242544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_61
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 284
+        width: 58
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06832f6ddf70c7830800000000000000
+      internalID: 4070136950050404448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_62
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 310
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9af835bdd62276e0800000000000000
+      internalID: -1841366563971073382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_63
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 345
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14ee1ec1207e2ed0800000000000000
+      internalID: -2436887057866496993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_64
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 346
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6510aee4606531cb0800000000000000
+      internalID: -4894473784927846058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_65
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 309
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc08dcd1f1f63d5f0800000000000000
+      internalID: -733120134896582451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_66
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 315
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77354ba39946ca5e0800000000000000
+      internalID: -1897030733752151177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 315
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac66c3f4ad45ace10800000000000000
+      internalID: 2218679063042352842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_68
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 316
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3758fa3e5297fdd0800000000000000
+      internalID: -2452330538666010817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_69
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 315
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc0d04ec34e9cc60800000000000000
+      internalID: 7839047576590290101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_70
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 221
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04adc001104e4d20800000000000000
+      internalID: 3264617221662286860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_71
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 277
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35d130d386c5a7e0800000000000000
+      internalID: -1754778210354997958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_72
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 280
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba568c4c7e9176d0800000000000000
+      internalID: -2994438020527662405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_73
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 280
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a651b9801450570800000000000000
+      internalID: 8432217382538537567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_74
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 277
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55457088cb79deb0800000000000000
+      internalID: -4694585035478186657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_75
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 278
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d6e9af3ff06fbe0800000000000000
+      internalID: -1443949089969509091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterStrider2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 260
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9bc51130f08bd60800000000000000
+      internalID: 7906085651699513803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterStrider1
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 260
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855893959bfd0b900800000000000000
+      internalID: 698303929401312600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_78
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 283
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239ac90e828cf6170800000000000000
+      internalID: 8173971926593349938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_79
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 283
+        width: 4
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf6cf242e5798280800000000000000
+      internalID: -9040565162322661462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_80
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 235
+        width: 66
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15002c504403ff230800000000000000
+      internalID: 3674708889670123601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 248
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee52b7063e72e430800000000000000
+      internalID: 3810747005231324908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_82
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 247
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302ea6b2df7701290800000000000000
+      internalID: -7921699815305846269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_83
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 248
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435cd7a945776e3a0800000000000000
+      internalID: -6636485795630955212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_84
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 229
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e5fef1e26052020800000000000000
+      internalID: 2316264378526031424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_85
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 233
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031857c8a96e70ff0800000000000000
+      internalID: -69833717745090256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_86
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 233
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f435e3f611af0e0800000000000000
+      internalID: -2235455095551340679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_87
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 245
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451f4b3debc05a130800000000000000
+      internalID: 3577279492750897492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_88
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 249
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334ef3cf11668f140800000000000000
+      internalID: 4753661634122081331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_89
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 251
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd2001c586042870800000000000000
+      internalID: 8657051555251367383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_90
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 249
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb66d03d443050fc0800000000000000
+      internalID: -3529411138841385281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_91
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 177
+        width: 67
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0720ff73989a51100800000000000000
+      internalID: 78154975363924592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_92
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 176
+        width: 66
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71b84081ac2d52d0800000000000000
+      internalID: -3288423080756989569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_93
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 214
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f96b6b95bff72760800000000000000
+      internalID: 7433190865459964401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_94
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 217
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f908839e5d8f64fb0800000000000000
+      internalID: -4663766766471053153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterStrider4
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 195
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b6c5f08a6243140800000000000000
+      internalID: 4698422814508346260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterStrider3
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 191
+        width: 69
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b164a5e044ca57a0800000000000000
+      internalID: -6387577338461920847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_97
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 131
+        width: 60
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51231e97e9d605ba0800000000000000
+      internalID: -6102256967669960171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_98
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 182
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5b70b0450aa69d0800000000000000
+      internalID: -2780233537125108226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_99
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 181
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd399df13743d6000800000000000000
+      internalID: 30738441521697755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_100
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 181
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bef92de0f4e9c80800000000000000
+      internalID: -8314120936997524681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_101
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 181
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68b11fa78214cd70800000000000000
+      internalID: 9062388724143339627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_102
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 169
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ca39add0d4188d0800000000000000
+      internalID: -2845908767624418289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_103
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 136
+        width: 71
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e9818035d3c9db0800000000000000
+      internalID: -4783881277346898345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_104
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 147
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5da6194ebc486f50800000000000000
+      internalID: 6874829211334782303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_105
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 142
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b74191fbab32c610800000000000000
+      internalID: 1639938823994558390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_106
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 133
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbb765b8532c80a0800000000000000
+      internalID: -6878083666994021425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_107
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 133
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be1974739e7e75b0800000000000000
+      internalID: -5368714533999665481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_108
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 133
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d0902b16bcaa250800000000000000
+      internalID: 5956797077610106117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_109
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 137
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f890cf70d6a0f60800000000000000
+      internalID: 8001327569037791063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_110
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 138
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf271d3958cee150800000000000000
+      internalID: 5903876447131873202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_111
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 136
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca1b43049f9ff6f0800000000000000
+      internalID: -648624363258832191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_112
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 136
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f070f9b23d05a610800000000000000
+      internalID: 1631724951510741240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_113
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 133
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc03600cf51f97fb0800000000000000
+      internalID: -4649419746737508147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_114
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 133
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b888e7e2b55e5050800000000000000
+      internalID: 5791160397728352441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_115
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 130
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b48d0c3e7828c5a0800000000000000
+      internalID: -6500901539470801743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterStrider5
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 129
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f571dcef97a6a9e0800000000000000
+      internalID: -1610415511423584783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_117
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 141
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d4c337145b2f790800000000000000
+      internalID: -7497731136907621062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_118
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 134
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33178aa878ab4d6d0800000000000000
+      internalID: -2966541163220668109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2734ae53b3ab060800000000000000
+      internalID: 6969948476058858195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_120
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 85
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417c022b41e1cb980800000000000000
+      internalID: -8521903320655149292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_121
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 85
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf77013e0648b4670800000000000000
+      internalID: 8524052271390029820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_122
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 85
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200cae2128dab6b40800000000000000
+      internalID: 5434628149527363586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_123
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 86
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7701306a1368d0180800000000000000
+      internalID: -9147507720322871177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_124
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 85
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99df1a62097898340800000000000000
+      internalID: 4866569925543722393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_125
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 86
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc5d970d05300b30800000000000000
+      internalID: 4251456378316348668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_126
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 87
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f3616590d8c50e0800000000000000
+      internalID: -2279792240117792871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_127
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 71
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410ce9482b75110f0800000000000000
+      internalID: -1148040005761974252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_128
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 84
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b529036d58a99900800000000000000
+      internalID: 691769136825050546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_129
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 84
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27dda2f3a5034b180800000000000000
+      internalID: -9100595782843966094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_130
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 84
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7015546db5be78080800000000000000
+      internalID: -9185114135329419001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_131
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 85
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8eee3a8127b77580800000000000000
+      internalID: -8829387189755384182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_132
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 86
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1346e635f2bc870800000000000000
+      internalID: 8704102740204466600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_133
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 85
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866cc74c2b28a08c0800000000000000
+      internalID: -4032266812044556696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_134
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 55
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42970effb82416260800000000000000
+      internalID: 7089020457518659876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_135
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 55
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0179a9128dc603460800000000000000
+      internalID: 7219389878207420176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_136
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 54
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc040ed22164d9dd0800000000000000
+      internalID: -2477747176090877749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_137
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 37
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9b16b5652ab11b0800000000000000
+      internalID: -5684771612841100857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_138
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 40
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab038aa4ee4b49a20800000000000000
+      internalID: 3068276181693903034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_139
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 42
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e38fb399d950d20800000000000000
+      internalID: 3244172388051992126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_140
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 43
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e29e5d86d4f0230800000000000000
+      internalID: 3607186939207822931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_141
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 38
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98765284ac55e46b0800000000000000
+      internalID: -5310212583341070455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_142
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 15
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771e8544444e1eea0800000000000000
+      internalID: -5845139859494608521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_143
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 37
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60dd0c82dd518b90800000000000000
+      internalID: -7241403566960816020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_144
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 38
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb9249494ba25930800000000000000
+      internalID: 4130552139502230467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_145
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 38
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9584c5a31c9c05e0800000000000000
+      internalID: -1942005731104094822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_146
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 41
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16f7f56e52e54530800000000000000
+      internalID: 3838723152468768282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_147
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 35
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6940c684da680c0800000000000000
+      internalID: -4573777844986669376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_148
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 25
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed8ffe5e0966e7e0800000000000000
+      internalID: -1736585095860482592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_149
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 23
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce97f3f6d6c5d55e0800000000000000
+      internalID: -1919276241102341652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_150
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 36
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90089ce878c9e8230800000000000000
+      internalID: 3643021254619398153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_151
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 39
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ceef9510aa8656a0800000000000000
+      internalID: -6460824195254194493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_152
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 40
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aea4ffbe49a47f70800000000000000
+      internalID: 9184151695808310953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_153
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 41
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1542b1c259d707d0800000000000000
+      internalID: -2952152081257839334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_154
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 39
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0edbef70519c5610800000000000000
+      internalID: 1611322541621370379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_155
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 36
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee79e0505200a0e0800000000000000
+      internalID: -2260804468961870105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_156
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f10107e9e60f750800000000000000
+      internalID: 6336686302474280805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_157
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06464c252d45dd60800000000000000
+      internalID: 7914316742225446414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_158
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 6
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169114292f2398610800000000000000
+      internalID: 1623885158060988769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_159
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 6
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159cea6eed59c41c0800000000000000
+      internalID: -4518071541573957295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_160
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 7
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6034f6ee581a8470800000000000000
+      internalID: 8397551251066466413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_161
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 9
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5785e599458f22e80800000000000000
+      internalID: -8204722528881584011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_162
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 10
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71e453ab906faf70800000000000000
+      internalID: 9200678785317659006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_163
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 5
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ed56ec4cc1cb4d0800000000000000
+      internalID: -3117585210445275498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_164
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 5
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07781e5a766e8cb20800000000000000
+      internalID: 3155024871812073328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_165
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 6
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d793bc207ba4760800000000000000
+      internalID: 7442962556810526068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_166
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 5
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b964ba794193b1dd0800000000000000
+      internalID: -2514353206349576549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_167
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 6
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7594bbb38c0039670800000000000000
+      internalID: 8544173778047551831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_168
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 27
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cc7978ee7349d00800000000000000
+      internalID: 978468516662856856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_insect_169
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 27
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc57481a5c7b80c90800000000000000
+      internalID: -7203305544532855349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

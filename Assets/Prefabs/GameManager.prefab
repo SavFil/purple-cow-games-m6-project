@@ -51,7 +51,7 @@ MonoBehaviour:
   currentVersion: 
   twoPlayer: 0
   craftPrefabs:
-  - {fileID: 5926266032888430355, guid: 5a1cf9d5cede6ab488486f846befbc56, type: 3}
+  - {fileID: 5926266032888430355, guid: 56c48352dfc2a9b4090af0fc546df6b5, type: 3}
   playerCrafts:
   - {fileID: 0}
   - {fileID: 0}
@@ -86,6 +86,17 @@ MonoBehaviour:
   - {fileID: 6339480540960626380, guid: 721014f1e406044439fed57b1888ff8b, type: 3}
   - {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
   - {fileID: 250782328296364611, guid: edab9caafd2c4814089a44aead0578ba, type: 3}
+  medals:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &347930484269923544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,9 +190,9 @@ MonoBehaviour:
   - {fileID: -1365553916049691152, guid: 547048ec2f357ba47a3da54fff9fbde8, type: 3}
   - {fileID: -2815203094679398255, guid: ec2f67394e58be548af254ace6c904bf, type: 3}
   - {fileID: 2023609167412676135, guid: 28341f95306c44b4ab50a823e21236d3, type: 3}
-  - {fileID: -8031151572821712943, guid: 1d4a70c4ad72b044788b3c012347ceb4, type: 3}
+  - {fileID: -8031151572821712943, guid: e1d8739a432b30545a20a3bd6922b74a, type: 3}
   - {fileID: 2374037761182320978, guid: f860a10e52aaa2f4dba8b3819e876622, type: 3}
-  - {fileID: 7319129995878026225, guid: a96893543995e5641badfaa8cd393b5f, type: 3}
+  - {fileID: -8031151572821712943, guid: 747b44cf99dc8b649af75c13479408f1, type: 3}
 --- !u!114 &4233874250641540882
 MonoBehaviour:
   m_ObjectHideFlags: 0

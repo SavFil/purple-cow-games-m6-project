@@ -9,7 +9,7 @@ public class LevelProgress : MonoBehaviour
 
     public int levelSize;
 
-
+    public Camera progressCamera;
 
     public AnimationCurve speedCurve = new AnimationCurve();
 
