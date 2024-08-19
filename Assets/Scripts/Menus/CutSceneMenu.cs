@@ -77,6 +77,7 @@ public class CutSceneMenu : Menu
         {
             ResetSaturation();
             GameManager.Instance.StartGame();
+            
         }
     }
 

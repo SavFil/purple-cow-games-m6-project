@@ -46,6 +46,7 @@ public class GameInitializer : MonoBehaviour
                     break;
                 case GameMode.Gameplay:
                     MenuManager.Instance.SwitchToGameplayMenus();
+                    if (!GameManager.Instance.playerCrafts[0]) GameManager.Instance.SpawnPlayer(0, 0);
                     break;
             };
             menuLoaded = true;
