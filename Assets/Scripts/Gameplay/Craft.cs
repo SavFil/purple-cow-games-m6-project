@@ -302,7 +302,7 @@ public class Craft : MonoBehaviour
                 Explode();
                 return;
             }
-            Debug.Log("Hit//////////////////////");
+            //Debug.Log("Hit//////////////////////");
             damage = hitGameObject.transform.root.GetComponent<Enemy>().hitDamage;
             Destroy(hitGameObject);
         }
@@ -313,7 +313,7 @@ public class Craft : MonoBehaviour
         }
 
         GameManager.Instance.playerDatas[playerIndex].health -= damage;
-        Debug.Log(GameManager.Instance.playerDatas[playerIndex].health);
+        //Debug.Log(GameManager.Instance.playerDatas[playerIndex].health);
         if (GameManager.Instance.playerDatas[playerIndex].health <= 0)
         {
             Explode();
