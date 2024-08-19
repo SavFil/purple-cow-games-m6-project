@@ -1906,7 +1906,7 @@ MonoBehaviour:
   sequence:
     emmitFrames: 
     totalFrames: 0
-  rate: 10
+  rate: 5
   speed: 10
   startAngle: 0
   endAngle: 0

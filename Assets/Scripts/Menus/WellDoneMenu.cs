@@ -26,4 +26,11 @@ public class WellDoneMenu : Menu
         SceneManager.LoadScene("MainMenusScene");
     }
 
+
+    public void WellDone()
+    {
+        Debug.Log("winmenu");
+        TurnOn(null);
+        
+    }
 }

@@ -118,6 +118,10 @@ public class Enemy : MonoBehaviour
 
     public void Destroyed()
     { Destroy(gameObject); }
+
+
+
+
 }
 
 [Serializable]
