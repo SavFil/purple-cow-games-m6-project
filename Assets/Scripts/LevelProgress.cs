@@ -10,7 +10,7 @@ public class LevelProgress : MonoBehaviour
     public int levelSize;
 
     public Camera progressCamera;
-
+    public float cameraSpeed;
     public AnimationCurve speedCurve = new AnimationCurve();
 
     private Craft player1craft = null;
@@ -29,7 +29,7 @@ public class LevelProgress : MonoBehaviour
         if (data.progress < levelSize)
         {
             float ratio = (float)data.progress / (float)levelSize;
-            float movement = speedCurve.Evaluate(ratio);
+            float movement = speedCurve.Evaluate(ratio)* cameraSpeed;
             data.progress++;
 
             if (player1craft == null)

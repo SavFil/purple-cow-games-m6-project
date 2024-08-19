@@ -8890,6 +8890,7 @@ MonoBehaviour:
     positionY: 0
   levelSize: 9232
   progressCamera: {fileID: 1188112557}
+  cameraSpeed: 0.5
   speedCurve:
     serializedVersion: 2
     m_Curve:
