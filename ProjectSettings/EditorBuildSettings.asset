@@ -71,10 +71,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stages/StagesComplete/StageKiddiePool.unity
     guid: b298c0595e0eac84ea10b8b1fe5d9d6f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stages/StagesComplete/StageTallGrass.unity
     guid: 166218da1cc1d76459256df4fb46f81f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stages/StagesComplete/StageVeggieGarden.unity
     guid: ae6328622e46d374aa6363eaa6d78c10
   - enabled: 1
