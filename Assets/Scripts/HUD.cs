@@ -1,12 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
     public AnimatedNumber[] playerScore = new AnimatedNumber[2];
     public AnimatedNumber topScore;
     public GameObject player2Start;
+
+    public PlayerHUD[] playerHUDs = new PlayerHUD[2];
 
     private void FixedUpdate()
     {
@@ -25,6 +29,10 @@ public class HUD : MonoBehaviour
             playerScore[0].UpdateNumber(p1Score);
         }
 
+        if (GameManager.Instance.playerCrafts[0])
+        {
+            UpdateLives(0);
+        }
         //if (GameManager.Instance.twoPlayer)
         //{
         //    if (player2Start)
@@ -41,5 +49,37 @@ public class HUD : MonoBehaviour
         //    if (player2Start)
         //        player2Start.SetActive(true);
         //}
+    }
+
+
+
+    private void UpdateLives(int playerIndex)
+    {
+
+        PlayerData data = GameManager.Instance.playerDatas[playerIndex];
+        PlayerHUD hud = playerHUDs[playerIndex];
+
+
+        int lives = data.health;
+        float fillammoutRatio = 1 / (float)lives;
+
+        hud.health.fillAmount = (float)lives / (float)PlayerData.MAXHEALTH;
+        
+
+
+
+        for (int i = 0; i < hud.lives.Length; i++)
+        {
+            if (hud.lives[i])
+                hud.lives[i].SetActive(lives > i);
+        }
+
+    }
+
+    [Serializable]
+    public class PlayerHUD
+    {
+        public GameObject[] lives = new GameObject[5];
+        public Image health;
     }
 }

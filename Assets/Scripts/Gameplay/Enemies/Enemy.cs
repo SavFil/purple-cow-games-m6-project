@@ -22,6 +22,10 @@ public class Enemy : MonoBehaviour
     Animator animator = null;
     public string timeoutParameterName = null;
 
+
+    public int hitDamage;
+
+
     private void Start()
     {
         sections = gameObject.GetComponentsInChildren<EnemySection>();

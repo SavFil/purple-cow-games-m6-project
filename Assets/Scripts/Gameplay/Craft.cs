@@ -42,6 +42,9 @@ public class Craft : MonoBehaviour
     public AudioSource audioSource;
 
 
+    int enemyBLayer = 0;
+    int enemyLayer = 0;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -60,6 +63,9 @@ public class Craft : MonoBehaviour
 
         pickUpLayer = LayerMask.NameToLayer("PickUp");
 
+        enemyLayer = LayerMask.NameToLayer("Enemy");
+        enemyBLayer = LayerMask.NameToLayer("EnemyBullets");
+        
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -90,17 +96,17 @@ public class Craft : MonoBehaviour
         Collider2D[] hits = new Collider2D[maxColliders];
 
         // Bullet hits
-        Vector2 halfSize = new Vector2(3f, 4f);
+        Vector2 halfSize = new Vector2(spriteRenderer.bounds.size.x, spriteRenderer.bounds.size.y);
         int noOfhits = Physics2D.OverlapBoxNonAlloc(transform.position, halfSize, 0, hits, layerMask);
         if (noOfhits > 0)
         {
             foreach (Collider2D hit in hits)
             {
-                //if (hit)
-                //{
-                //    if (hit.gameObject.layer != pickUpLayer)
-                //        Hit();
-                //}
+                if (hit)
+                {
+                    if (hit.gameObject.layer == enemyLayer || hit.gameObject.layer == enemyBLayer)
+                        Hit(hit.gameObject);
+                }
             }
         }
 
@@ -247,7 +253,7 @@ public class Craft : MonoBehaviour
 
     public void OneUp()
     {
-        GameManager.Instance.playerDatas[playerIndex].lives++;
+        GameManager.Instance.playerDatas[playerIndex].health+=5;
     }
 
     public void AddBomb(int power)
@@ -273,11 +279,48 @@ public class Craft : MonoBehaviour
         }
     }
 
-    public void Hit()
+    public void Hit(GameObject hitGameObject)
     {
         if (!invulnerable)
-            Explode();
+        {
+            if (alive && GameManager.Instance.playerDatas[playerIndex].health > 0)
+            {
+                DecreaseHealth(hitGameObject);
+            }
+        }
+            //Explode();
     }
+
+    private void DecreaseHealth(GameObject hitGameObject)
+    {
+        int damage = 0;
+        if (hitGameObject.layer == enemyLayer)
+        {
+            if (hitGameObject.transform.root.GetComponent<Enemy>().isBoss)
+            {
+                GameManager.Instance.playerDatas[playerIndex].health = 0;
+                Explode();
+                return;
+            }
+            Debug.Log("Hit//////////////////////");
+            damage = hitGameObject.transform.root.GetComponent<Enemy>().hitDamage;
+            Destroy(hitGameObject);
+        }
+        else if (hitGameObject.layer == enemyBLayer)
+        {
+            damage = hitGameObject.GetComponent<Bullet>().bulletDamage;
+            GameManager.Instance.bulletManager.DeActivateBullet(hitGameObject.GetComponent<Bullet>().index);
+        }
+
+        GameManager.Instance.playerDatas[playerIndex].health -= damage;
+        Debug.Log(GameManager.Instance.playerDatas[playerIndex].health);
+        if (GameManager.Instance.playerDatas[playerIndex].health <= 0)
+        {
+            Explode();
+        }
+    }
+
+
 
     public void Explode()
     {

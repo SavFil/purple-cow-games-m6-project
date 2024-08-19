@@ -55,6 +55,7 @@ MonoBehaviour:
   isBoss: 0
   timeout: 3600
   timeoutParameterName: 
+  hitDamage: 5
 --- !u!114 &-7036047809792821577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +298,8 @@ MonoBehaviour:
   target: {fileID: 0}
   homing: 0
   isPlayer: 0
+  height: 0
+  width: 0
 --- !u!1 &8240263691909380934
 GameObject:
   m_ObjectHideFlags: 0

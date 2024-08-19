@@ -113,7 +113,8 @@ public class BulletSpawner : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!GameManager.Instance.progressWindow) GameManager.Instance.progressWindow = FindObjectOfType<LevelProgress>();
+
+        if (!GameManager.Instance.progressWindow) return;
         height = GameManager.Instance.progressWindow.progressCamera.orthographicSize;
         width = (height * (GameManager.Instance.progressWindow.progressCamera.aspect / 2)) + 30;
 

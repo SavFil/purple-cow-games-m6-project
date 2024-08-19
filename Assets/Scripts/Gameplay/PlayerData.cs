@@ -7,6 +7,6 @@ using UnityEngine;
 public class PlayerData
 {
     public int score = 0;
-    public byte lives = 3;
-
+    public int health = 15;//health
+    public const int MAXHEALTH = 15;
 }

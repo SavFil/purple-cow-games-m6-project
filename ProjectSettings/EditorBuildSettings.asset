@@ -77,4 +77,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stages/StagesComplete/StageVeggieGarden.unity
     guid: ae6328622e46d374aa6363eaa6d78c10
+  - enabled: 1
+    path: Assets/Scenes/Menus/GameOverMenu.unity
+    guid: 54bcaaa11fa0f64409e84abe835fc94d
+  - enabled: 1
+    path: Assets/Scenes/Menus/WellDoneMenu.unity
+    guid: ccf7ea4c023856546a97f31a87e2beb7
   m_configObjects: {}

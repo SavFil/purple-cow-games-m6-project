@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  bulletDamage: 1
 --- !u!61 &1166078885294784164
 BoxCollider2D:
   m_ObjectHideFlags: 0
