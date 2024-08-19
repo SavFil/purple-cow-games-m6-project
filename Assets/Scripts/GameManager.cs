@@ -87,6 +87,12 @@ public class GameManager : MonoBehaviour
         playerCrafts[playerIndex].playerIndex = playerIndex;
     }
 
+    public void ResetData()
+    {
+        playerDatas[0].health = 15;
+    } 
+
+
     //Debug code for testing purposes.
 
     private void Update()

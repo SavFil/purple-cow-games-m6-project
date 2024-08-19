@@ -102,11 +102,11 @@ public class Craft : MonoBehaviour
         {
             foreach (Collider2D hit in hits)
             {
-                //if (hit)
-                //{
-                //    if (hit.gameObject.layer == enemyLayer || hit.gameObject.layer == enemyBLayer)
-                //        Hit(hit.gameObject);
-                //}
+              if (hit)
+              {
+                  if (hit.gameObject.layer == enemyLayer || hit.gameObject.layer == enemyBLayer)
+                      Hit(hit.gameObject);
+              }
             }
         }
 
