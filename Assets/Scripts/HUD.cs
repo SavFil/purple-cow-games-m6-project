@@ -25,21 +25,21 @@ public class HUD : MonoBehaviour
             playerScore[0].UpdateNumber(p1Score);
         }
 
-        if (GameManager.Instance.twoPlayer)
-        {
-            if (player2Start)
-                player2Start.SetActive(false);
-
-            if (playerScore[1])
-            {
-                int p2Score = GameManager.Instance.playerDatas[1].score;
-                playerScore[0].UpdateNumber(p2Score);
-            }
-        }
-        else
-        {
-            if (player2Start)
-                player2Start.SetActive(true);
-        }
+        //if (GameManager.Instance.twoPlayer)
+        //{
+        //    if (player2Start)
+        //        player2Start.SetActive(false);
+        //
+        //    if (playerScore[1])
+        //    {
+        //        int p2Score = GameManager.Instance.playerDatas[1].score;
+        //        playerScore[0].UpdateNumber(p2Score);
+        //    }
+        //}
+        //else
+        //{
+        //    if (player2Start)
+        //        player2Start.SetActive(true);
+        //}
     }
 }

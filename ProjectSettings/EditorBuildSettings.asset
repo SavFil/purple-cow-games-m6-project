@@ -63,9 +63,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/ControllerMenu.unity
     guid: ec8d227b4db38f54c86b03572067f16b
   - enabled: 1
-    path: Assets/Scenes/Stages/StageGeneral.unity
-    guid: 4e924ad7e5f6b3c45a3ebba111402e46
-  - enabled: 1
     path: Assets/Scenes/DisplayScene.unity
     guid: 788ffef616a589f438763bbd0a34f452
+  - enabled: 1
+    path: Assets/Scenes/Stages/StagesComplete/StageAntNest.unity
+    guid: 54421e9787278894b910c0d79938a5ab
+  - enabled: 1
+    path: Assets/Scenes/Stages/StagesComplete/StageKiddiePool.unity
+    guid: b298c0595e0eac84ea10b8b1fe5d9d6f
+  - enabled: 1
+    path: Assets/Scenes/Stages/StagesComplete/StageTallGrass.unity
+    guid: 166218da1cc1d76459256df4fb46f81f
+  - enabled: 1
+    path: Assets/Scenes/Stages/StagesComplete/StageVeggieGarden.unity
+    guid: ae6328622e46d374aa6363eaa6d78c10
   m_configObjects: {}

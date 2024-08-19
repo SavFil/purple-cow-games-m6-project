@@ -129,7 +129,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("StageGeneral");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("StageKiddiePool");
     }
 
     public void PickUpFallOffScreen(PickUp pickup)

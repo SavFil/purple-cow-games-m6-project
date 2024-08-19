@@ -35,27 +35,44 @@ public class BulletSpawner : MonoBehaviour
 
     public bool isPlayer = false;
 
+
+
+    public float height;
+    public float width;
+
+
+
     public void Shoot(int size)
     {
         if (size < 0) return;
 
-        // this code checks bounds to make turrets shoot or not based on their position on the screen to make them shoot or not..
-        // the bounds need adjustment 
-        //if (!isPlayer)
-        //{
-        //float x = transform.position.x;
-        //if (GameManager.Instance && GameManager.Instance.progressWindow)
-        //    x -= GameManager.Instance.progressWindow.data.positionX;
-        //if (char < -110 || x > 110)
-        //    return;
-        //    float y = transform.position.y;
-        //    if (GameManager.Instance && GameManager.Instance.progressWindow)
-        //    {
-        //        y -= GameManager.Instance.progressWindow.data.positionY;
-        //    }
-        //    if (y < -100 || y > 180)
-        //        return;
-        //}
+
+        //?////////////////////////////////////Screen Adjustment/////////////////////////////////////////////
+        //!/bullets for enemies
+        //!/New way 
+        float x = transform.position.x;
+
+        if (GameManager.Instance && GameManager.Instance.progressWindow)
+        {
+
+            x -= GameManager.Instance.progressWindow.data.positionX;
+            if (x < -width || x > width)
+            {
+                //Debug.Log("x = " + x);
+                return;
+            }
+        }
+
+        float y = transform.position.y;
+        if (GameManager.Instance && GameManager.Instance.progressWindow)
+        {
+            y -= GameManager.Instance.progressWindow.data.positionY;
+            if (y < -height || y > height)
+            {
+                return;
+            }
+        }
+
 
         Vector2 primaryDirection = transform.up;
 
@@ -97,6 +114,11 @@ public class BulletSpawner : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        height = GameManager.Instance.progressWindow.progressCamera.orthographicSize;
+        width = (height * (GameManager.Instance.progressWindow.progressCamera.aspect / 2)) + 30;
+
+
         timer++;
         if (timer >= rate)
         {
@@ -105,7 +127,7 @@ public class BulletSpawner : MonoBehaviour
             {
                 muzzleFlash.SetActive(false);
             }
-            if (autoFireActive) 
+            if (autoFireActive)
             {
                 firing = true;
                 frame = 0;
