@@ -49,7 +49,7 @@ public class CutSceneMenu : Menu
 
 
         skipText.text = "Skip";
-
+        ResetSaturation();
 
     }
 

@@ -340,10 +340,11 @@ public class Craft : MonoBehaviour
         }
 
         EffectSystem.instance.CraftExplosion(transform.position);
-        Destroy(gameObject);
+        yield return new WaitForSeconds(1f);
+        GameOverMenu.Instance.GameOver();
         GameManager.Instance.playerCrafts[0] = null;
-
-        yield return null;
+        Destroy(gameObject);
+        //yield return null;
     }
 
     internal void AddOption()
