@@ -121,7 +121,7 @@ public class Craft : MonoBehaviour
                 if (hit)
                 {
                     if (hit.gameObject.layer == pickUpLayer)
-                        PickUp(hit.gameObject.GetComponent<PickUp>());
+                        PickUp(hit.GetComponent<PickUp>());
                     else // Bullet graze
                         craftData.beamCharge++;
                 }

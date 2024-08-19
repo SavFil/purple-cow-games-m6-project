@@ -43,6 +43,7 @@ public class GameInitializer : MonoBehaviour
             {
                 case GameMode.Menus:
                     MenuManager.Instance.SwitchToMainMenuMenus();
+                    GameManager.Instance.ResetData();
                     break;
                 case GameMode.Gameplay:
                     MenuManager.Instance.SwitchToGameplayMenus();

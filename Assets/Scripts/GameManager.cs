@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
     public void ResetData()
     {
         playerDatas[0].health = 15;
+        playerDatas[0].score = 0;
     } 
 
 
