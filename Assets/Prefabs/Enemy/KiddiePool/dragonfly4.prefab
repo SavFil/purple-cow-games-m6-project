@@ -79,7 +79,8 @@ MonoBehaviour:
   damagedByBeams: 1
   damagedByBombs: 1
   spawnCyclicPickup: 0
-  spawnSpecificPickup: []
+  spawnSpecificPickup:
+  - {fileID: 4807690228858125039, guid: 8101f7421e4b0a649975f2791c793e10, type: 3}
 --- !u!58 &-3140977277393596076
 CircleCollider2D:
   m_ObjectHideFlags: 0

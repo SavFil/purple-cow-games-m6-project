@@ -72,7 +72,7 @@ public class Craft : MonoBehaviour
 
         enemyLayer = LayerMask.NameToLayer("Enemy");
         enemyBLayer = LayerMask.NameToLayer("EnemyBullets");
-        
+
     }
 
     public void SetInvulnerable()
@@ -108,11 +108,11 @@ public class Craft : MonoBehaviour
         {
             foreach (Collider2D hit in hits)
             {
-              if (hit)
-              {
-                  //if (hit.gameObject.layer == enemyLayer || hit.gameObject.layer == enemyBLayer)
-                  //    Hit(hit.gameObject);
-              }
+                if (hit)
+                {
+                    if (hit.gameObject.layer == enemyLayer || hit.gameObject.layer == enemyBLayer)
+                        Hit(hit.gameObject);
+                }
             }
         }
 
@@ -155,7 +155,7 @@ public class Craft : MonoBehaviour
                 newPosition.y = (int)craftData.positionY;
             gameObject.transform.position = newPosition;
 
-          
+
 
 
 
@@ -182,7 +182,7 @@ public class Craft : MonoBehaviour
             {
                 ShotConfiguration shotConfig = config.shotLevel[craftData.shotPower];
                 PlaySFX(SFXType.Shoot);
-                
+
                 for (int s = 0; s < 5; s++)
                 {
                     bulletSpawner[s].Shoot(shotConfig.spawnerSizes[s]);
@@ -280,7 +280,9 @@ public class Craft : MonoBehaviour
 
     public void OneUp()
     {
-        GameManager.Instance.playerDatas[playerIndex].health+=5;
+        GameManager.Instance.playerDatas[playerIndex].health += 5;
+        if (GameManager.Instance.playerDatas[playerIndex].health > PlayerData.MAXHEALTH)
+            GameManager.Instance.playerDatas[playerIndex].health = PlayerData.MAXHEALTH;
     }
 
     public void AddBomb(int power)
@@ -315,7 +317,7 @@ public class Craft : MonoBehaviour
                 DecreaseHealth(hitGameObject);
             }
         }
-            //Explode();
+        //Explode();
     }
 
     private void DecreaseHealth(GameObject hitGameObject)
@@ -340,7 +342,6 @@ public class Craft : MonoBehaviour
         }
 
         GameManager.Instance.playerDatas[playerIndex].health -= damage;
-        //Debug.Log(GameManager.Instance.playerDatas[playerIndex].health);
         if (GameManager.Instance.playerDatas[playerIndex].health <= 0)
         {
             Explode();
@@ -370,7 +371,7 @@ public class Craft : MonoBehaviour
 
         EffectSystem.instance.CraftExplosion(transform.position);
         yield return new WaitForSeconds(1f);
-        
+
         GameManager.Instance.playerCrafts[0] = null;
         Destroy(gameObject);
         yield return null;
