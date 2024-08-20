@@ -1627,7 +1627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &105632506
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5487,7 +5487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &576090040
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9263,7 +9263,9 @@ MonoBehaviour:
   player2Start: {fileID: 0}
   playerHUDs:
   - healthImage: {fileID: 1637412931}
+    healthBG: {fileID: 105632505}
   - healthImage: {fileID: 0}
+    healthBG: {fileID: 0}
 --- !u!1 &974352420
 GameObject:
   m_ObjectHideFlags: 0

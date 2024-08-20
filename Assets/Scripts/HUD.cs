@@ -12,6 +12,17 @@ public class HUD : MonoBehaviour
 
     public PlayerHUD[] playerHUDs = new PlayerHUD[2];
 
+    
+    private void Awake()
+    {
+        if (!GameManager.Instance.hud)
+        {
+            GameManager.Instance.hud = this;
+        }
+    }
+
+
+
     private void FixedUpdate()
     {
         UpdateHUD();
@@ -25,7 +36,7 @@ public class HUD : MonoBehaviour
         if (playerScore[0]&& GameManager.Instance.playerCrafts[0])
         {
             int p1Score = GameManager.Instance.playerDatas[0].score;
-            Debug.Log("score " +  p1Score);
+            
             playerScore[0].UpdateNumber(p1Score);
         }
 
@@ -61,15 +72,15 @@ public class HUD : MonoBehaviour
 
 
         int healthHud = data.health;
-        //float fillammoutRatio = 1 / (float)healthHud;
 
         hud.healthImage.fillAmount = (float)healthHud / (float)PlayerData.MAXHEALTH;
-        Debug.Log(hud.healthImage.fillAmount);
     }
 
     [Serializable]
     public class PlayerHUD
     {
         public Image healthImage;
+        public GameObject healthBG;
+
     }
 }

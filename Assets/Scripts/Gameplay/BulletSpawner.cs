@@ -117,7 +117,7 @@ public class BulletSpawner : MonoBehaviour
         if (!GameManager.Instance.progressWindow) return;
         height = GameManager.Instance.progressWindow.progressCamera.orthographicSize;
         width = (height * (GameManager.Instance.progressWindow.progressCamera.aspect / 2)+100);
-        Debug.Log(width + "//" + height);
+
 
         timer++;
         if (timer >= rate)

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -29,7 +32,7 @@ public class GameManager : MonoBehaviour
     private int currentDropIndex = 0;
     private int currentMedalIndex = 0;
 
-
+    public HUD hud = null;
 
     private void Awake()
     {
@@ -54,7 +57,6 @@ public class GameManager : MonoBehaviour
 
         Application.targetFrameRate = 60;
 
-
     }
 
 
@@ -73,7 +75,7 @@ public class GameManager : MonoBehaviour
     {
         playerDatas[0].health = 15;
         playerDatas[0].score = 0;
-    } 
+    }
 
 
     //Debug code for testing purposes.
@@ -118,8 +120,25 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("StageKiddiePool");
+        SceneManager.LoadScene("StageKiddiePool");
+        StartCoroutine(TogleHud(0, true));
     }
+
+
+    IEnumerator TogleHud(int playerIndex, bool active)
+    {
+        yield return new WaitForSeconds(.5f);
+        Debug.Log("hud1");
+        while (!SceneManager.GetSceneByName("StageKiddiePool").isLoaded && !hud)
+        {
+            Debug.Log("hud2");
+            yield return null;
+        }
+        hud.playerHUDs[playerIndex].healthBG.SetActive(active);
+        hud.playerScore[playerIndex].gameObject.SetActive(active);      
+    }
+
+
 
     public void PickUpFallOffScreen(PickUp pickup)
     {
