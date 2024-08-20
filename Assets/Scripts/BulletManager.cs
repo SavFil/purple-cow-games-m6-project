@@ -100,7 +100,7 @@ public class BulletManager : MonoBehaviour
         MAX_TYPES,
     }
 
-    const int MAX_BULLET_PER_TYPE = 50;
+    const int MAX_BULLET_PER_TYPE = 70;
     const int MAX_BULLET_COUNT = MAX_BULLET_PER_TYPE * (int)BulletType.MAX_TYPES;
     private Bullet[] bullets = new Bullet[MAX_BULLET_COUNT];
     private NativeArray<BulletData> bulletData;

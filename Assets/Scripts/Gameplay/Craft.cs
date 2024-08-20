@@ -110,8 +110,8 @@ public class Craft : MonoBehaviour
             {
               if (hit)
               {
-                  if (hit.gameObject.layer == enemyLayer || hit.gameObject.layer == enemyBLayer)
-                      Hit(hit.gameObject);
+                  //if (hit.gameObject.layer == enemyLayer || hit.gameObject.layer == enemyBLayer)
+                  //    Hit(hit.gameObject);
               }
             }
         }
