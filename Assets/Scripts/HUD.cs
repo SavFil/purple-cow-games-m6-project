@@ -60,26 +60,16 @@ public class HUD : MonoBehaviour
         PlayerHUD hud = playerHUDs[playerIndex];
 
 
-        int lives = data.health;
-        float fillammoutRatio = 1 / (float)lives;
+        int healthHud = data.health;
+        //float fillammoutRatio = 1 / (float)healthHud;
 
-        hud.health.fillAmount = (float)lives / (float)PlayerData.MAXHEALTH;
-        
-
-
-
-        for (int i = 0; i < hud.lives.Length; i++)
-        {
-            if (hud.lives[i])
-                hud.lives[i].SetActive(lives > i);
-        }
-
+        hud.healthImage.fillAmount = (float)healthHud / (float)PlayerData.MAXHEALTH;
+        Debug.Log(hud.healthImage.fillAmount);
     }
 
     [Serializable]
     public class PlayerHUD
     {
-        public GameObject[] lives = new GameObject[5];
-        public Image health;
+        public Image healthImage;
     }
 }

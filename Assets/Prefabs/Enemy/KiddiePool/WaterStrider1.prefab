@@ -383,7 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 80
   sequence:
-    emmitFrames: 000000000200000004000000
+    emmitFrames: 00000000
     totalFrames: 10
   rate: 30
   speed: 4
