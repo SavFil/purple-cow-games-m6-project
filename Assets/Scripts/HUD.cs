@@ -22,7 +22,7 @@ public class HUD : MonoBehaviour
         if (!GameManager.Instance) return;
 
         //Score
-        if (playerScore[0])
+        if (playerScore[0]&& GameManager.Instance.playerCrafts[0])
         {
             int p1Score = GameManager.Instance.playerDatas[0].score;
             Debug.Log("score " +  p1Score);
