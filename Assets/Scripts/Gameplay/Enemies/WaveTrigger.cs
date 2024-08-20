@@ -31,7 +31,7 @@ public class WaveTrigger : MonoBehaviour
             i++;
         }
     }
-
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         foreach (EnemyPattern pattern in patterns)
@@ -40,4 +40,5 @@ public class WaveTrigger : MonoBehaviour
         }
 
     }
+#endif
 }
