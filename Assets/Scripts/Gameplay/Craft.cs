@@ -39,7 +39,14 @@ public class Craft : MonoBehaviour
 
     public GameObject bombPrefab = null;
 
-    public AudioSource audioSource;
+    private enum SFXType
+    {
+        Shoot,
+        Explode
+    }
+
+    public AudioSource audioSourceShoot;
+    public AudioSource audioSourceExplode;
 
 
     int enemyBLayer = 0;
@@ -66,7 +73,6 @@ public class Craft : MonoBehaviour
         enemyLayer = LayerMask.NameToLayer("Enemy");
         enemyBLayer = LayerMask.NameToLayer("EnemyBullets");
         
-        audioSource = GetComponent<AudioSource>();
     }
 
     public void SetInvulnerable()
@@ -175,7 +181,8 @@ public class Craft : MonoBehaviour
             if (InputManager.Instance.playerState[playerIndex].shoot)
             {
                 ShotConfiguration shotConfig = config.shotLevel[craftData.shotPower];
-                PlaySFX();
+                PlaySFX(SFXType.Shoot);
+                
                 for (int s = 0; s < 5; s++)
                 {
                     bulletSpawner[s].Shoot(shotConfig.spawnerSizes[s]);
@@ -216,15 +223,35 @@ public class Craft : MonoBehaviour
         }
     }
 
-    private void PlaySFX()
+    private void PlaySFX(SFXType sfxType)
     {
-        if (audioSource != null && audioSource.clip != null)
+        switch (sfxType)
         {
-            audioSource.Play();
-        }
-        else
-        {
-            Debug.Log("AudioSource or AudioClip is missing.");
+            case SFXType.Shoot:
+                if (audioSourceShoot != null && audioSourceShoot.clip != null)
+                {
+                    audioSourceShoot.Play();
+                }
+                else
+                {
+                    Debug.Log("Shoot sound missing.");
+                }
+                break;
+
+            case SFXType.Explode:
+                if (audioSourceExplode != null && audioSourceShoot.clip != null)
+                {
+                    audioSourceExplode.Play();
+                }
+                else
+                {
+                    Debug.Log("Explode sound missing.");
+                }
+                break;
+
+            default:
+                Debug.LogWarning("Unhandled SFX type.");
+                break;
         }
     }
 
@@ -325,7 +352,9 @@ public class Craft : MonoBehaviour
     public void Explode()
     {
         alive = false;
+        
         StartCoroutine(Exploding());
+        PlaySFX(SFXType.Explode);
     }
 
     IEnumerator Exploding()
