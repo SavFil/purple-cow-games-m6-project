@@ -369,7 +369,7 @@ MonoBehaviour:
     emmitFrames: 000000000200000004000000
     totalFrames: 10
   rate: 30
-  speed: 4
+  speed: 3
   startAngle: 0
   endAngle: 0
   radialNumber: 1
