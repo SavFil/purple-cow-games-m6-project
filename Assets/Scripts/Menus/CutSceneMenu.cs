@@ -24,7 +24,6 @@ public class CutSceneMenu : Menu
     Color imageColor = new Color(1, 1, 1, 0);
 
 
-
     [Header("--FADE CANVAS")]
     public CanvasGroup canvasGroup = null;
     public float duration = .5f;
@@ -97,6 +96,8 @@ public class CutSceneMenu : Menu
         yield return StartCoroutine(SetImageAlphaOne(blockTwoImage, 1));
 
         yield return StartCoroutine(SetImageAlphaOne(blockThreeImage, 1));
+        
+        yield return new WaitForSeconds(.5f);
 
         yield return StartCoroutine(StartGame());
     }
