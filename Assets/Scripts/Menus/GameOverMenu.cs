@@ -22,15 +22,20 @@ public class GameOverMenu : Menu
         //Debug.Log("GameOverMenu Created!");
     }
 
-    public void OnContinueButton()
-    {
-        SceneManager.LoadScene("MainMenusScene");
-    }
 
     public void GameOver()
     {
         TurnOn(null);
         // AudioManager.instance.PlayMusic(AudioManager.Tracks.GameOver, true, 0.5f);
         scoreReadout.text = GameManager.Instance.playerDatas[0].score.ToString(); 
+    }
+
+    public void OnReturnButton()
+    {
+        SceneManager.LoadScene("MainMenusScene");
+    }
+    public void OnRetryButton()
+    {
+        GameManager.Instance.StartGame();
     }
 }

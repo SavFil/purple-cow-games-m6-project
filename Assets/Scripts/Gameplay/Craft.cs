@@ -381,8 +381,7 @@ public class Craft : MonoBehaviour
 
     public void GameIsOver()
     {
-        //GameOverMenu.Instance.GameOver();
-        WellDoneMenu.Instance.WellDone();
+        GameOverMenu.Instance.GameOver();
     }
 
     internal void AddOption()
