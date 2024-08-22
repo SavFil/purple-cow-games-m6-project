@@ -367,10 +367,10 @@ TextureImporter:
       name: sprite_thorns_9
       rect:
         serializedVersion: 2
-        x: 6
-        y: 85
-        width: 5
-        height: 16
+        x: 7
+        y: 87
+        width: 3
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

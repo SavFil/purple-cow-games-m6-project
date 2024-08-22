@@ -427,7 +427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42207562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.299999, y: 107, z: 0}
+  m_LocalPosition: {x: -36.60001, y: 107, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1392177367}
@@ -481,7 +481,7 @@ MonoBehaviour:
     angleSpeed: 1
     noOfSpins: 1
     movement: 2
-    direction: {x: 0, y: 233.83}
+    direction: {x: 0, y: 250}
     spline:
       controlPoints:
       - {x: 0, y: 0}
@@ -543,8 +543,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: -13.300003, y: 2633.0095, z: 0}
-  currentPosition: {x: -13.300003, y: 2633.0986, z: 0}
+  lastPosition: {x: -36.600006, y: 2516.683, z: 0}
+  currentPosition: {x: -36.600006, y: 2516.7744, z: 0}
   lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &68431064
 GameObject:
@@ -1324,7 +1324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315590069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130.3, y: 98, z: 0}
+  m_LocalPosition: {x: 115.6, y: 98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1392177367}
@@ -1378,7 +1378,7 @@ MonoBehaviour:
     angleSpeed: 1
     noOfSpins: 1
     movement: 2
-    direction: {x: 0, y: 233.83}
+    direction: {x: 0, y: 250}
     spline:
       controlPoints:
       - {x: 0, y: 0}
@@ -1440,8 +1440,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: 130.3, y: 2499.2866, z: 0}
-  currentPosition: {x: 130.3, y: 2499.2866, z: 0}
+  lastPosition: {x: 115.59999, y: 2551.9478, z: 0}
+  currentPosition: {x: 115.59999, y: 2552.0386, z: 0}
   lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &327273224
 GameObject:
@@ -2302,7 +2302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403307878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -102.2, y: 98, z: 0}
+  m_LocalPosition: {x: -124.4, y: 98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1392177367}
@@ -2356,7 +2356,7 @@ MonoBehaviour:
     angleSpeed: 1
     noOfSpins: 1
     movement: 2
-    direction: {x: 0, y: 233.83}
+    direction: {x: 0, y: 250}
     spline:
       controlPoints:
       - {x: 0, y: 0}
@@ -2418,8 +2418,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: -111.2, y: 2581.5461, z: 0}
-  currentPosition: {x: -111.2, y: 2581.6343, z: 0}
+  lastPosition: {x: -124.4, y: 2520.7424, z: 0}
+  currentPosition: {x: -124.4, y: 2520.831, z: 0}
   lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &410106615
 GameObject:
@@ -3265,7 +3265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551070158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2349.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1188112558}
@@ -4205,7 +4205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679250364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 104.5, y: 105.1, z: 0}
+  m_LocalPosition: {x: 83.7, y: 105.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1392177367}
@@ -4259,7 +4259,7 @@ MonoBehaviour:
     angleSpeed: 1
     noOfSpins: 1
     movement: 2
-    direction: {x: 0, y: 233.83}
+    direction: {x: 0, y: 250}
     spline:
       controlPoints:
       - {x: 0, y: 0}
@@ -4321,8 +4321,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: 104.5, y: 2613.9873, z: 0}
-  currentPosition: {x: 104.5, y: 2614.081, z: 0}
+  lastPosition: {x: 83.7, y: 2506.3867, z: 0}
+  currentPosition: {x: 83.7, y: 2506.3867, z: 0}
   lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &688886858
 GameObject:
@@ -7073,7 +7073,6 @@ MonoBehaviour:
   - {fileID: 1167487811}
   - {fileID: 1767543491}
   - {fileID: 403307880}
-  - {fileID: 1630953186}
   delays: []
 --- !u!1 &1050288835
 GameObject:
@@ -7551,7 +7550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167487809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.3, y: 98, z: 0}
+  m_LocalPosition: {x: -66, y: 98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1392177367}
@@ -7605,7 +7604,7 @@ MonoBehaviour:
     angleSpeed: 1
     noOfSpins: 1
     movement: 2
-    direction: {x: 0, y: 233.83}
+    direction: {x: 0, y: 250}
     spline:
       controlPoints:
       - {x: 0, y: 0}
@@ -7667,8 +7666,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: -42.300003, y: 2499.2866, z: 0}
-  currentPosition: {x: -42.300003, y: 2499.2866, z: 0}
+  lastPosition: {x: -66, y: 2499.2866, z: 0}
+  currentPosition: {x: -66, y: 2499.2866, z: 0}
   lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &1173161963
 GameObject:
@@ -8879,7 +8878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273729043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.9, y: 103.8, z: 0}
+  m_LocalPosition: {x: 23.5, y: 103.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1392177367}
@@ -8933,7 +8932,7 @@ MonoBehaviour:
     angleSpeed: 1
     noOfSpins: 1
     movement: 2
-    direction: {x: 0, y: 233.83}
+    direction: {x: 0, y: 250}
     spline:
       controlPoints:
       - {x: 0, y: 0}
@@ -8995,8 +8994,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: 45.90001, y: 2551.756, z: 0}
-  currentPosition: {x: 45.90001, y: 2551.8481, z: 0}
+  lastPosition: {x: 23.5, y: 2517.2927, z: 0}
+  currentPosition: {x: 23.5, y: 2517.3801, z: 0}
   lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &1277361898
 GameObject:
@@ -10283,7 +10282,6 @@ Transform:
   - {fileID: 1167487810}
   - {fileID: 1767543490}
   - {fileID: 403307879}
-  - {fileID: 1630953185}
   m_Father: {fileID: 1155821760}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11300,150 +11298,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1630953184
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1630953185}
-  - component: {fileID: 1630953186}
-  m_Layer: 0
-  m_Name: EnemyPattern1 (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 2800000, guid: 5818c1d0deb9d4c47a99b5580472a9ec, type: 3}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1630953185
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630953184}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -132.5, y: 103.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1392177367}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1630953186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630953184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd37064cb2fe1724c9fc82d39b36040c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  steps:
-  - rotate: 2
-    endAngle: -180
-    angleSpeed: 1
-    noOfSpins: 1
-    movement: 1
-    direction: {x: 0, y: 248.7}
-    spline:
-      controlPoints:
-      - {x: 0, y: 0}
-      - {x: 0, y: -20}
-      - {x: 20, y: -20}
-      - {x: 20, y: -40}
-      isClosed: 0
-      linearPoints:
-      - {x: 0, y: 0}
-      - {x: 0.3272318, y: -3.9816682}
-      - {x: 1.2584023, y: -7.8645782}
-      - {x: 2.9318986, y: -11.488572}
-      - {x: 5.1838045, y: -14.786707}
-      - {x: 7.8242435, y: -17.789082}
-      - {x: 10.634401, y: -20.635574}
-      - {x: 13.393014, y: -23.531351}
-      - {x: 15.887773, y: -26.653055}
-      - {x: 17.904339, y: -30.098509}
-      - {x: 19.250492, y: -33.857834}
-      - {x: 19.88225, y: -37.799168}
-    movementSpeed: 0.5
-    framesToWait: 100
-    activateStates: []
-    deActivateStates: []
-  - rotate: 2
-    endAngle: -180
-    angleSpeed: 1
-    noOfSpins: 1
-    movement: 2
-    direction: {x: 0, y: 233.83}
-    spline:
-      controlPoints:
-      - {x: 0, y: 0}
-      - {x: 0, y: -20}
-      - {x: 20, y: -20}
-      - {x: 20, y: -40}
-      isClosed: 0
-      linearPoints:
-      - {x: 0, y: 0}
-      - {x: 0.3272318, y: -3.9816682}
-      - {x: 1.2584023, y: -7.8645782}
-      - {x: 2.9318986, y: -11.488572}
-      - {x: 5.1838045, y: -14.786707}
-      - {x: 7.8242435, y: -17.789082}
-      - {x: 10.634401, y: -20.635574}
-      - {x: 13.393014, y: -23.531351}
-      - {x: 15.887773, y: -26.653055}
-      - {x: 17.904339, y: -30.098509}
-      - {x: 19.250492, y: -33.857834}
-      - {x: 19.88225, y: -37.799168}
-    movementSpeed: 0.5
-    framesToWait: 30
-    activateStates: []
-    deActivateStates: []
-  - rotate: 2
-    endAngle: -180
-    angleSpeed: 1
-    noOfSpins: 1
-    movement: 1
-    direction: {x: 0, y: 248.7}
-    spline:
-      controlPoints:
-      - {x: 0, y: 0}
-      - {x: 0, y: -20}
-      - {x: 20, y: -20}
-      - {x: 20, y: -40}
-      isClosed: 0
-      linearPoints:
-      - {x: 0, y: 0}
-      - {x: 0.3272318, y: -3.9816682}
-      - {x: 1.2584023, y: -7.8645782}
-      - {x: 2.9318986, y: -11.488572}
-      - {x: 5.1838045, y: -14.786707}
-      - {x: 7.8242435, y: -17.789082}
-      - {x: 10.634401, y: -20.635574}
-      - {x: 13.393014, y: -23.531351}
-      - {x: 15.887773, y: -26.653055}
-      - {x: 17.904339, y: -30.098509}
-      - {x: 19.250492, y: -33.857834}
-      - {x: 19.88225, y: -37.799168}
-    movementSpeed: 0.5
-    framesToWait: 30
-    activateStates: []
-    deActivateStates: []
-  enemyPrefab: {fileID: 1311060986460152104, guid: 8e25364342ed9fe439bb5e6a5a2a66ca, type: 3}
-  stayOnLast: 1
-  startActive: 0
-  spawnOnEasy: 1
-  spawnOnNormal: 1
-  spawnOnHard: 0
-  spawnOnInsane: 0
-  lastPosition: {x: -132.5, y: 2505.0867, z: 0}
-  currentPosition: {x: -132.5, y: 2505.0867, z: 0}
-  lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &1636459386
 GameObject:
   m_ObjectHideFlags: 0
@@ -12318,8 +12172,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: -111, y: 2399.4067, z: 0}
-  currentPosition: {x: -111, y: 2399.3193, z: 0}
+  lastPosition: {x: -111, y: 2408.8047, z: 0}
+  currentPosition: {x: -111, y: 2408.7207, z: 0}
   lastAngle: {x: 0, y: 0, z: 0, w: 1}
 --- !u!1 &1714317527
 GameObject:
@@ -12542,7 +12396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767543489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -72, y: 103.2, z: 0}
+  m_LocalPosition: {x: -95.1, y: 103.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1392177367}
@@ -12596,7 +12450,7 @@ MonoBehaviour:
     angleSpeed: 1
     noOfSpins: 1
     movement: 2
-    direction: {x: 0, y: 233.83}
+    direction: {x: 0, y: 250}
     spline:
       controlPoints:
       - {x: 0, y: 0}
@@ -12658,8 +12512,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: -72, y: 2569.018, z: 0}
-  currentPosition: {x: -72, y: 2569.1096, z: 0}
+  lastPosition: {x: -95.1, y: 2512.3062, z: 0}
+  currentPosition: {x: -95.1, y: 2512.407, z: 0}
   lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &1771178214
 GameObject:
@@ -13193,7 +13047,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846000685}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 75.6, y: 98, z: 0}
+  m_LocalPosition: {x: 54.7, y: 98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1392177367}
@@ -13247,7 +13101,7 @@ MonoBehaviour:
     angleSpeed: 1
     noOfSpins: 1
     movement: 2
-    direction: {x: 0, y: 233.83}
+    direction: {x: 0, y: 250}
     spline:
       controlPoints:
       - {x: 0, y: 0}
@@ -13309,8 +13163,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: 75.59999, y: 2521.2754, z: 0}
-  currentPosition: {x: 75.59999, y: 2521.4626, z: 0}
+  lastPosition: {x: 54.699997, y: 2612.7764, z: 0}
+  currentPosition: {x: 54.699997, y: 2612.8677, z: 0}
   lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &1850549584
 GameObject:
@@ -14415,7 +14269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090895339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.9, y: 98, z: 0}
+  m_LocalPosition: {x: -6.6, y: 98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1392177367}
@@ -14469,7 +14323,7 @@ MonoBehaviour:
     angleSpeed: 1
     noOfSpins: 1
     movement: 2
-    direction: {x: 0, y: 233.83}
+    direction: {x: 0, y: 250}
     spline:
       controlPoints:
       - {x: 0, y: 0}
@@ -14531,8 +14385,8 @@ MonoBehaviour:
   spawnOnNormal: 1
   spawnOnHard: 0
   spawnOnInsane: 0
-  lastPosition: {x: 16.899994, y: 2499.2866, z: 0}
-  currentPosition: {x: 16.899994, y: 2499.2866, z: 0}
+  lastPosition: {x: -6.600006, y: 2500.2168, z: 0}
+  currentPosition: {x: -6.600006, y: 2500.3105, z: 0}
   lastAngle: {x: 0, y: 0, z: -1, w: -0.00000004371139}
 --- !u!1 &2095742819
 GameObject:
