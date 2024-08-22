@@ -14,7 +14,7 @@ public class PlayMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("PlayMenu Created!");
+        //Debug.Log("PlayMenu Created!");
     }
 
     public void OnNormalButton()

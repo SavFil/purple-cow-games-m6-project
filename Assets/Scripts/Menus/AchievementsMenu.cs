@@ -14,7 +14,7 @@ public class AchievementsMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("AchievementsMenu Created!");
+        //Debug.Log("AchievementsMenu Created!");
     }
     public void OnBackButton()
     {

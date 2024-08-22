@@ -14,7 +14,7 @@ public class AudioOptionsMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("AudioOptionsMenu Created!");
+        //Debug.Log("AudioOptionsMenu Created!");
     }
 
     public void OnSFXVolumeSlider()

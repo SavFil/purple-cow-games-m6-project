@@ -16,7 +16,7 @@ public class MenuManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        Debug.Log("MenuManager Created!");
+        //Debug.Log("MenuManager Created!");
     }
 
     internal void SwitchToGameplayMenus()

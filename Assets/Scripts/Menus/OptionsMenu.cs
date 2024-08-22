@@ -14,7 +14,7 @@ public class OptionsMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("OptionsMenu Created!");
+        //Debug.Log("OptionsMenu Created!");
     }
 
     public void OnGraphicsButton()

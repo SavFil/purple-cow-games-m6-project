@@ -57,7 +57,7 @@ public class InputManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        Debug.Log("InputManager Created!");
+        //Debug.Log("InputManager Created!");
 
         // Initialisation
         playerController[0] = -1;

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class WellDoneMenu : Menu
 {
     public static WellDoneMenu Instance { get; private set; }
+    public TextMeshProUGUI scoreReadout = null;
 
     private void Start()
     {
@@ -18,7 +19,7 @@ public class WellDoneMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("WellDoneMenu Created!");
+        //Debug.Log("WellDoneMenu Created!");
     }
 
     public void OnContinueButton()
@@ -31,6 +32,7 @@ public class WellDoneMenu : Menu
     {
         Debug.Log("winmenu");
         TurnOn(null);
+        scoreReadout.text = GameManager.Instance.playerDatas[0].score.ToString();
         
     }
 }

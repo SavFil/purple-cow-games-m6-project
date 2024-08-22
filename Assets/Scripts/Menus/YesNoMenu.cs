@@ -14,7 +14,7 @@ public class YesNoMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("YesNoMenu Created!");
+        //Debug.Log("YesNoMenu Created!");
     }
 
     public void OnQuitButton()

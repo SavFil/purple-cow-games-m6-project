@@ -14,6 +14,6 @@ public class LoadMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("LoadMenu Created!");
+        //Debug.Log("LoadMenu Created!");
     }
 }

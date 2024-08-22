@@ -14,6 +14,6 @@ public class PauseMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("PauseMenu Created!");
+        //Debug.Log("PauseMenu Created!");
     }
 }

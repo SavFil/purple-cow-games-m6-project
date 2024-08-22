@@ -19,7 +19,7 @@ public class GameOverMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("GameOverMenu Created!");
+        //Debug.Log("GameOverMenu Created!");
     }
 
     public void OnContinueButton()

@@ -168,7 +168,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 85.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -975,7 +975,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 100
+        scalar: 50
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -1420,7 +1420,7 @@ ParticleSystem:
   UVModule:
     serializedVersion: 2
     enabled: 1
-    mode: 0
+    mode: 1
     timeMode: 0
     fps: 30
     frameOverTime:
@@ -1538,7 +1538,16 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 0}
+    - sprite: {fileID: 3871178908671572374, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
+    - sprite: {fileID: -6242556060592220421, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
+    - sprite: {fileID: 5086416031237831746, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
+    - sprite: {fileID: 1481180006827511712, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
+    - sprite: {fileID: 445511542520705748, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
+    - sprite: {fileID: 7606258918893531196, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
+    - sprite: {fileID: 1458663920646791725, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
+    - sprite: {fileID: 6448897650704345910, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
+    - sprite: {fileID: 949706545637570155, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
+    - sprite: {fileID: 5904943063110623282, guid: 9f7a533ba1805f546a427a01977d02d6, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4816,7 +4825,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b0bd6ba2986d4044ab52e9f7a940914, type: 2}
+  - {fileID: 2100000, guid: 1f87ce829c12cd2409d9cc483e7e7f39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4836,7 +4845,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0

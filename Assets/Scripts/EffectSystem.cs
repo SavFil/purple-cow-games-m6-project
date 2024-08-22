@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class EffectSystem : MonoBehaviour
 {
-   public static EffectSystem instance = null;
+    public static EffectSystem instance = null;
 
-   public GameObject craftExplosionPrefab = null;
-   public ParticleSystem craftParticlesPrefab = null;
-   public ParticleSystem craftDebrisParticlesPrefab = null;
+    public GameObject craftExplosionPrefab = null;
+    public ParticleSystem craftExplosionParticlePrefab = null;
+    public ParticleSystem craftParticlesPrefab = null;
+    public ParticleSystem craftDebrisParticlesPrefab = null;
+
+
     void Start()
     {
         if (instance)
@@ -19,7 +22,7 @@ public class EffectSystem : MonoBehaviour
         }
 
         instance = this;
-        
+
     }
 
     public void CraftExplosion(Vector3 position)

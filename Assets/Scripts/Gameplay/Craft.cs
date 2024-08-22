@@ -355,7 +355,6 @@ public class Craft : MonoBehaviour
         alive = false;
         Invoke("GameIsOver", 1);
         StartCoroutine(Exploding());
-        PlaySFX(SFXType.Explode);
     }
 
     IEnumerator Exploding()
@@ -370,6 +369,8 @@ public class Craft : MonoBehaviour
         }
 
         EffectSystem.instance.CraftExplosion(transform.position);
+        PlaySFX(SFXType.Explode);
+        spriteRenderer.enabled = false;
         yield return new WaitForSeconds(1f);
 
         GameManager.Instance.playerCrafts[0] = null;
@@ -380,7 +381,8 @@ public class Craft : MonoBehaviour
 
     public void GameIsOver()
     {
-        GameOverMenu.Instance.GameOver();
+        //GameOverMenu.Instance.GameOver();
+        WellDoneMenu.Instance.WellDone();
     }
 
     internal void AddOption()

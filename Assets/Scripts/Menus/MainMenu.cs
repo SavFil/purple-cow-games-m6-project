@@ -14,7 +14,7 @@ public class MainMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("MainMenu Created!");
+        //Debug.Log("MainMenu Created!");
     }
 
     public void OnPlayButton()

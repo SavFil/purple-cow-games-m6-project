@@ -36,7 +36,7 @@ public class ControlsOptionsMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("ControlsOptionsMenu Created!");
+        //Debug.Log("ControlsOptionsMenu Created!");
     }
 
     private void OnEnable()

@@ -14,7 +14,7 @@ public class ScoresMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("ScoresMenu Created!");
+        //Debug.Log("ScoresMenu Created!");
     }
     public void OnBackButton()
     {

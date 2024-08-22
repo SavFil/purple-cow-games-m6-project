@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        Debug.Log("GameManager Created!");
+        //Debug.Log("GameManager Created!");
 
         currentVersion = gameVersionSO.Version;
 
@@ -135,7 +135,7 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
         hud.playerHUDs[playerIndex].healthBG.SetActive(active);
-        hud.playerScore[playerIndex].gameObject.SetActive(active);      
+        hud.playerScore[playerIndex].gameObject.SetActive(active);
     }
 
 

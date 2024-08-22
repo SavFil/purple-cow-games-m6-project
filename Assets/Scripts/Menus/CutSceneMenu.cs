@@ -39,7 +39,7 @@ public class CutSceneMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("MainMenu Created!");
+        //Debug.Log("MainMenu Created!");
 
 
         skipText.text = "Skip";
@@ -81,7 +81,7 @@ public class CutSceneMenu : Menu
     public IEnumerator CutsceneSequence()
     {
 
-        yield return StartCoroutine(SetImageAlphaOne(blockOneMat,1));
+        yield return StartCoroutine(SetImageAlphaOne(blockOneMat,0));
 
 
         skipContainer.SetActive(true);

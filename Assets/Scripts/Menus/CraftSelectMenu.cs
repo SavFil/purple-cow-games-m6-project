@@ -21,7 +21,7 @@ public class CraftSelectMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("CraftSelectMenu Created!");
+        //Debug.Log("CraftSelectMenu Created!");
     }
 
     public void OnPlayButton()
@@ -39,18 +39,19 @@ public class CraftSelectMenu : Menu
     IEnumerator FadeCutscene()
     {
         canvasGroup.interactable = false;
+        canvasGroup.LeanAlpha(0, duration);
         while (canvasGroup.alpha > 0)
         {
-            canvasGroup.LeanAlpha(0, duration);
+            
             yield return null;
         }
         TurnOff(false);
 
-        yield return new WaitForSeconds(duration);
         CutSceneMenu.Instance.TurnOn(this);
+        CutSceneMenu.Instance.canvasGroup.LeanAlpha(1, CutSceneMenu.Instance.duration);
         while (CutSceneMenu.Instance.canvasGroup.alpha < 1)
         {
-            CutSceneMenu.Instance.canvasGroup.LeanAlpha(1, CutSceneMenu.Instance.duration);
+            
             yield return null;
         }
 

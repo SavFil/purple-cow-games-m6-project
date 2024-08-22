@@ -14,7 +14,7 @@ public class TitleScreenMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("TitleScreenMenu Created!");
+        //Debug.Log("TitleScreenMenu Created!");
     }
 
     private void Update()

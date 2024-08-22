@@ -21,7 +21,7 @@ public class ControllerMenu : Menu
         }
 
         Instance = this;
-        Debug.Log("ControllerMenu Created!");
+        //Debug.Log("ControllerMenu Created!");
     }
 
     private void Update()
