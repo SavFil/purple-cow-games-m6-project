@@ -95,9 +95,9 @@ public class CutSceneMenu : Menu
 
         yield return StartCoroutine(SetImageAlphaOne(blockTwoImage, 1));
 
-        yield return StartCoroutine(SetImageAlphaOne(blockThreeImage, 1));
+        yield return StartCoroutine(SetImageAlphaOne(blockThreeImage, .5f));
         
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(2f);
 
         yield return StartCoroutine(StartGame());
     }
