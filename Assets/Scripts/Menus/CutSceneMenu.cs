@@ -1,9 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static Unity.Collections.AllocatorManager;
-using static UnityEngine.Rendering.DebugUI;
+using TMPro;
+
 
 public class CutSceneMenu : Menu
 {
@@ -15,14 +14,17 @@ public class CutSceneMenu : Menu
     public Image skipImage;
     public GameObject skipContainer;
     bool canInteractSkip;
-    public Text skipText;
+    public TMP_Text skipText;
 
     [Header("--IMAGE BLOCKS")]
     public Image blockOneImage;
     public Image blockTwoImage;
     public Image blockThreeImage;
+    public Image blockFourImage;
+    public Image blockFiveImage;
+    public Image blockSixImage;
     Color imageColor = new Color(1, 1, 1, 0);
-
+    float opacityRatio = .02f;
 
     [Header("--FADE CANVAS")]
     public CanvasGroup canvasGroup = null;
@@ -88,15 +90,21 @@ public class CutSceneMenu : Menu
 
     public IEnumerator CutsceneSequence()
     {
-        yield return StartCoroutine(SetImageAlphaOne(blockOneImage, 0));
+        yield return StartCoroutine(SetImageAlphaOne(blockOneImage, .5f));
 
         skipContainer.SetActive(true);
         canInteractSkip = true;
 
-        yield return StartCoroutine(SetImageAlphaOne(blockTwoImage, 1));
+        yield return StartCoroutine(SetImageAlphaOne(blockTwoImage, .5f));
 
         yield return StartCoroutine(SetImageAlphaOne(blockThreeImage, .5f));
-        
+
+        yield return StartCoroutine(SetImageAlphaOne(blockFourImage, .5f));
+
+        yield return StartCoroutine(SetImageAlphaOne(blockFiveImage, .5f));
+
+        yield return StartCoroutine(SetImageAlphaOne(blockSixImage, .5f));
+
         yield return new WaitForSeconds(2f);
 
         yield return StartCoroutine(StartGame());
@@ -109,7 +117,7 @@ public class CutSceneMenu : Menu
         float changeOpacity = 0;
         while (image.color.a < 1)
         {
-            changeOpacity += .01f;
+            changeOpacity += opacityRatio;
             imageColor = new Color(1, 1, 1, changeOpacity);
             image.color = imageColor;
             if (image.color.a >= 1) yield break;
