@@ -292,6 +292,30 @@ MonoBehaviour:
             m_StringArgument: Dying
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 855708358}
+          m_TargetAssemblyTypeName: BulletSpawner, Assembly-CSharp
+          m_MethodName: DeActivate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Shooting1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7766747582052844019}
+          m_TargetAssemblyTypeName: BulletSpawner, Assembly-CSharp
+          m_MethodName: DeActivate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Shooting2
+            m_BoolArgument: 0
+          m_CallState: 2
     eventDelays: 
   - triggered: 0
     noOfPartsRequired: 2

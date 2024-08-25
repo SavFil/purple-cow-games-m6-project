@@ -32,7 +32,17 @@ public class GameManager : MonoBehaviour
     private int currentDropIndex = 0;
     private int currentMedalIndex = 0;
 
-    public HUD hud = null;
+    public enum Gamestate
+    {
+        INVALID,
+        InMenus,
+        Playing
+    }
+    public Gamestate gameState = Gamestate.INVALID;
+
+
+
+
 
     private void Awake()
     {
@@ -78,66 +88,11 @@ public class GameManager : MonoBehaviour
     }
 
 
-    //Debug code for testing purposes.
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            if (!playerCrafts[0]) SpawnPlayer(0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            if (playerCrafts[0])
-            {
-                playerCrafts[0].AddOption();
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            if (playerCrafts[0] && playerCrafts[0].craftData.shotPower < CraftConfiguration.MAX_SHOT_POWER - 1)
-            {
-                playerCrafts[0].craftData.shotPower++;
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            EnemyPattern testPattern = GameObject.FindObjectOfType<EnemyPattern>();
-            testPattern.Spawn();
-        }
-
-        if (Input.GetKeyDown(KeyCode.RightBracket))
-        {
-            if (playerCrafts[0])
-            {
-                playerCrafts[0].IncreaseBeamStrength();
-            }
-        }
-    }
-
     public void StartGame()
     {
         SceneManager.LoadScene("StageKiddiePool");
-        StartCoroutine(TogleHud(0, true));
+        ResetData();
     }
-
-
-    IEnumerator TogleHud(int playerIndex, bool active)
-    {
-        yield return new WaitForSeconds(.5f);
-        Debug.Log("hud1");
-        while (!SceneManager.GetSceneByName("StageKiddiePool").isLoaded && !hud)
-        {
-            Debug.Log("hud2");
-            yield return null;
-        }
-        hud.playerHUDs[playerIndex].healthBG.SetActive(active);
-        hud.playerScore[playerIndex].gameObject.SetActive(active);
-    }
-
 
 
     public void PickUpFallOffScreen(PickUp pickup)

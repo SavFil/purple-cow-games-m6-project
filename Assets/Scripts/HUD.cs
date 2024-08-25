@@ -13,13 +13,7 @@ public class HUD : MonoBehaviour
     public PlayerHUD[] playerHUDs = new PlayerHUD[2];
 
     
-    private void Awake()
-    {
-        if (!GameManager.Instance.hud)
-        {
-            GameManager.Instance.hud = this;
-        }
-    }
+
 
 
 
@@ -31,6 +25,19 @@ public class HUD : MonoBehaviour
     public void UpdateHUD()
     {
         if (!GameManager.Instance) return;
+
+        if (GameManager.Instance.gameState == GameManager.Gamestate.Playing)
+        {
+            playerHUDs[0].healthBG.SetActive(true);
+            playerScore[0].gameObject.SetActive(true);
+        }
+        else
+        {
+            playerHUDs[0].healthBG.SetActive(false);
+            playerScore[0].gameObject.SetActive(false);
+        }
+
+
 
         //Score
         if (playerScore[0]&& GameManager.Instance.playerCrafts[0])

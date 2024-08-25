@@ -44,17 +44,26 @@ public class GameInitializer : MonoBehaviour
                 case GameMode.Menus:
                     MenuManager.Instance.SwitchToMainMenuMenus();
                     GameManager.Instance.ResetData();
+                    GameManager.Instance.gameState = GameManager.Gamestate.InMenus;
                     break;
                 case GameMode.Gameplay:
                     MenuManager.Instance.SwitchToGameplayMenus();
-                    if (!GameManager.Instance.playerCrafts[0])
-                    {
-                        GameManager.Instance.SpawnPlayer(0, 0);
-                        GameManager.Instance.ResetData();
-                    }
+                    GameManager.Instance.gameState = GameManager.Gamestate.Playing;
+                    
                     break;
             };
-            menuLoaded = true;
+
+
+
+            if (gameMode == GameMode.Gameplay)
+            {
+                if (!GameManager.Instance.playerCrafts[0])
+                {
+                    GameManager.Instance.SpawnPlayer(0, 0);
+                }
+            }
+
+                menuLoaded = true;
         }
     }
 }
